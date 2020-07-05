@@ -1,0 +1,38 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+
+
+
+    -->
+
+    <dimen name="txt2">18dp</dimen>
+    <dimen name="txt6">28dp</dimen>
+    <dimen name="profile_iconsize">@dimen/_45sdp</dimen>
+    <dimen name="horizontalscroll">@dimen/_40sdp</dimen>
+    <dimen name="yesnopadding">@dimen/_10sdp</dimen>
+
+
+    <dimen name="txt_clbl">8dp</dimen>
+    <dimen name="txt0">16dp</dimen>
+    <dimen name="txt1">20dp</dimen>
+    <dimen name="txt3">21dp</dimen>
+    <dimen name="txt4">22dp</dimen>
+    <dimen name="txt5">28dp</dimen>
+    <dimen name="txt7">40dp</dimen>
+    <dimen name="txt_pad">10dp</dimen>
+    <dimen name="check_size">264px</dimen>
+    <dimen name="txt_pading_left">37.5dp</dimen>
+    <dimen name="pad_score_golf_ball">13dp</dimen>
+    <dimen name="image_layout">200dp</dimen>
+    <dimen name="star_size">28dp</dimen>
+    <dimen name="font_size">50dp</dimen>
+    <dimen name="sticker_size">40dp</dimen>
+    <dimen name="ad_text">16dp</dimen>
+    <dimen name="ad_header_margin">7dp</dimen>
+    <dimen name="ad_header">20dp</dimen>
+    <dimen name="tool_bar_size">65dp</dimen>
+
+</resources>

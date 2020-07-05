@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3A55A0</color>-->
+    <color name="colorPrimary">#118090</color>
+    <!--<color name="colorPrimaryDark">#FF2D427E</color>-->
+    <color name="colorPrimaryDark">#0e6a78</color>
+    <color name="colorAccent">#545454</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+
+    <color name="progress_background">#0D000000</color>
+    <color name="gray">#999999</color>
+    <color name="darkgray">#5b5b5b</color>
+    <color name="lightgray">#c6c4c4</color>
+    <color name="control_normal">#888888</color>
+    <color name="aqua">#118090</color>
+    <color name="grey">#979797</color>
+
+
+    <!--cropColor-->
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+
+    <color name="yes_btn">#EC2F2F</color>
+    <color name="no_btn">#53EC2F</color>
+
+    <color name="color_green">#53EC2F</color>
+    <color name="color_red">#EC2F2F</color>
+
+    <color name="windowBackground">#1C1C1C</color>
+
+    <color name="light_green">#4DAF51</color>
+    <color name="dark_green">#41a345</color>
+
+    <color name="app_center_colorPrimary">#4DAF51</color>
+    <color name="app_center_colorPrimaryDark">#41a345</color>
+    <color name="app_center_colorAccent">#FFFFFF</color>
+
+    <color name="text_color">#646464</color>
+
+    <color name="pomegranate">#f4511e</color>
+    <color name="theme_one_line">@color/white</color>
+    <color name="theme_two_line">#fbb03b</color>
+    <color name="theme_three_line">@color/white</color>
+    <color name="theme_four_line">@color/white</color>
+
+    <color name="sub_1">#232426</color>
+    <color name="sub_2">#787979</color>
+
+</resources>

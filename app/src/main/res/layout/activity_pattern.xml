@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pattern_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appLock.PatternActivity"
+    android:background="@drawable/bg_pin">
+
+    <ImageView
+        android:id="@+id/pattern_iv_appIcon"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:adjustViewBounds="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toTopOf="@+id/pattern_tv_appName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pattern_tv_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pattern_iv_finger"
+        app:layout_constraintEnd_toEndOf="@+id/pattern_iv_appIcon"
+        app:layout_constraintStart_toStartOf="@+id/pattern_iv_appIcon" />
+
+    <ImageView
+        android:id="@+id/pattern_iv_finger"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/_14ssp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/pattern_iv_appIcon"
+        app:layout_constraintStart_toStartOf="@+id/pattern_iv_appIcon"
+        app:srcCompat="@drawable/ic_fingerprint" />
+
+    <com.calculator.vault.gallery.locker.hide.data.appLock.patternlockview.PatternLockView
+        android:id="@+id/pattern_pv_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        app:wrongStateColor="@android:color/holo_red_dark"
+        app:correctStateColor="@android:color/holo_green_light"
+        app:pathWidth="@dimen/_4sdp"
+        app:dotNormalSize="@dimen/_16sdp"
+        app:dotSelectedSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+<!--    <com.drivedemo.ConnectPatternView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="32dp"
+        app:connectPatternCircleColor="@android:color/white"
+        app:connectPatternAnimationType="bottom"
+        app:connectPatternCircleRadius="16dp"
+        app:connectPatternLineColor="@android:color/white"
+        app:connectPatternNumber="nine"
+        app:connectPatternLineWidth="3dp"
+        app:connectPatternDrawable="@drawable/ic_circle_filled_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

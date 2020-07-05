@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/txt0">
+
+
+
+        <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!-- <ss.com.bannerslider.views.BannerSlider
+                         android:id="@+id/banner_slider"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/banner_height"
+                         android:layout_marginTop="@dimen/txt0"
+                         android:layout_marginLeft="@dimen/txt0"
+                         android:layout_marginRight="@dimen/txt0"
+                         app:emptyView="@drawable/ic_download_button"
+                         app:loopSlides="true" />-->
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/banner_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+                    <!-- <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/banner_height"
+                         android:layout_marginTop="@dimen/txt0"
+                         android:layout_marginLeft="@dimen/txt0"
+                         android:layout_marginRight="@dimen/txt0"
+                         android:background="@drawable/img" />-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25ssp"
+                    android:background="@drawable/circular_layout"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_download_app" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="DOWNLOAD"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:saveEnabled="false"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:src="@drawable/header_ad" />
+    </androidx.cardview.widget.CardView>
+
+
+    <!--<android.support.v7.widget.CardView -->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--card_view:cardCornerRadius="15dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<com.vasu.nameart.custom.SliderLayout-->
+                    <!--android:id="@+id/banner_slider"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/txt7"-->
+                <!--android:background="@drawable/circular_layout"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_download1" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="DOWNLOAD"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="@dimen/_10ssp"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

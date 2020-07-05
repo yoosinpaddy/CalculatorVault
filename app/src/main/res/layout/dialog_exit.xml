@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="@dimen/txt">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/txt7"-->
+            <!--android:layout_height="@dimen/txt7"-->
+            <!--android:src="@drawable/appicon"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="@dimen/txt"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textColor="@color/app_center_colorPrimary"-->
+            <!--android:textSize="@dimen/txt2"-->
+            <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/app_center_colorPrimary" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/txt"-->
+        <!--android:text="Are you sure to leave this page ?"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="@dimen/txt2" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#E0E0E0" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="3">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_rate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/txt0"-->
+            <!--android:text="Rate App"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/txt2" />-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#E0E0E0" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_no"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/txt0"-->
+            <!--android:text="No"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/txt2" />-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#E0E0E0" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_yes"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/txt0"-->
+            <!--android:text="Yes"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/txt2" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

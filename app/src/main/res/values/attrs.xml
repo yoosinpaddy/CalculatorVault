@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SVGImageView">
+        <!-- Location of the SVG document. -->
+        <attr name="svg" format="reference|string"/>
+        <attr name="css" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ConnectPatternView">
+        <attr name="connectPatternNumber" format="enum">
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+            <enum name="five" value="5" />
+            <enum name="nine" value="9" />
+        </attr>
+        <attr name="connectPatternCircleColor" format="color" />
+        <attr name="connectPatternCircleRadius" format="dimension" />
+        <attr name="connectPatternLineColor" format="color" />
+        <attr name="connectPatternLineWidth" format="dimension" />
+        <attr name="connectPatternDrawable" format="reference" />
+        <attr name="connectPatternAnimationType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PatternLockView">
+        <attr name="dotCount" format="integer"/>
+        <attr name="dotNormalSize" format="dimension"/>
+        <attr name="dotSelectedSize" format="dimension"/>
+        <attr name="dotDrawable" format="reference" />
+        <attr name="pathWidth" format="dimension"/>
+        <attr name="aspectRatioEnabled" format="boolean"/>
+        <attr name="aspectRatio" format="enum">
+            <enum name="square" value="0"/>
+            <enum name="width_bias" value="1"/>
+            <enum name="height_bias" value="2"/>
+        </attr>
+        <attr name="normalStateColor" format="color"/>
+        <attr name="correctStateColor" format="color"/>
+        <attr name="wrongStateColor" format="color"/>
+        <attr name="dotAnimationDuration" format="integer"/>
+        <attr name="pathEndAnimationDuration" format="integer"/>
+    </declare-styleable>
+</resources>

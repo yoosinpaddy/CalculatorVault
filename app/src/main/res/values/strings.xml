@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string name="grant">GRANT NOW</string>
+    <string name="dialog_permission">To use this app, allow access to your device manage read and write external storage and camera permission.</string>
+
+
+
+
+    <string name="NoHiddenImages">No Photos</string>
+    <string name="Photos">Photos</string>
+    <string name="files">Files</string>
+    <string name="backup_title">Backup</string>
+    <string name="Videos">Videos</string>
+    <string name="Browser">Browser</string>
+    <string name="Credentials">Credentials</string>
+    <string name="Notes">Notes</string>
+    <string name="appLock">App Lock</string>
+    <string name="Contact">Contacts</string>
+    <string name="anti_lost">Anti-Lost Guide</string>
+    <string name="add_direction">Tap [ + ] on the top bar to add one</string>
+    <string name="Edit">EDIT</string>
+    <string name="Share">Share</string>
+    <string name="Save">Save</string>
+    <string name="Delete">Delete</string>
+    <string name="Cancel">CANCEL</string>
+    <string name="DeleteFromSystem">Delete from system</string>
+
+    <string name="oldPass">Enter your Old Password (4 - Digit)</string>
+    <string name="newPass">Enter New Password (4 - Digit)</string>
+    <string name="confPass">Confirm Password (4 - Digit)</string>
+    <string name="DONE">DONE</string>
+    <string name="OldPassword">Old Password</string>
+    <string name="NewPassword">New Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="browserSettings">Browser Settings</string>
+    <string name="lockSettings">Lock Settings</string>
+    <string name="breakReport">Break-in-Report</string>
+    <string name="breakAlert">Break in Alert</string>
+    <string name="DecoyPasscode">Decoy Passcode</string>
+    <string name="help">Help</string>
+    <string name="ContactUS">Contact Us</string>
+    <string name="RateUs">Rate us</string>
+
+    <!--Notes-->
+    <string name="Number">number</string>
+    <string name="ContactDetails">Contact Details</string>
+    <string name="ContactName">Contact Name</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="Email">Email</string>
+    <string name="Birthday">Birthday</string>
+    <string name="NotAvailable">Not Available</string>
+    <string name="NoContacts">No Contacts Found</string>
+    <string name="Add_contacts">Add contacts from here.</string>
+
+    <!--Browser-->
+    <string name="Google">Google</string>
+    <string name="Yahoo">Yahoo</string>
+    <string name="Bing">Bing</string>
+    <string name="googlelink">https://www.google.com/</string>
+    <string name="yahoolink">https://in.yahoo.com/?p=us</string>
+    <string name="binglink">https://www.bing.com/</string>
+    <string name="Title">Title:</string>
+    <string name="Website">Website:</string>
+    <string name="Username">Username:</string>
+    <string name="Password">Password:</string>
+    <string name="Notescred">Notes:</string>
+    <string name="ChoosePhoto">Choose Photo</string>
+    <string name="ChooseVideo">Choose Video</string>
+
+    <!--Calculator-->
+    <string name="ac" translatable="false">AC</string>
+    <string name="value_update" translatable="false">+/-</string>
+    <string name="percentage" translatable="false">%</string>
+    <string name="divide" translatable="false">÷</string>
+    <string name="divide_operator" translatable="false">/</string>
+    <string name="seven" translatable="false">7</string>
+    <string name="eight" translatable="false">8</string>
+    <string name="nine" translatable="false">9</string>
+    <string name="multiply" translatable="false">x</string>
+    <string name="multiply_expression" translatable="false">*</string>
+    <string name="four" translatable="false">4</string>
+    <string name="five" translatable="false">5</string>
+    <string name="six" translatable="false">6</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="comma" translatable="false">,</string>
+    <string name="comma_expression" translatable="false">.</string>
+    <string name="equals" translatable="false">=</string>
+
+    <!-- Messages -->
+    <string name="invalid_expression_message">Invalid expression</string>
+    <string name="pick_image_intent_text">Pick Image</string>
+    <!--http://stackoverflow.com/questions/17502824/whats-wrong-with-this-format-string-->
+
+    <!--Crop module main fragment-->
+    <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+
+    <string name="ChangePassword">Change Password</string>
+    <string name="decoy_message">Your all Decoy account data will be lost. Do you want to continue?</string>
+    <string name="success_backup_msg_dialog"><![CDATA[Your data has been backup into your Google Drive with name <b>CalculatorBackup.zip</b>, so please don\'t delete that file otherwise you can\'t restore your data. ]]></string>
+    <string name="success_restore_msg_dialog"><![CDATA[Your backup will automatically restore after download. ]]></string>
+    <string name="confirmation">Are you sure want to leave this page?</string>
+    <string name="delete_image_message">Are you sure you want to delete from vault?</string>
+    <string name="share_intent_images">Image</string>
+    <string name="share_intent_Videos">Video</string>
+    <string name="how_to_recover_passcode">How To Recover Passcode</string>
+    <string name="step_1">Step 1 :</string>
+    <string name="first_enter_0000">First enter 0000 in Calculator and press % button.</string>
+    <string name="step_2">Step 2 :</string>
+    <string name="give_correct_answer">Give correct answer of your question and click on show passcode then you will get back your passcode.</string>
+    <string name="security">Security</string>
+    <string name="give_answer_of">Give answer of your question and retrieve your forgot passcode.</string>
+    <string name="answer">Answer :</string>
+    <string name="answer_">Answer</string>
+    <string name="show_passcode">Show Passcode</string>
+    <string name="set_answer">Set Answer</string>
+    <string name="break_in_report">Break-in-Report</string>
+    <string name="recovery_passcode">Recover Passcode</string>
+    <string name="backup">Backup</string>
+    <string name="backup_and_restore">Backup And Restore</string>
+    <string name="rate_app">Rate App</string>
+    <string name="more_apps">More Apps</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="browser_setting">Browser Settings</string>
+    <string name="back_to_calculator">Back To Calculator</string>
+    <string name="lock_setting">Lock Settings</string>
+    <string name="write_your_note_here">Description</string>
+    <string name="add_notes">Add notes from here.</string>
+    <string name="add_credentials">Add credentials from here.</string>
+    <string name="add_photos">Add photos from here.</string>
+    <string name="add_videos">Add videos from here.</string>
+    <string name="search_here">Search Here</string>
+
+    <string-array name="forgot_passcode_questions">
+        <item>What is your favorite team?</item>
+        <item>Who is your favourite movie?</item>
+        <item>In what town was your first job?</item>
+        <item>What is your nickname?</item>
+        <item>What is your favourite book?</item>
+        <item>Who was your childhood hero?</item>
+    </string-array>
+
+    <string name="ad_attribution">Ad</string>
+
+    <!--ad IDs TEST-->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="inter_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--<string name="inter_ad_unit_id1">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--<string name="inter_ad_unit_id2">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--<string name="native_ad_unit_id">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--<string name="native_ad_unit_id1">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--<string name="native_ad_unit_id2">ca-app-pub-3940256099942544/2247696110</string>-->
+
+
+    <string name="ads_product_key_monthlydiscount" translatable="false">com.calculatorvault.purchase.monthlydiscount</string>
+    <string name="ads_product_key_month" translatable="false">com.calculatorvault.purchase.monthly</string>
+    <string name="ads_product_key_year" translatable="false">com.calculatorvault.purchase.yearly</string>
+
+
+    <!--ad IDs LIVE-->
+    <string name="banner_ad_unit_id">ca-app-pub-1168261283036318/5360510180</string>
+    <string name="inter_ad_unit_id">ca-app-pub-1168261283036318/9108183509</string>
+    <string name="inter_ad_unit_id1">ca-app-pub-1168261283036318/1960339074</string>
+    <string name="inter_ad_unit_id2">ca-app-pub-1168261283036318/6449982495</string>
+    <string name="native_ad_unit_id">ca-app-pub-1168261283036318/6060839027</string>
+    <string name="native_ad_unit_id1">ca-app-pub-1168261283036318/2605449719</string>
+    <string name="native_ad_unit_id2">ca-app-pub-1168261283036318/5568199566</string>
+    <string name="app_id">ca-app-pub-1168261283036318~6865163546</string>
+
+    <!-- Mopub Ads intID -->
+    <string name="mopub_int_id">98dfc4753cf54d58afa7be129898f56e</string>
+
+    <!-- Applovin applovin.sdk.key-->
+    <string name="applovin_sdk_key">eruI7aE39Fwu0q7Jmet5Sk1p7p3rJSR-oFggKdAWDdsTAux2__wIXaFIh8Re3c1IgWRs1QZa8n1KQdupymguA5</string>
+
+    <!--in-app purchase test id-->
+    <!--<string name="ads_product_key">android.test.purchased</string>-->
+    <!--<string name="licenseKey">bGoa+V7g/yqDXvKRqq+JTFn4uQZbPiQJo4pf9RzJ</string>-->
+
+    <!--in-app purchase live id-->
+    <string name="ads_product_key">com.calculator.vault.adsremove</string>
+    <string name="licenseKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtuOnNXSdbWDJp0h2QbrgLopfyP91qsOie11XlPNEH7OHVlEB7b2Iwvj6aSTbuPd8CXEN+9RTm93V+A2P4Twi7rJkddPqQ3nx7SgKQ7tMtu2gdry9/ivxhFttPXtzVzP/5W3/i1NFd9r1EMPQibSYUC3IicHFtWh0B/T7Xe6U7Jnr1Ym0RgBrtikBdNSY9Lz3IKN0EXmw4jog9tYP012RaKVf0eRdNQcKFEW0xGEkzgD91CUcRAR9tizWw90mpl6DadT0ZxHSgTmICWVZGrBW5VMtetSWQwNklYIaDO0hut93hJaKBQJPiYLmsK0kpSJecnnjevsmOowJyq17dJcmfQIDAQAB</string>
+
+    <string name="remove_ad_msg">Do you want to remove ads?</string>
+    <string name="purchased_msg">You have already purchased.</string>
+    <string name="remove_ads_msg">Ads remove successfully from app. Enjoy using app without any interference.</string>
+    <string name="something_wrong">Somthing went Wrong</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="share_app">Share App</string>
+    <string name="title_amp_subject"><![CDATA[Title & Subject]]></string>
+    <string name="notes">Notes</string>
+    <string name="Other">Other Files</string>
+    <string name="other_files">Other Files</string>
+
+    <string name="accessibility_service_desc">"Calculator Vault locks applications that you have chosen to be locked.\n
+Calculator Vault performs:\n
+Observe your actions:-\n
+Calculator Vault observers \"typeWindowStateChanged\" event to detect current focus when you open any locked app.\n
+Privacy Note:-\n
+This application don't store or send any kind of your information. This service is only used to retrieve application window when user opens locked app."</string>
+    <string name="accessibility_service_summary">Lock app using CalculatorVault</string>
+    <string name="lock_theme">Lock Theme</string>
+    <string name="change_pattern">Change Pattern</string>
+    <string name="enable_pattern_lock">Enable Pattern Lock</string>
+    <string name="use_fingerprint_to_unlock">Use Fingerprint To Unlock</string>
+
+    <string name="message_pattern_dot_added">Dot added to pattern</string>
+    <string name="message_pattern_started">Pattern drawing started</string>
+    <string name="message_pattern_detected">Pattern drawing completed</string>
+    <string name="message_pattern_cleared">Pattern cleared</string>
+    <string name="set_new_pattern">Set new pattern.</string>
+    <string name="draw_old_pattern">Draw old pattern.</string>
+    <string name="uninstall_protection">Uninstall Protection</string>
+
+    <string name="description">Click Activate to On/Off device</string>
+    <string name="learn_more">Learn More</string>
+    <string name="sponsored">Sponsored</string>
+
+    <string name="notification_access">Notification access</string>
+    <string name="Accessibility">Accessibility</string>
+    <string name="Usage_Access">Usage Access</string>
+    <string name="an_application_with"><![CDATA[An application with Backup and Restore & without any Ads]]></string>
+
+</resources>

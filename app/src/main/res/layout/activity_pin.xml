@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pin_cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pin"
+    tools:context=".appLock.PinActivity">
+
+    <EditText
+        android:id="@+id/pin_edt_code"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="4"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_iv_appIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pin_iv_appIcon" />
+
+    <ImageView
+        android:id="@+id/pin_iv_appIcon"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:adjustViewBounds="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/pin_tv_appName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pin_tv_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pin_iv_finger"
+        app:layout_constraintEnd_toEndOf="@+id/pin_iv_appIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/pin_iv_appIcon"
+        app:layout_constraintTop_toBottomOf="@+id/pin_iv_appIcon" />
+
+    <ImageView
+        android:id="@+id/pin_iv_finger"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/pin_iv_pTwo"
+        app:layout_constraintEnd_toEndOf="@+id/pin_iv_appIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/pin_iv_appIcon"
+        app:layout_constraintTop_toBottomOf="@+id/pin_tv_appName"
+        app:srcCompat="@drawable/ic_fingerprint" />
+
+    <ImageView
+        android:id="@+id/pin_iv_pOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:src="@drawable/ic_dash"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_iv_pTwo"
+        app:layout_constraintEnd_toStartOf="@+id/pin_iv_pTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pin_iv_pTwo" />
+
+    <ImageView
+        android:id="@+id/pin_iv_pTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:src="@drawable/ic_dash"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_iv_pThree"
+        app:layout_constraintEnd_toStartOf="@+id/pin_iv_pThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_iv_pOne"
+        app:layout_constraintTop_toTopOf="@+id/pin_iv_pThree" />
+
+    <ImageView
+        android:id="@+id/pin_iv_pThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:src="@drawable/ic_dash"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/pin_iv_pFour"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_iv_pTwo" />
+
+    <ImageView
+        android:id="@+id/pin_iv_pFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:src="@drawable/ic_dash"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_iv_pThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_iv_pThree"
+        app:layout_constraintTop_toTopOf="@+id/pin_iv_pThree" />
+
+    <ImageView
+        android:id="@+id/pin_tv_one"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_two"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_two" />
+
+    <ImageView
+        android:id="@+id/pin_tv_two"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_tv_five"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_one"
+        app:layout_constraintTop_toBottomOf="@+id/pin_iv_pThree"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/pin_tv_three"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_two"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_two" />
+
+    <ImageView
+        android:id="@+id/pin_tv_four"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_five"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_five"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_five" />
+
+    <ImageView
+        android:id="@+id/pin_tv_five"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_tv_eight"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_six"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_four"
+        app:layout_constraintTop_toBottomOf="@+id/pin_tv_two" />
+
+    <ImageView
+        android:id="@+id/pin_tv_six"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_five"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_five"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_five" />
+
+    <ImageView
+        android:id="@+id/pin_tv_seven"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_eight"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_eight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_eight" />
+
+    <ImageView
+        android:id="@+id/pin_tv_eight"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_tv_zero"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_nine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_seven"
+        app:layout_constraintTop_toBottomOf="@+id/pin_tv_five" />
+
+    <ImageView
+        android:id="@+id/pin_tv_nine"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_eight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_eight"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_eight" />
+
+    <ImageView
+        android:id="@+id/pin_tv_zero"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pin_iv_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_blank"
+        app:layout_constraintTop_toBottomOf="@+id/pin_tv_eight" />
+
+    <ImageView
+        android:id="@+id/pin_iv_delete"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_backspace"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin_tv_zero"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_zero" />
+
+    <TextView
+        android:id="@+id/pin_tv_blank"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_tv_zero"
+        app:layout_constraintEnd_toStartOf="@+id/pin_tv_zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pin_tv_zero" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
