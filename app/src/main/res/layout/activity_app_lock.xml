@@ -13,13 +13,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_green">
 
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:textStyle="bold"
                 android:ellipsize="end"
                 android:gravity="center"
                 android:singleLine="true"
@@ -43,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar_top"
-        android:background="@drawable/ic_background_all"
         android:orientation="vertical"
         android:gravity="center">
 
@@ -54,7 +54,7 @@
             android:gravity="center"
             android:textSize="@dimen/_20sdp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/navy_blue"/>
 
     </LinearLayout>
 </RelativeLayout>

@@ -11,7 +11,6 @@
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -19,7 +18,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_blue_2">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -27,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
+                android:textStyle="bold"
                 android:gravity="center"
                 android:singleLine="true"
                 android:text="@string/backup"
@@ -79,7 +79,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/ic_background_all"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +88,8 @@
         <LinearLayout
             android:id="@+id/ll_take_backup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/j_nav_item_bg"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="@dimen/_8sdp"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.9"
                 android:text="Take Backup"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_16ssp" />
 
             <ImageView
@@ -110,21 +110,19 @@
                 android:adjustViewBounds="true"
                 android:padding="@dimen/_3sdp"
                 android:src="@drawable/ic_arrow"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/navy_blue" />
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey" />
 
         <LinearLayout
             android:id="@+id/ll_restore_backup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/j_nav_item_bg"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:layout_marginTop="12dp"
             android:padding="@dimen/_8sdp"
             android:weightSum="1">
 
@@ -133,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.9"
                 android:text="Restore Backup"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_16ssp" />
 
             <ImageView
@@ -143,14 +141,10 @@
                 android:adjustViewBounds="true"
                 android:padding="@dimen/_3sdp"
                 android:src="@drawable/ic_arrow"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/navy_blue" />
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey" />
 
     </LinearLayout>
 

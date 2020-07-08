@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".appLock.AppListActivity"
-    android:background="@drawable/ic_background_all">
+    tools:context=".appLock.AppListActivity" >
 
     <LinearLayout
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,7 +18,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_green">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -29,6 +27,7 @@
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:singleLine="true"
                 android:text="@string/appLock"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -59,6 +58,8 @@
         android:id="@+id/rv_appList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        tools:itemCount="4"
+        tools:listitem="@layout/list_item_app_list"
         app:layout_constraintBottom_toTopOf="@id/fl_adplaceholder"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_top" />
 
