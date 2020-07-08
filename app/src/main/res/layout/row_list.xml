@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="8dp"
     android:background="@color/transparent"
-    android:orientation="vertical"
-    app:cardBackgroundColor="@color/transparent">
+    android:orientation="vertical" >
 
     <FrameLayout
         android:id="@+id/front_layout"
@@ -25,37 +26,40 @@
                 android:layout_height="@dimen/_45sdp"
                 android:layout_centerVertical="true"
                 android:adjustViewBounds="true"
-                android:tint="@color/colorPrimary"
-                android:src="@drawable/ic_file_black_24dp" />
+                android:src="@drawable/j_note_img" />
 
             <TextView
                 android:id="@+id/tv_note_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
                 android:layout_toStartOf="@id/iv_note_copy"
                 android:layout_toLeftOf="@id/iv_note_copy"
                 android:layout_toEndOf="@id/iv_note_icon"
                 android:layout_toRightOf="@id/iv_note_icon"
-                android:textColor="@color/colorPrimary"
                 android:maxHeight="@dimen/_35sdp"
-                android:textSize="@dimen/_14ssp" />
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                tools:text="John Files" />
 
             <TextView
                 android:id="@+id/tv_note_timestamp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_note_text"
+                android:layout_marginStart="12dp"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
                 android:layout_toStartOf="@id/iv_note_copy"
                 android:layout_toLeftOf="@id/iv_note_copy"
                 android:layout_toEndOf="@id/iv_note_icon"
                 android:layout_toRightOf="@id/iv_note_icon"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_14ssp" />
-
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_14ssp"
+                tools:text="24/06/2020 10:33:12" />
 
 
             <ImageView
@@ -66,7 +70,8 @@
                 android:layout_toLeftOf="@+id/iv_note_delete"
                 android:padding="@dimen/_12sdp"
                 android:src="@drawable/ic_content_copy"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/colorPrimary"
+                android:visibility="gone" />
 
             <ImageView
                 android:id="@+id/iv_note_delete"
@@ -76,11 +81,10 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:padding="@dimen/_12sdp"
-                android:src="@drawable/ic_delete_black_24dp"
-                android:tint="@color/colorPrimary" />
+                android:src="@drawable/j_btn_delete" />
 
         </RelativeLayout>
 
     </FrameLayout>
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>

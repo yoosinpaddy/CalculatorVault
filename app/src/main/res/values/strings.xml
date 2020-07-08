@@ -18,7 +18,7 @@
     <string name="appLock">App Lock</string>
     <string name="Contact">Contacts</string>
     <string name="anti_lost">Anti-Lost Guide</string>
-    <string name="add_direction">Tap [ + ] on the top bar to add one</string>
+    <string name="add_direction">Tap { + } on the top bar to add one</string>
     <string name="Edit">EDIT</string>
     <string name="Share">Share</string>
     <string name="Save">Save</string>
@@ -199,7 +199,7 @@
     <string name="no">No</string>
     <string name="remove_ads">Remove Ads</string>
     <string name="share_app">Share App</string>
-    <string name="title_amp_subject"><![CDATA[Title & Subject]]></string>
+    <string name="title_amp_subject">Title and Subject</string>
     <string name="notes">Notes</string>
     <string name="Other">Other Files</string>
     <string name="other_files">Other Files</string>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.calculator.vault.gallery.locker.hide.data.R;
 import com.calculator.vault.gallery.locker.hide.data.ads.AdsListener;
@@ -33,7 +34,7 @@ public class NoteTextActivity extends AppCompatActivity implements View.OnClickL
     private static final String TAG = "NoteTextActivity";
     EditText moEtNoteText, moEtTextTitle;
     String msNoteText;
-    LinearLayout moLLSaveNote;
+    TextView moLLSaveNote, btnClearNotes;
     NoteListModel moNoteListModel;
     ImageVideoDatabase imageVideoDatabase = new ImageVideoDatabase(this);
     ImageView iv_back;
@@ -193,6 +194,7 @@ public class NoteTextActivity extends AppCompatActivity implements View.OnClickL
         moEtTextTitle = findViewById(R.id.et_note_title);
         moEtNoteText = findViewById(R.id.et_editnoteText);
         moLLSaveNote = findViewById(R.id.ll_save_notes);
+        btnClearNotes = findViewById(R.id.btnClearNotes);
         iv_back = findViewById(R.id.iv_back);
         moNoteListModel = new NoteListModel();
 
@@ -226,6 +228,14 @@ public class NoteTextActivity extends AppCompatActivity implements View.OnClickL
                     savenotes();
                     finish();
                 }
+            }
+        });
+
+        btnClearNotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moEtTextTitle.setText("");
+                moEtNoteText.setText("");
             }
         });
 

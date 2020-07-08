@@ -39,7 +39,7 @@ public class AddCredentialsActivity extends AppCompatActivity implements View.On
     private EditText moEtTitleCredText, moEtUsernameCredText;
     private EditText moEtwebsiteCredText, moEtPasswordCredText;
     private EditText moEtNotesCredText;
-    private LinearLayout ll_save_creds;
+    private TextView ll_save_creds, btnClearCredentials;
     private String mscredTitle, mscredWebsite, mscredUsername, mscredPassword, mscredNotes;
     private ImageVideoDatabase imageVideoDatabase = new ImageVideoDatabase(this);
     private ColorGenerator colorGenerator = ColorGenerator.DEFAULT;
@@ -203,6 +203,7 @@ public class AddCredentialsActivity extends AppCompatActivity implements View.On
 
     private void initViewListener() {
         ll_save_creds.setOnClickListener(this);
+        btnClearCredentials.setOnClickListener(this);
         iv_back.setOnClickListener(this);
 
         moRlMain.getViewTreeObserver().addOnGlobalLayoutListener(() -> {
@@ -250,6 +251,7 @@ public class AddCredentialsActivity extends AppCompatActivity implements View.On
         moEtPasswordCredText = findViewById(R.id.et_PasswordCredText);
         moEtNotesCredText = findViewById(R.id.et_NotesCredText);
         ll_save_creds = findViewById(R.id.ll_save_creds);
+        btnClearCredentials = findViewById(R.id.btnClearCredentials);
         iv_back = findViewById(R.id.iv_back);
         moRlMain = findViewById(R.id.rl_main);
         //moFlNativeAds = findViewById(R.id.fl_adplaceholder);
@@ -282,7 +284,16 @@ public class AddCredentialsActivity extends AppCompatActivity implements View.On
                     addCredentialsInDatabase();
                 }
                 break;
-
+            case R.id.btnClearCredentials:
+//                private EditText moEtTitleCredText, moEtUsernameCredText;
+//                private EditText moEtwebsiteCredText, moEtPasswordCredText;
+//                private EditText moEtNotesCredText;
+                moEtTitleCredText.setText("");
+                moEtUsernameCredText.setText("");
+                moEtwebsiteCredText.setText("");
+                moEtPasswordCredText.setText("");
+                moEtNotesCredText.setText("");
+                break;
             case R.id.iv_back:
                 onBackPressed();
                 break;

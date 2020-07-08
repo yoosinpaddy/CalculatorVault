@@ -10,18 +10,18 @@
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/j_toolbar_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/iv_security_back"
-            android:layout_width="@dimen/_22sdp"
-            android:layout_height="@dimen/_22sdp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/_8sdp"
-            android:src="@drawable/ic_back_arrow" />
+            android:src="@drawable/j_btn_back" />
 
         <TextView
             android:id="@+id/tv_title"
@@ -33,7 +33,8 @@
             android:singleLine="true"
             android:text="@string/security"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -45,26 +46,50 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:gravity="center"
         android:layout_marginRight="8dp"
+        android:gravity="center"
         android:text="@string/give_answer_of"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/navy_blue"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Question"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintBottom_toTopOf="@id/spinner_security_questions"
+        app:layout_constraintStart_toStartOf="@id/spinner_security_questions" />
+
     <Spinner
         android:id="@+id/spinner_security_questions"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
+        android:background="@drawable/j_spinner_bg"
+        android:entries="@array/forgot_passcode_questions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.100000000"
-        android:entries="@array/forgot_passcode_questions"/>
+        app:layout_constraintVertical_bias="0.100000000" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/j_arrow_down"
+        app:layout_constraintTop_toTopOf="@id/spinner_security_questions"
+        app:layout_constraintBottom_toBottomOf="@id/spinner_security_questions"
+        app:layout_constraintEnd_toEndOf="@id/spinner_security_questions"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -91,7 +116,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/answer"
+        android:text="@string/answer_"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -100,31 +125,35 @@
     <EditText
         android:id="@+id/et_security_answer"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/j_spinner_bg"
         android:hint="@string/answer_"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        android:background="@drawable/bg_curve_edittext"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
         android:paddingStart="8dp"
         android:paddingLeft="8dp"
+        android:paddingTop="4dp"
         android:paddingEnd="8dp"
         android:paddingRight="8dp"
-        android:textSize="14sp"/>
+        android:paddingBottom="4dp"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
         android:id="@+id/btn_security_show"
         style="@style/MyButtonblue"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_22sdp"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
         android:layout_marginTop="16dp"
-        android:text="@string/show_passcode"
+        android:background="@drawable/j_btn_set_answer"
         android:gravity="center"
+        android:text="@string/set_answer"
         android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/et_security_answer" />

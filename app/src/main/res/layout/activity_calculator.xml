@@ -16,23 +16,24 @@
             android:id="@+id/tv_formula"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/black"
             android:fontFamily="sans-serif-light"
-            android:gravity="right|bottom"
+            android:gravity="start|bottom"
             android:maxLines="1"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textStyle="bold"
             android:paddingRight="@dimen/_5sdp"
-            android:textColor="@color/white"
+            android:textColor="@color/navy_blue"
             android:visibility="visible"
             android:textSize="@dimen/formula_text_size" />
         <TextView
             android:id="@+id/tv_passwordType"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/black"
             android:gravity="center|bottom"
             android:maxLines="1"
             android:paddingRight="@dimen/_5sdp"
-            android:textColor="@color/white"
+            android:textColor="@color/navy_blue"
             android:text="@string/newPass"
             android:visibility="gone"
             android:textSize="@dimen/formula_text_size" />
@@ -43,15 +44,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.8"
-        android:background="@color/black"
+        android:padding="8dp"
         android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|start"
         android:maxLines="1"
         android:paddingRight="@dimen/_5sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/grey"
         android:textSize="@dimen/display_text_size"
-
         tools:text="0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#ECECEC"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="18dp"
+        android:layout_height="0.5dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,24 +75,26 @@
 
             <Button
                 android:id="@+id/btn_clearAll"
-                style="@style/MyButton"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="AC"
+                android:text="C"
                 tools:ignore="NestedWeights" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,6 +106,8 @@
                 android:id="@+id/btn_sign"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="\+/-" />
@@ -103,14 +115,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,6 +134,8 @@
                 android:id="@+id/btn_percent"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="%" />
@@ -129,7 +143,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
@@ -141,7 +155,11 @@
 
             <Button
                 android:id="@+id/btn_divide"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -150,7 +168,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                 />
         </LinearLayout>
     </LinearLayout>
 
@@ -170,6 +188,8 @@
             <Button
                 android:id="@+id/btn_7"
                 style="@style/MyButton"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -178,14 +198,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -196,6 +216,8 @@
             <Button
                 android:id="@+id/btn_8"
                 style="@style/MyButton"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -204,14 +226,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -223,6 +245,8 @@
                 android:id="@+id/btn_9"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="9" />
@@ -230,7 +254,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -241,7 +265,11 @@
 
             <Button
                 android:id="@+id/btn_multiply"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -250,7 +278,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                 />
         </LinearLayout>
     </LinearLayout>
 
@@ -270,6 +298,8 @@
                 android:id="@+id/btn_4"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="4" />
@@ -277,13 +307,13 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -295,6 +325,8 @@
                 android:id="@+id/btn_5"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="5" />
@@ -302,14 +334,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -322,13 +354,15 @@
                 style="@style/MyButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:text="6" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
@@ -340,8 +374,12 @@
 
             <Button
                 android:id="@+id/btn_minus"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="-" />
@@ -349,7 +387,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                 />
         </LinearLayout>
 
     </LinearLayout>
@@ -371,6 +409,8 @@
                 android:id="@+id/btn_1"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="1" />
@@ -378,14 +418,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -397,6 +437,8 @@
                 android:id="@+id/btn_2"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="2" />
@@ -404,14 +446,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
             android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -423,6 +465,8 @@
                 android:id="@+id/btn_3"
                 style="@style/MyButton"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="3" />
@@ -430,7 +474,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -441,7 +485,11 @@
 
             <Button
                 android:id="@+id/btn_plus"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -450,7 +498,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                 />
         </LinearLayout>
 
 
@@ -472,17 +520,21 @@
                 style="@style/MyButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/j_calc_btn_long"
+                android:layout_margin="8dp"
                 android:layout_weight="1.5"
                 android:text="0" />
 
             <View
                 android:layout_width="1.3dp"
                 android:layout_height="match_parent"
-                android:background="@color/lightgray" />
+                 />
 
             <Button
                 android:id="@+id/btn_decimal"
                 style="@style/MyButton"
+                android:background="@drawable/j_calc_btn_2"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
@@ -492,7 +544,12 @@
 
         <Button
             android:id="@+id/btn_equals"
-            style="@style/MyButtonblue"
+            style="@style/JButtons"
+            android:background="@drawable/j_ellipse"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:textSize="44sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

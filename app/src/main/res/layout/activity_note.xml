@@ -3,19 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content" >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_blue_2">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -26,24 +26,24 @@
                 android:gravity="center"
                 android:singleLine="true"
                 android:text="@string/Notes"
+                android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/white" />
 
 
             <LinearLayout
                 android:id="@+id/ll_add_notes"
-                android:layout_width="?attr/actionBarSize"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:layout_centerHorizontal="true"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_addsvg"
-                    android:tint="@color/white" />
+                    android:src="@drawable/j_btn_add_contacts" />
                 <!--  <ImageView
                       android:id="@+id/iv_more_app"
                       android:layout_width="match_parent"
@@ -89,7 +89,6 @@
         android:orientation="vertical"
         android:weightSum="1"
         android:layout_below="@+id/toolbar_top"
-        android:background="@drawable/ic_background_all"
         android:visibility="visible"
         android:layout_above="@+id/fl_adplaceholder">
 
@@ -103,6 +102,8 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_notesList"
+                tools:itemCount="4"
+                tools:listitem="@layout/row_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:nestedScrollingEnabled="false"
@@ -156,10 +157,10 @@
             <ImageView
                 android:id="@+id/iv_add_notes"
                 android:layout_gravity="center"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:gravity="center"
-                android:src="@drawable/ic_add_svg"
+                android:src="@drawable/j_img_add_blue"
                 ads:layout_constraintBottom_toBottomOf="parent"
                 ads:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -173,6 +174,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginLeft="24dp"
                 android:adjustViewBounds="true"
+                android:visibility="gone"
                 android:gravity="center"
                 android:src="@drawable/ic_arrow_svg"
                 android:tint="@color/colorPrimary"
@@ -189,7 +191,7 @@
                 android:padding="14dp"
                 android:textSize="@dimen/_16sdp"
                 android:text="@string/add_direction"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 ads:layout_constraintEnd_toEndOf="parent"
                 ads:layout_constraintStart_toStartOf="parent"
                 ads:layout_constraintTop_toBottomOf="@+id/iv_add_notes"/>

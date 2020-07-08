@@ -12,11 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="2.1"
-        android:background="@color/black"
+        android:background="@color/white"
         android:fontFamily="sans-serif-light"
         android:gravity="right|bottom"
         android:maxLines="1"
-        android:textColor="@color/white"
+        android:textColor="@color/navy_blue"
         android:textSize="@dimen/formula_text_size" />
 
     <TextView
@@ -24,11 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.8"
-        android:background="@color/black"
+        android:background="@color/white"
         android:fontFamily="sans-serif-light"
         android:gravity="center_vertical|right"
         android:maxLines="1"
-        android:textColor="@color/white"
+        android:padding="8dp"
+        android:textColor="@color/grey"
         android:textSize="@dimen/display_text_size"
         tools:text="0" />
 
@@ -46,23 +47,23 @@
 
             <Button
                 android:id="@+id/btn_clearAll"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="AC" />
+                android:text="C" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,23 +73,23 @@
 
             <Button
                 android:id="@+id/btn_sign"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="\+/-" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,16 +99,17 @@
 
             <Button
                 android:id="@+id/btn_percent"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="%" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
@@ -119,16 +121,18 @@
 
             <Button
                 android:id="@+id/btn_divide"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="÷" />
+                android:background="@drawable/j_calc_btn"
+                android:text="÷"
+                android:textColor="@color/white" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -148,23 +152,23 @@
 
             <Button
                 android:id="@+id/btn_7"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="7" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,23 +178,23 @@
 
             <Button
                 android:id="@+id/btn_8"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="8" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -200,16 +204,17 @@
 
             <Button
                 android:id="@+id/btn_9"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="9" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -220,16 +225,18 @@
 
             <Button
                 android:id="@+id/btn_multiply"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="x" />
+                android:background="@drawable/j_calc_btn"
+                android:text="x"
+                android:textColor="@color/white" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -247,22 +254,22 @@
 
             <Button
                 android:id="@+id/btn_4"
-                style="@style/MyButton"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="4" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -272,23 +279,23 @@
 
             <Button
                 android:id="@+id/btn_5"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="5" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -298,16 +305,17 @@
 
             <Button
                 android:id="@+id/btn_6"
-                style="@style/MyButton"
+                android:background="@drawable/j_calc_btn_2"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="6" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
@@ -319,16 +327,18 @@
 
             <Button
                 android:id="@+id/btn_minus"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="-" />
+                android:background="@drawable/j_calc_btn"
+                android:text="-"
+                android:textColor="@color/white" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -348,23 +358,23 @@
 
             <Button
                 android:id="@+id/btn_1"
-                style="@style/MyButton"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="1" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -374,23 +384,23 @@
 
             <Button
                 android:id="@+id/btn_2"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="2" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
         <View
             android:layout_width="1.3dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightgray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -400,16 +410,17 @@
 
             <Button
                 android:id="@+id/btn_3"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="3" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/lightgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -420,16 +431,18 @@
 
             <Button
                 android:id="@+id/btn_plus"
-                style="@style/MyButtonblue"
+                style="@style/JButtons"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="+" />
+                android:background="@drawable/j_calc_btn"
+                android:text="+"
+                android:textColor="@color/white" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.3dp"
-                android:background="@color/darkgray" />
+                android:layout_height="1.3dp" />
         </LinearLayout>
 
 
@@ -448,22 +461,27 @@
 
             <Button
                 android:id="@+id/btn_0"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_long"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:paddingStart="12dp"
+                android:gravity="start|center_vertical"
                 android:layout_weight="1.5"
                 android:text="0" />
 
             <View
                 android:layout_width="1.3dp"
-                android:layout_height="match_parent"
-                android:background="@color/lightgray" />
+                android:layout_height="match_parent" />
 
             <Button
                 android:id="@+id/btn_decimal"
-                style="@style/MyButton"
+                style="@style/JButtons"
+                android:background="@drawable/j_calc_btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="3"
                 android:text="." />
 
@@ -471,10 +489,15 @@
 
         <Button
             android:id="@+id/btn_equals"
-            style="@style/MyButtonblue"
+            style="@style/JButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="=" />
+            android:background="@drawable/j_ellipse"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="44sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
