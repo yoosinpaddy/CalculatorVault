@@ -25,13 +25,12 @@
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_top">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_background_all">
+            android:layout_marginTop="56dp">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -168,7 +167,7 @@
                         app:layout_constraintBottom_toTopOf="@+id/ll_other"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/divider"
-                        app:layout_constraintTop_toBottomOf="@+id/ll_videos"/>
+                        app:layout_constraintTop_toBottomOf="@+id/ll_videos" />
 
                     <LinearLayout
                         android:id="@+id/ll_other"
@@ -252,7 +251,7 @@
                         app:layout_constraintBottom_toTopOf="@+id/ll_browser"
                         app:layout_constraintEnd_toStartOf="@id/divider"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ll_notes"/>
+                        app:layout_constraintTop_toBottomOf="@+id/ll_notes" />
 
                     <LinearLayout
                         android:id="@+id/ll_contacts"
@@ -369,6 +368,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@android:color/white"
+            android:elevation="1000dp"
             android:fitsSystemWindows="true">
 
             <include layout="@layout/layout_nav_drawer" />
