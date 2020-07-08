@@ -9,7 +9,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/j_toolbar_browser"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,9 +18,10 @@
 
         <ImageView
             android:id="@+id/iv_leftVisited"
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:src="@drawable/ic_left_arrow"
+            android:layout_width="22sp"
+            android:layout_height="22sp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/j_browser_back"
             android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,9 +29,10 @@
 
         <ImageView
             android:id="@+id/iv_rightVisited"
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:src="@drawable/ic_right_arrow_white"
+            android:layout_width="22sp"
+            android:layout_height="22sp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/j_browser_forward"
             android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iv_leftVisited"
@@ -39,16 +41,18 @@
         <EditText
             android:id="@+id/et_browser_text"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="4dp"
             android:layout_marginRight="4dp"
+            android:layout_marginStart="8dp"
             android:layout_marginBottom="4dp"
-            android:background="@drawable/browser_curvedialog"
+            android:background="@drawable/j_browser_edt"
             android:ellipsize="end"
-            android:gravity="start"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:inputType="text"
-            android:padding="@dimen/_10sdp"
             android:singleLine="true"
             android:text="@string/Browser"
             android:textAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
@@ -68,6 +72,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:text="@string/DONE"
+            android:visibility="gone"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,10 +80,18 @@
 
         <ImageView
             android:id="@+id/iv_browser_refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_browser_done"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/j_img_history" />
+
+        <ImageView
+            android:id="@+id/iv_browser_history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_browser_done"
             app:layout_constraintTop_toTopOf="parent"
@@ -86,14 +99,14 @@
 
         <ImageView
             android:id="@+id/iv_browser_bookmark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="22sp"
+            android:layout_height="22sp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/iv_browser_refresh"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/ic_bookmark" />
+            android:src="@drawable/j_img_bookmark" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
