@@ -11,13 +11,12 @@
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary">
+        android:layout_alignParentTop="true" >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_blue_2">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -78,7 +77,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar_top"
-        android:background="@drawable/ic_background_all"
         android:layout_above="@id/fl_adplaceholder">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -101,7 +99,7 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"
+                android:tint="#0daeff"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view"
                 app:srcCompat="@drawable/ic_anti_lost_clean" />
@@ -112,7 +110,7 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"
+                android:tint="#0daeff"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_anti_lost_hidden" />
@@ -125,7 +123,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:text="Where The Hidden Files Are Stored?"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_12ssp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -141,7 +139,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="/.androidData"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.508"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -156,7 +154,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Do not delete any folders of files in them!"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/textView19"
@@ -188,7 +186,7 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"
+                android:tint="#0daeff"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view4"
                 app:srcCompat="@drawable/ic_anti_lost_backup" />
@@ -201,7 +199,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:text="Please! Carefull About Clean Tools"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -217,7 +215,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Don't clean any files in /.androidData"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.483"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
@@ -232,7 +230,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:text="Backup Your Files If"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -248,7 +246,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="Change to new device"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView25"
                 tools:text="Change to new device" />
@@ -260,7 +258,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="Factory reset your device"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView23"
                 tools:text="Factory reset your device" />
@@ -270,7 +268,7 @@
                 android:layout_width="@dimen/_14sdp"
                 android:layout_height="@dimen/_14sdp"
                 android:layout_marginStart="8dp"
-                android:tint="@color/colorPrimary"
+                android:tint="#0daeff"
                 app:layout_constraintBottom_toBottomOf="@+id/textView25"
                 app:layout_constraintStart_toEndOf="@+id/textView25"
                 app:layout_constraintTop_toTopOf="@+id/textView25"
@@ -280,7 +278,7 @@
                 android:id="@+id/imageView11"
                 android:layout_width="@dimen/_14sdp"
                 android:layout_height="@dimen/_14sdp"
-                android:tint="@color/colorPrimary"
+                android:tint="#0daeff"
                 app:layout_constraintBottom_toBottomOf="@+id/textView24"
                 app:layout_constraintEnd_toEndOf="@+id/imageView9"
                 app:layout_constraintTop_toTopOf="@+id/textView24"
@@ -294,7 +292,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="If by mistake you uninstall the app without backup then don’t worry if you are no the same device, don’t factory reset your device and you don’t delete AndroidData  folders, then install the app again and your all previous  files will be shown in Calculator."
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView24"

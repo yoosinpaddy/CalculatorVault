@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fl_main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -29,7 +30,7 @@
                     android:id="@+id/iv_hiddenimage"
                     android:layout_width="@dimen/_45sdp"
                     android:layout_height="@dimen/_45sdp"
-                    android:src="@drawable/ic_other_file_thumb"
+                    android:src="@drawable/j_img_file"
                     android:adjustViewBounds="true"/>
 
             </RelativeLayout>
@@ -44,8 +45,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
+                    android:textStyle="bold"
                     android:layout_centerVertical="true"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/navy_blue"
+                    tools:text="Whatsapp Image"
                     android:maxHeight="@dimen/_35sdp"
                     android:textSize="@dimen/_14ssp" />
 

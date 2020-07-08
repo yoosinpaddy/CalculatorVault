@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.calculator.vault.gallery.locker.hide.data.R;
 import com.calculator.vault.gallery.locker.hide.data.ads.AdsListener;
@@ -33,7 +34,7 @@ public class NoteEditActivity extends AppCompatActivity implements View.OnClickL
     private static final String TAG = "NoteEditActivity";
     EditText moetNoteText, moEtNoteTitle;
     String msNoteText;
-    LinearLayout moLlSaveNote;
+    TextView moLlSaveNote,btnClearNotes;
     NoteListModel moNoteListModel;
     private int miID;
     ImageView iv_back;
@@ -187,6 +188,7 @@ public class NoteEditActivity extends AppCompatActivity implements View.OnClickL
 
     private void initViewListener() {
         moLlSaveNote.setOnClickListener(this);
+        btnClearNotes.setOnClickListener(this);
         iv_back.setOnClickListener(this);
 
         moIvMoreApp.setOnClickListener(new OnSingleClickListener() {
@@ -210,6 +212,7 @@ public class NoteEditActivity extends AppCompatActivity implements View.OnClickL
         moEtNoteTitle = findViewById(R.id.et_note_title);
         moetNoteText = findViewById(R.id.et_editnoteText);
         moLlSaveNote = findViewById(R.id.ll_save_notes);
+        btnClearNotes = findViewById(R.id.btnClearNotesE);
         iv_back = findViewById(R.id.iv_back);
         moNoteListModel = new NoteListModel();
 
@@ -248,6 +251,12 @@ public class NoteEditActivity extends AppCompatActivity implements View.OnClickL
                     finish();
                 }
                 break;
+
+            case R.id.btnClearNotesE:
+                moEtNoteTitle.setText("");
+                moetNoteText.setText("");
+                break;
+
                 case R.id.iv_back:
                 onBackPressed();
                 break;

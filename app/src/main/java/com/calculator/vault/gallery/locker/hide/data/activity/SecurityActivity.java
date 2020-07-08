@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -66,6 +68,12 @@ public class SecurityActivity extends AppCompatActivity implements View.OnClickL
         mSpinnerQuestions = findViewById(R.id.spinner_security_questions);
         mEtAnswer = findViewById(R.id.et_security_answer);
         mBtnShow = findViewById(R.id.btn_security_show);
+
+        String[] listQuestions = getResources().getStringArray(R.array.forgot_passcode_questions);
+        ArrayAdapter<String> spinnerItems = new ArrayAdapter<>(this
+                , R.layout.j_spinner_item, R.id.tvSpinnerItem, listQuestions);
+        spinnerItems.setDropDownViewResource(R.layout.j_spinner_item);
+        mSpinnerQuestions.setAdapter(spinnerItems);
     }
 
     @Override

@@ -3,19 +3,19 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--done-->
     <LinearLayout
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_green">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -24,6 +24,7 @@
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:singleLine="true"
                 android:text="@string/Contact"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -32,28 +33,31 @@
 
             <LinearLayout
                 android:id="@+id/ll_add_contacts"
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerHorizontal="true"
-                android:gravity="center">
+                android:layout_centerVertical="true"
+                android:background="@drawable/j_btn_add_contacts"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                <ImageView
+                <!--<ImageView
                     android:layout_width="@dimen/_24sdp"
                     android:layout_height="@dimen/_24sdp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_addsvg"
-                    android:tint="@color/white" />
+                    android:tint="@color/white" />-->
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/iv_back"
-                android:layout_width="@dimen/_22sdp"
-                android:layout_height="@dimen/_22sdp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_8sdp"
-                android:src="@drawable/ic_back_arrow"/>
+                android:src="@drawable/j_btn_back" />
 
         </RelativeLayout>
     </LinearLayout>
@@ -62,19 +66,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/fl_adplaceholder"
         android:layout_below="@+id/toolbar_top"
-        android:background="@drawable/ic_background_all"
         android:orientation="vertical"
-        android:visibility="visible"
-        android:layout_above="@+id/fl_adplaceholder">
+        android:visibility="visible">
 
         <LinearLayout
             android:id="@+id/ll_searchTExt"
+            android:layout_margin="6dp"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
+            android:layout_height="60sp"
             android:layout_alignParentTop="true"
             android:layout_weight="0"
-            android:background="@drawable/bg_edt_search"
+            android:background="@drawable/j_contact_search"
+            android:padding="0dp"
             android:visibility="visible">
 
             <LinearLayout
@@ -89,20 +94,14 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/_4sdp"
                     android:layout_marginLeft="@dimen/_4sdp"
-                    android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:drawableStart="@drawable/ic_search"
-                    android:drawableLeft="@drawable/ic_search"
                     android:drawablePadding="@dimen/_9sdp"
                     android:focusable="true"
                     android:hint="@string/search_here"
                     android:maxLines="1"
-                    android:paddingStart="@dimen/_4sdp"
-                    android:paddingLeft="@dimen/_4sdp"
-                    android:searchIcon="@drawable/ic_search"
+                    android:paddingStart="48dp"
+                    android:paddingLeft="48dp"
                     android:singleLine="true"
-                    android:textAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
-                    android:textColor="@color/colorPrimary"
                     android:textColorHint="@color/control_normal"
                     android:textCursorDrawable="@drawable/color_cursor">
 
@@ -153,6 +152,8 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_contactList"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/contactlistitem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scrollbars="vertical" />
@@ -160,16 +161,16 @@
         </androidx.core.widget.NestedScrollView>
 
         <!--<FrameLayout-->
-            <!--android:id="@+id/flBanner"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginStart="8dp"-->
-            <!--android:layout_marginEnd="8dp"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--app:layout_constraintEnd_toEndOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="parent" />-->
+        <!--android:id="@+id/flBanner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
 
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
@@ -190,11 +191,11 @@
         android:id="@+id/ll_nocontact"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/fl_adplaceholder"
         android:layout_below="@+id/toolbar_top"
         android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:visibility="gone"
-        android:layout_above="@+id/fl_adplaceholder">
+        android:visibility="gone">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

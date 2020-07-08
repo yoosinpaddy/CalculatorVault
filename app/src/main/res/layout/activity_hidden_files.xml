@@ -3,21 +3,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/ic_background_all">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_green">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -27,9 +26,10 @@
                 android:ellipsize="end"
                 android:gravity="center"
                 android:singleLine="true"
-                android:text="@string/other_files"
+                android:text="Open Files"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/ll_editcontrol"
@@ -38,31 +38,38 @@
                 android:layout_toLeftOf="@+id/ll_add_files"
                 android:gravity="center_vertical">
 
-                <TextView
+                <ImageView
                     android:id="@+id/tv_editcontrol"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/j_edit" />
+
+                <TextView
+                    android:id="@+id/jTvCancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="@dimen/_10sdp"
                     android:paddingEnd="@dimen/_10sdp"
                     android:text="@string/Edit"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_add_files"
-                android:layout_width="?attr/actionBarSize"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:layout_centerHorizontal="true"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_addsvg"
-                    android:tint="@color/white" />
+                    android:src="@drawable/j_btn_add_contacts" />
                 <!--  <ImageView
                       android:id="@+id/iv_more_app"
                       android:layout_width="match_parent"
@@ -105,11 +112,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/fl_adplaceholder"
         android:layout_below="@+id/toolbar_top"
         android:orientation="vertical"
         android:visibility="visible"
-        android:weightSum="1"
-        android:layout_above="@+id/fl_adplaceholder">
+        android:weightSum="1">
 
         <LinearLayout
             android:id="@+id/ll_itemlayout"
@@ -204,7 +211,9 @@
                     android:id="@+id/rv_hiddenpics"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_above="@+id/adView" />
+                    android:layout_above="@+id/adView"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/show_file_item" />
 
                 <!--<FrameLayout-->
                 <!--android:id="@+id/flBanner"-->
@@ -224,8 +233,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    ads:adSize="SMART_BANNER"
                     android:visibility="gone"
+                    ads:adSize="SMART_BANNER"
                     ads:adUnitId="@string/banner_ad_unit_id"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -270,11 +279,11 @@
         android:id="@+id/ll_noPhotos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/fl_adplaceholder"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:visibility="gone"
-        android:layout_above="@+id/fl_adplaceholder">
+        android:visibility="gone">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

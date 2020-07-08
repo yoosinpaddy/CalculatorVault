@@ -8,13 +8,12 @@
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content" >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_blue_2">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -24,7 +23,7 @@
                 android:ellipsize="end"
                 android:gravity="center"
                 android:singleLine="true"
-                android:text="@string/Notes"
+                android:text="Edit Note"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/white" />
 
@@ -74,8 +73,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar_top"
-        android:background="@drawable/ic_background_all">
+        android:layout_below="@+id/toolbar_top" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -89,7 +87,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/title_amp_subject"
-                android:textColor="@color/black"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -97,12 +95,12 @@
             <EditText
                 android:id="@+id/et_note_title"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/j_spinner_bg"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:autofillHints=""
-                android:background="@drawable/rounded_border_edittext"
                 android:focusable="true"
                 android:inputType=""
                 android:maxLines="1"
@@ -121,6 +119,7 @@
                 android:id="@+id/iv_copy_title"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:visibility="gone"
                 android:layout_marginEnd="8dp"
                 android:contentDescription="TODO"
                 android:src="@drawable/ic_title"
@@ -135,7 +134,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/notes"
-                android:textColor="@color/black"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_note_title" />
@@ -144,11 +143,11 @@
                 android:id="@+id/et_editnoteText"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_150sdp"
+                android:background="@drawable/j_textarea"
                 android:layout_below="@+id/et_note_title"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/rounded_border_edittext"
                 android:focusable="true"
                 android:gravity="top"
                 android:inputType="textCapSentences|textAutoComplete|textMultiLine"
@@ -166,13 +165,14 @@
                 android:id="@+id/iv_copy_notes"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:visibility="gone"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginEnd="8dp"
                 android:contentDescription="TODO"
                 android:src="@drawable/ic_note"
                 app:layout_constraintEnd_toEndOf="@+id/et_editnoteText"
                 app:layout_constraintTop_toTopOf="@+id/et_editnoteText" />
-
+<!--
             <LinearLayout
                 android:id="@+id/ll_save_notes"
                 android:layout_width="match_parent"
@@ -201,6 +201,54 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:text="@string/Save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_editnoteText"
+                app:layout_goneMarginTop="8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_save"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ll_save_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/j_btn_save_blue"
+                    android:gravity="center"
+                    android:text="@string/Save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btnClearNotesE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/j_add_cre_clear"
+                    android:gravity="center"
+                    android:text="Clear"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp"
                     android:textStyle="bold" />

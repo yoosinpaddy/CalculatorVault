@@ -14,13 +14,12 @@
             android:id="@+id/toolbar_top"
             style="@style/ToolBarStyle.Event"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:layout_height="wrap_content" >
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary">
+                android:background="@drawable/j_toolbar_browser">
 
                 <TextView
                     android:id="@+id/tv_title"
@@ -80,20 +79,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/ic_background_all">
+            android:orientation="vertical" >
 
             <RelativeLayout
                 android:id="@+id/rl_google"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/j_nav_item_bg"
                 android:padding="@dimen/_8sdp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Google"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_16ssp"
                     android:layout_centerVertical="true"/>
 
@@ -109,22 +109,19 @@
                     android:tint="@color/colorPrimary"/>
             </RelativeLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray"/>
-
             <RelativeLayout
                 android:id="@+id/rl_yahoo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/j_nav_item_bg"
                 android:padding="@dimen/_8sdp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Yahoo"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_16ssp"
                     android:layout_centerVertical="true"/>
 
@@ -140,22 +137,19 @@
                     android:tint="@color/colorPrimary"/>
             </RelativeLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray"/>
-
             <RelativeLayout
                 android:id="@+id/rl_bing"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/j_nav_item_bg"
                 android:padding="@dimen/_8sdp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Bing"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_16ssp"
                     android:layout_centerVertical="true"/>
 
@@ -171,11 +165,6 @@
                     android:tint="@color/colorPrimary"/>
 
             </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray"/>
 
             <Space
                 android:layout_width="match_parent"

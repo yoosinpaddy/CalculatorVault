@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,13 +7,12 @@
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_green">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -63,32 +60,32 @@
                  android:background="@drawable/blast_anim"
                  android:visibility="gone" />-->
 
-         <!--   <ImageView
-                android:id="@+id/iv_back"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:layout_centerInParent="true"
-                android:paddingLeft="16dp"
-                android:paddingRight="12dp"
-                android:src="@mipmap/ic_action_navigation_arrow_back"
-                android:visibility="visible" />-->
+            <!--   <ImageView
+                   android:id="@+id/iv_back"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerInParent="true"
+                   android:paddingLeft="16dp"
+                   android:paddingRight="12dp"
+                   android:src="@mipmap/ic_action_navigation_arrow_back"
+                   android:visibility="visible" />-->
             <ImageView
                 android:id="@+id/iv_back"
                 android:layout_width="@dimen/_22sdp"
                 android:layout_height="@dimen/_22sdp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_8sdp"
-                android:src="@drawable/ic_back_arrow"/>
+                android:src="@drawable/ic_back_arrow" />
 
         </RelativeLayout>
 
     </LinearLayout>
 
     <ScrollView
-        android:layout_below="@+id/toolbar_top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_top">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,9 +98,7 @@
                 android:layout_height="@dimen/_100sdp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15sdp"
-                android:src="@drawable/manuser"
-                app:civ_border_width="2dp"
-                app:civ_border_color="@color/colorPrimary"/>
+                android:src="@drawable/j_img_user" />
 
             <TextView
                 android:id="@+id/tv_contact_name"
@@ -112,90 +107,125 @@
                 android:gravity="center"
                 android:text="@string/ContactName"
                 android:textSize="@dimen/_14ssp"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_5sdp">
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="@string/FirstName"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/ed_contactFirstname"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/j_spinner_bg"
                     android:hint="@string/FirstName"
                     android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/navy_blue"
+                    android:textColorHint="@color/navy_blue"
                     android:textSize="@dimen/_13ssp"
-                    android:layout_marginBottom="@dimen/_3sdp"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="@string/LastName"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/ed_contactLastname"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/j_spinner_bg"
                     android:hint="@string/LastName"
                     android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/navy_blue"
+                    android:textColorHint="@color/navy_blue"
                     android:textSize="@dimen/_13ssp"
-                    android:layout_marginBottom="@dimen/_3sdp"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="@string/PhoneNumber"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/ed_contactPhonenumber"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/j_spinner_bg"
                     android:hint="@string/PhoneNumber"
-                    android:maxLength="12"
                     android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:padding="8dp"
+                    android:textColor="@color/navy_blue"
+                    android:textColorHint="@color/navy_blue"
                     android:textSize="@dimen/_13ssp"
-                    android:layout_marginBottom="@dimen/_3sdp"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="@string/Email"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/ed_contactemail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/j_spinner_bg"
                     android:hint="@string/Email"
                     android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/navy_blue"
+                    android:textColorHint="@color/navy_blue"
                     android:textSize="@dimen/_13ssp"
-                    android:layout_marginBottom="@dimen/_3sdp"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="@string/Birthday"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/ed_contactBirthday"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/j_spinner_bg"
+                    android:gravity="center_vertical"
                     android:hint="@string/Birthday"
+                    android:padding="8dp"
+                    android:textColor="@color/navy_blue"
+                    android:textColorHint="@color/navy_blue"
                     android:textSize="@dimen/_13ssp"
-                    android:layout_marginBottom="@dimen/_3sdp"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>

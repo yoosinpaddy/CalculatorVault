@@ -7,13 +7,12 @@
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content" >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_pink">
 
             <LinearLayout
                 android:layout_width="@dimen/_180sdp"
@@ -29,6 +28,7 @@
                     android:gravity="center"
                     android:singleLine="true"
                     android:text="00"
+                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
                     android:textColor="@color/white" />
 
@@ -37,6 +37,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:singleLine="true"
+                    android:textStyle="bold"
                     android:text=" / "
                     android:textAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
                     android:textColor="@color/white" />
@@ -48,6 +49,7 @@
                     android:gravity="center"
                     android:singleLine="true"
                     android:text="05"
+                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
                     android:textColor="@color/white" />
             </LinearLayout>

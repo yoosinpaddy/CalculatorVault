@@ -11,13 +11,12 @@
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_pink">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -29,7 +28,8 @@
                 android:singleLine="true"
                 android:text="@string/Photos"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/ll_editcontrol"
@@ -46,23 +46,24 @@
                     android:paddingEnd="@dimen/_10sdp"
                     android:text="@string/Edit"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_add_photos"
-                android:layout_width="?attr/actionBarSize"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerHorizontal="true"
-                android:gravity="center">
+                android:gravity="center_vertical"
+                android:padding="0dp">
 
                 <ImageView
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_addsvg"
-                    android:tint="@color/white" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/j_btn_add_contacts" />
                 <!--  <ImageView
                       android:id="@+id/iv_more_app"
                       android:layout_width="match_parent"
@@ -105,11 +106,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/fl_adplaceholder"
         android:layout_below="@+id/toolbar_top"
         android:orientation="vertical"
         android:visibility="visible"
-        android:weightSum="1"
-        android:layout_above="@id/fl_adplaceholder">
+        android:weightSum="1">
 
 
         <LinearLayout
@@ -208,16 +209,16 @@
                     android:layout_above="@+id/adView" />
 
                 <!--<FrameLayout-->
-                    <!--android:id="@+id/flBanner"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginStart="8dp"-->
-                    <!--android:layout_marginEnd="8dp"-->
-                    <!--android:layout_alignParentBottom="true"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
-                    <!--app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--app:layout_constraintStart_toStartOf="parent" />-->
+                <!--android:id="@+id/flBanner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent" />-->
 
                 <com.google.android.gms.ads.AdView
                     android:id="@+id/adView"
@@ -225,8 +226,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    ads:adSize="SMART_BANNER"
                     android:visibility="gone"
+                    ads:adSize="SMART_BANNER"
                     ads:adUnitId="@string/banner_ad_unit_id"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -271,11 +272,11 @@
         android:id="@+id/ll_noPhotos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/fl_adplaceholder"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:visibility="gone"
-        android:layout_above="@+id/fl_adplaceholder">
+        android:visibility="gone">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -283,11 +284,11 @@
 
             <ImageView
                 android:id="@+id/iv_add_photos"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:src="@drawable/ic_add_svg"
+                android:src="@drawable/j_m_add"
                 ads:layout_constraintBottom_toBottomOf="parent"
                 ads:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -304,6 +305,7 @@
                 android:gravity="center"
                 android:src="@drawable/ic_arrow_svg"
                 android:tint="@color/colorPrimary"
+                android:visibility="gone"
                 app:layout_constraintBottom_toTopOf="@+id/iv_add_photos"
                 app:layout_constraintStart_toEndOf="@+id/iv_add_photos"
                 app:layout_constraintTop_toTopOf="@+id/iv_add_photos" />
@@ -316,8 +318,9 @@
                 android:gravity="center"
                 android:padding="14dp"
                 android:text="@string/add_direction"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
                 ads:layout_constraintEnd_toEndOf="parent"
                 ads:layout_constraintStart_toStartOf="parent"
                 ads:layout_constraintTop_toBottomOf="@+id/iv_add_photos" />

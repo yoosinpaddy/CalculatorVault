@@ -9,31 +9,53 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/img_nav_header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/j_img_nav_header"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Smart Tools App"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/ll_back_to_calculator"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/img_nav_header">
 
             <ImageView
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginStart="@dimen/_16sdp"
-                android:tint="@color/colorPrimary"
-                app:srcCompat="@drawable/ic_cal_back" />
+                app:srcCompat="@drawable/j_ic_back_to_calc" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
                 android:text="@string/back_to_calculator"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="8dp"
@@ -46,11 +68,12 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:tint="@color/colorPrimary"
+                android:visibility="gone"
                 app:srcCompat="@drawable/ic_right_arrow" />
 
         </LinearLayout>
 
-        <View
+        <!--<View
             android:id="@+id/view_back_to_cal"
             android:layout_width="0dp"
             android:layout_height="1dp"
@@ -60,17 +83,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_back_to_calculator" />
-
+-->
         <LinearLayout
             android:id="@+id/ll_nav_browserSetting"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
+            android:background="@drawable/j_nav_item_bg"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_back_to_cal">
+            app:layout_constraintTop_toBottomOf="@+id/ll_back_to_calculator">
 
             <ImageView
                 android:layout_width="@dimen/_25sdp"
@@ -110,6 +135,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_browserSetting" />
@@ -121,6 +147,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_browser">
@@ -163,6 +190,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_lockSetting" />
@@ -174,6 +202,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_lock">
@@ -216,6 +245,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_breakIn" />
@@ -227,6 +257,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_breakIn">
@@ -269,6 +300,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_decoyPass" />
@@ -280,6 +312,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_decoyPass">
@@ -322,6 +355,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_backup" />
@@ -333,6 +367,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_backup">
@@ -375,6 +410,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_recoveryPass" />
@@ -382,7 +418,7 @@
         <LinearLayout
             android:id="@+id/ll_nav_anti_lost"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -395,17 +431,18 @@
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginStart="@dimen/_16sdp"
                 android:padding="@dimen/_1sdp"
-                android:tint="@color/colorPrimary"
-                app:srcCompat="@drawable/ic_anti_lost_guid" />
+                app:srcCompat="@drawable/j_img_info" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
                 android:text="@string/anti_lost"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="8dp"
@@ -418,7 +455,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/ic_right_arrow"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/colorPrimary"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -429,6 +467,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_anti_lost" />
@@ -440,6 +479,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_anti_lost">
@@ -483,6 +523,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_uninstall_protection" />
@@ -545,7 +586,7 @@
         <LinearLayout
             android:id="@+id/ll_nav_rateApp"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -557,17 +598,18 @@
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginStart="@dimen/_16sdp"
-                android:tint="@color/colorPrimary"
-                app:srcCompat="@drawable/ic_rate" />
+                app:srcCompat="@drawable/j_rate_app" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
                 android:text="@string/rate_app"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="8dp"
@@ -580,7 +622,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/ic_right_arrow"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/colorPrimary"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -591,6 +634,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_rateApp" />
@@ -598,7 +642,7 @@
         <LinearLayout
             android:id="@+id/ll_nav_moreApps"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -610,17 +654,18 @@
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginStart="@dimen/_16sdp"
-                android:tint="@color/colorPrimary"
-                app:srcCompat="@drawable/ic_more" />
+                app:srcCompat="@drawable/j_more_apps" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
                 android:text="@string/more_apps"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="8dp"
@@ -633,7 +678,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/ic_right_arrow"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/colorPrimary"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -644,6 +690,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_moreApps" />
@@ -655,6 +702,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_moreApps">
@@ -697,6 +745,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_shareApp" />
@@ -704,7 +753,7 @@
         <LinearLayout
             android:id="@+id/ll_nav_removeAds"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -716,17 +765,18 @@
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginStart="@dimen/_16sdp"
-                android:tint="@color/colorPrimary"
-                app:srcCompat="@drawable/ic_remove_ads1" />
+                app:srcCompat="@drawable/j_remove_ads" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
                 android:text="@string/remove_ads"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="8dp"
@@ -739,7 +789,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/ic_right_arrow"
-                android:tint="@color/colorPrimary" />
+                android:tint="@color/colorPrimary"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -750,6 +801,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="8dp"
             android:background="@color/gray"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_nav_removeAds" />

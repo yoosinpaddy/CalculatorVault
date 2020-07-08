@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.calculator.vault.gallery.locker.hide.data.R;
 import com.calculator.vault.gallery.locker.hide.data.ads.AdsListener;
@@ -33,7 +34,7 @@ public class EditCredentialActivity extends AppCompatActivity implements View.On
     private EditText moEtTitleCredText, moEtUsernameCredText;
     private EditText moEtwebsiteCredText, moEtPasswordCredText;
     private EditText moEtNotesCredText;
-    private LinearLayout ll_save_creds;
+    private TextView ll_save_creds, btnClearCredentialsE;
     private String mscredTitle, mscredWebsite, mscredUsername, mscredPassword, mscredNotes;
     private ImageVideoDatabase imageVideoDatabase = new ImageVideoDatabase(this);
     private int miID;
@@ -229,6 +230,7 @@ public class EditCredentialActivity extends AppCompatActivity implements View.On
 
     private void initViewListener() {
         ll_save_creds.setOnClickListener(this);
+        btnClearCredentialsE.setOnClickListener(this);
         iv_back.setOnClickListener(this);
 
         moRlMain.getViewTreeObserver().addOnGlobalLayoutListener(
@@ -278,6 +280,7 @@ public class EditCredentialActivity extends AppCompatActivity implements View.On
         moEtPasswordCredText = findViewById(R.id.et_PasswordCredText);
         moEtNotesCredText = findViewById(R.id.et_NotesCredText);
         ll_save_creds = findViewById(R.id.ll_save_creds);
+        btnClearCredentialsE = findViewById(R.id.btnClearCredentialsE);
         iv_back = findViewById(R.id.iv_back);
         moRlMain = findViewById(R.id.rl_main);
         //moFlNativeAds = findViewById(R.id.fl_adplaceholder);
@@ -319,6 +322,16 @@ public class EditCredentialActivity extends AppCompatActivity implements View.On
                     addCredentialsInDatabase();
                 }
 
+                break;
+            case R.id.btnClearCredentialsE:
+//                private EditText moEtTitleCredText, moEtUsernameCredText;
+//                private EditText moEtwebsiteCredText, moEtPasswordCredText;
+//                private EditText moEtNotesCredText;
+                moEtTitleCredText.setText("");
+                moEtUsernameCredText.setText("");
+                moEtwebsiteCredText.setText("");
+                moEtPasswordCredText.setText("");
+                moEtNotesCredText.setText("");
                 break;
             case R.id.iv_back:
                 onBackPressed();

@@ -82,7 +82,8 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
     private ArrayList<String> moResultsArrayList = new ArrayList<>();
     private ArrayList<itemModel> moItemFileList = new ArrayList<>();
     private RelativeLayout moRlShareDeleteSave;
-    private TextView moTvEditControl;
+    private ImageView moTvEditControl;
+    private TextView jTvCancel;
     private static final String msDATABASE_NAME = "ImageVideoDatabase";
     private ImageVideoDatabase moImageVideoDatabase = new ImageVideoDatabase(this);
     private ImageView iv_back;
@@ -280,7 +281,7 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
                     moLLeditControl.setVisibility(View.GONE);
                     moLLNoPhotos.setVisibility(View.VISIBLE);
                     moRlShareDeleteSave.setVisibility(View.GONE);
-                    moTvEditControl.setText(getString(R.string.Edit));
+                    jTvCancel.setText(getString(R.string.Edit));
                 } else {
                     moLLeditControl.setVisibility(View.VISIBLE);
                     moLLNoPhotos.setVisibility(View.GONE);
@@ -305,6 +306,7 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
         moRlShareDeleteSave.setVisibility(View.GONE);
         moLLeditControl = findViewById(R.id.ll_editcontrol);
         moTvEditControl = findViewById(R.id.tv_editcontrol);
+        jTvCancel = findViewById(R.id.jTvCancel);
         moLLDelete = findViewById(R.id.ll_Delete);
         moLLShare = findViewById(R.id.ll_Share);
         moLLsave = findViewById(R.id.ll_Save);
@@ -504,10 +506,10 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.ll_editcontrol:
                 if (moRlShareDeleteSave.getVisibility() == View.GONE) {
-                    moTvEditControl.setText(getString(R.string.Cancel));
+                    jTvCancel.setText(getString(R.string.Cancel));
                     moRlShareDeleteSave.setVisibility(View.VISIBLE);
                 } else {
-                    moTvEditControl.setText(getString(R.string.Edit));
+                    jTvCancel.setText(getString(R.string.Edit));
                     moRlShareDeleteSave.setVisibility(View.GONE);
                     moItemFileList.clear();
                     if (isDecode.equals("true")) {
@@ -960,7 +962,7 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
             moLLeditControl.setVisibility(View.GONE);
             moLLNoPhotos.setVisibility(View.VISIBLE);
             moRlShareDeleteSave.setVisibility(View.GONE);
-            moTvEditControl.setText(getString(R.string.Edit));
+            jTvCancel.setText(getString(R.string.Edit));
         } else {
             moLLeditControl.setVisibility(View.VISIBLE);
             moLLNoPhotos.setVisibility(View.GONE);
@@ -1005,7 +1007,7 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
                                     moLLeditControl.setVisibility(View.GONE);
                                     moLLNoPhotos.setVisibility(View.VISIBLE);
                                     moRlShareDeleteSave.setVisibility(View.GONE);
-                                    moTvEditControl.setText(getString(R.string.Edit));
+                                    jTvCancel.setText(getString(R.string.Edit));
                                     findViewById(R.id.fl_adplaceholder).setVisibility(View.VISIBLE);
                                 } else {
                                     moLLeditControl.setVisibility(View.VISIBLE);
@@ -1155,7 +1157,7 @@ public class HiddenFilesActivity extends AppCompatActivity implements View.OnCli
                 moLLeditControl.setVisibility(View.GONE);
                 moLLNoPhotos.setVisibility(View.VISIBLE);
                 moRlShareDeleteSave.setVisibility(View.GONE);
-                moTvEditControl.setText(getString(R.string.Edit));
+                jTvCancel.setText(getString(R.string.Edit));
             } else {
                 moLLeditControl.setVisibility(View.VISIBLE);
                 moLLNoPhotos.setVisibility(View.GONE);

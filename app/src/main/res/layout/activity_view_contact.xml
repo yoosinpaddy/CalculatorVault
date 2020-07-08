@@ -9,13 +9,12 @@
         android:id="@+id/toolbar_top"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:layout_height="wrap_content" >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/j_toolbar_green">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -24,6 +23,7 @@
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:singleLine="true"
                 android:text="@string/ContactDetails"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -88,7 +88,6 @@
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar_top"
         android:layout_centerInParent="true"
-        android:background="@drawable/ic_background_all"
         android:orientation="vertical">
 
         <!--<ImageView-->
@@ -107,9 +106,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_20sdp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_user"
-            app:civ_border_color="@color/colorPrimary"
-            app:civ_border_width="2dp" />
+            android:src="@drawable/j_img_user"  />
 
         <TextView
             android:id="@+id/tv_contact_name"
@@ -119,7 +116,7 @@
             android:layout_marginBottom="@dimen/_8sdp"
             android:gravity="center"
             android:text="@string/ContactName"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/navy_blue"
             android:textSize="@dimen/_18ssp"
             android:textStyle="bold" />
 
