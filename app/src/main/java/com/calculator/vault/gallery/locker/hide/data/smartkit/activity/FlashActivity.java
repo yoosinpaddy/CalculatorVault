@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -26,7 +27,7 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
     private static StrobeRunner runner;
     private static Thread thread;
     private TextView textViewOn, textViewOff, textViewFreq;
-    private SeekArc seekbarOn, seekbarOff, seekbarFreq;
+    private SeekBar seekbarOn, seekbarOff, seekbarFreq;
     private static ImageView iv_flash_off;
     private static ImageView iv_flash_on, iv_back;
     private static boolean isFlashOn = true;
@@ -62,9 +63,9 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
         textViewOff = (TextView) findViewById(R.id.TextViewOff);
         textViewFreq = (TextView) findViewById(R.id.textViewFreq);
 
-        seekbarOn = (SeekArc) findViewById(R.id.SeekBarOn);
-        seekbarOff = (SeekArc) findViewById(R.id.SeekBarOff);
-        seekbarFreq = (SeekArc) findViewById(R.id.SeekBarFreq);
+        seekbarOn =  findViewById(R.id.SeekBarOn);
+        seekbarOff = findViewById(R.id.SeekBarOff);
+        seekbarFreq = findViewById(R.id.SeekBarFreq);
         iv_back = findViewById(R.id.iv_back);
         iv_more_app = findViewById(R.id.iv_more_app);
         iv_blast = findViewById(R.id.iv_blast);
@@ -166,7 +167,26 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
         runner = StrobeRunner.getInstance();
         runner.controller = activity;
 
-        seekbarOn.setOnSeekArcChangeListener(new SeekArc.OnSeekArcChangeListener() {
+        seekbarOn.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (fromUser) {
+                    setSeekbarOnProgress(progress);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        /*seekbarOn.setOnSeekArcChangeListener(new SeekArc.OnSeekArcChangeListener() {
             @Override
             public void onProgressChanged(SeekArc seekArc, int progress, boolean fromUser) {
                 if (fromUser) {
@@ -183,11 +203,30 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
             public void onStopTrackingTouch(SeekArc seekArc) {
 
             }
-        });
+        });*/
         setTextSpeedOn(runner.delayOn);
         seekbarOn.setProgress(delayToSeek(runner.delayOn));
 
-        seekbarOff.setOnSeekArcChangeListener(new SeekArc.OnSeekArcChangeListener() {
+        seekbarOff.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (fromUser) {
+                    setSeekbarOffProgress(progress);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        /*seekbarOff.setOnSeekArcChangeListener(new SeekArc.OnSeekArcChangeListener() {
             @Override
             public void onProgressChanged(SeekArc seekArc, int progress, boolean fromUser) {
                 if (fromUser) {
@@ -204,11 +243,30 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
             public void onStopTrackingTouch(SeekArc seekArc) {
 
             }
-        });
+        });*/
         setTextSpeedOff(runner.delayOff);
         seekbarOff.setProgress(delayToSeek(runner.delayOff));
 
-        seekbarFreq.setOnSeekArcChangeListener(new SeekArc.OnSeekArcChangeListener() {
+        seekbarFreq.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (fromUser) {
+                    setSeekbarFreqProgress(progress);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        /*seekbarFreq.setOnSeekArcChangeListener(new SeekArc.OnSeekArcChangeListener() {
             @Override
             public void onProgressChanged(SeekArc seekArc, int progress, boolean fromUser) {
                 if (fromUser) {
@@ -225,7 +283,7 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
             public void onStopTrackingTouch(SeekArc seekArc) {
 
             }
-        });
+        });*/
         // init
         frequency = freqFromDelays((float) runner.delayOff, (float) runner.delayOn);
         setTextFreq(frequency);
