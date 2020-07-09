@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     android:orientation="vertical"
-    android:id="@+id/rl_view"
-    tools:context=".activity.WordToSpeakActivity">
+    tools:context=".smartkit.activity.WordToSpeakActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/rl_tool"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/header_black">
+        android:background="@drawable/j_toolbar_green">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -101,7 +99,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/black"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/_10sdp"
                 android:paddingTop="@dimen/_10sdp"
@@ -110,17 +107,16 @@
                 <ScrollView
                     android:id="@+id/scrollView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="256dp"
                     android:scrollbars="vertical"
                     android:visibility="visible">
 
                     <EditText
                         android:id="@+id/spellhelper_et_user_voice_text"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:windowSoftInputMode="adjustPan"
-                        android:background="@drawable/curve_all_side_stroke_bg_white"
+                        android:background="@drawable/j_img_tts_edt"
                         android:gravity="top"
                         android:hint="Enter Your text"
                         android:lines="10"
@@ -130,7 +126,9 @@
                         android:paddingTop="@dimen/_7sdp"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
-                        android:textSize="@dimen/_17ssp" />
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold"
+                        android:windowSoftInputMode="adjustPan" />
                 </ScrollView>
 
 
@@ -140,7 +138,7 @@
                     android:layout_height="@dimen/_70sdp"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_15sdp"
-                    android:background="@drawable/round_button_bg"
+                    android:background="@drawable/j_img_audio_tts"
                     android:padding="@dimen/_16sdp"
                     android:src="@drawable/volume"
                     android:tint="@color/white" />
@@ -149,7 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Speed"
-                    android:textColor="@color/white"
+                    android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_15ssp" />
 
                 <SeekBar
@@ -160,17 +158,14 @@
                     android:max="100"
                     android:paddingTop="@dimen/_15sdp"
                     android:paddingBottom="@dimen/_15sdp"
-                    android:progress="0"
-                    android:progressBackgroundTint="@color/white"
-                    android:progressTint="@color/white"
-                    android:thumb="@drawable/thumb"
-                    android:thumbTint="@color/white" />
+                    android:progressDrawable="@drawable/seekbar_style_2"
+                    android:thumb="@drawable/custom_thumb_2" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Volume"
-                    android:textColor="@color/white"
+                    android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_15ssp" />
 
                 <SeekBar
@@ -181,16 +176,14 @@
                     android:max="100"
                     android:paddingTop="@dimen/_15sdp"
                     android:paddingBottom="@dimen/_15sdp"
-                    android:progress="0"
-                    android:progressBackgroundTint="@color/white"
-                    android:progressTint="@color/white"
-                    android:thumb="@drawable/thumb"
-                    android:thumbTint="@color/white" />
+                    android:progressDrawable="@drawable/seekbar_style_2"
+                    android:thumb="@drawable/custom_thumb_2" />
 
 
             </LinearLayout>
 
         </ScrollView>
+
         <FrameLayout
             android:id="@+id/fl_adplaceholder"
             android:layout_width="match_parent"
@@ -200,7 +193,7 @@
             android:layout_gravity="bottom"
             android:layout_marginTop="@dimen/_5sdp"
             android:visibility="visible" />
-`
+        `
     </LinearLayout>
 
 </RelativeLayout>

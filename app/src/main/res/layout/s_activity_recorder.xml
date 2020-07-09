@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".smartkit.activity.RecorderActivity">
 
@@ -13,7 +11,7 @@
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/header_black">
+        android:background="@drawable/j_toolbar_green">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -44,12 +42,11 @@
 
             <ImageView
                 android:id="@+id/btn_list_show"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentRight="true"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:src="@drawable/ic_history"
+                android:layout_centerVertical="true"
+                android:src="@drawable/j_img_history"
                 android:visibility="visible" />
 
         </RelativeLayout>
@@ -60,9 +57,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl_tool"
-        android:orientation="vertical"
         android:layout_above="@+id/fl_adplaceholder"
+        android:layout_below="@+id/rl_tool"
+        android:gravity="center"
+        android:orientation="vertical"
         android:weightSum="1">
 
         <com.calculator.vault.gallery.locker.hide.data.smartkit.custom.DynamicSineWaveView
@@ -70,9 +68,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.45"
-            android:background="@color/black"
             android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp" />
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="gone" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -81,7 +79,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             android:layout_weight="0.25"
-            android:src="@drawable/ic_recorder_voice" />
+            android:src="@drawable/j_img_microphone" />
 
         <Chronometer
             android:id="@+id/chronometerTimer"
@@ -90,8 +88,9 @@
             android:layout_gravity="center"
             android:layout_weight="0.15"
             android:gravity="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_25ssp" />
+            android:textColor="@color/navy_blue"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_start"
@@ -99,7 +98,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight="0.1"
-            android:background="@drawable/curve_all_side_for_btn"
+            android:background="@drawable/j_img_btn_start"
             android:text="Start"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -125,7 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_5sdp" />
 
 </RelativeLayout>
