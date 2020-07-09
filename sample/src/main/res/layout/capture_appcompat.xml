@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -11,7 +10,7 @@
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/header_black">
+        android:background="@drawable/j_toolbar_orange2">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -34,7 +33,7 @@
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="Scanner"
+                android:text="QR Scanner"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -52,6 +51,7 @@
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
     <com.journeyapps.barcodescanner.DecoratedBarcodeView
         android:id="@+id/zxing_barcode_scanner"
         android:layout_width="match_parent"
