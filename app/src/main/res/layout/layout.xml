@@ -16,8 +16,7 @@
             android:layout_height="56dp"
             android:background="@color/white"
             android:fitsSystemWindows="true"
-            android:minHeight="?attr/actionBarSize"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            android:minHeight="?attr/actionBarSize">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -86,626 +85,630 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:id="@+id/mCLMain"
-                    android:visibility="visible"
                     android:layout_height="match_parent">
 
-
-                    <LinearLayout
-                        android:id="@+id/ll_j_top"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/mCLMain"
                         android:layout_width="match_parent"
-                        android:layout_height="176dp"
-                        android:background="@drawable/j_top_home_layout_bg"
-                        android:gravity="bottom|center_horizontal"
-                        android:orientation="vertical"
-                        android:paddingStart="36dp"
-                        android:paddingEnd="36dp"
-                        android:paddingBottom="36dp"
-                        android:weightSum="4"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
 
-                        <TextView
-                            android:id="@+id/j_tv_st"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="12dp"
-                            android:text="Smart Tools"
-                            android:textColor="@color/navy_blue"
-                            android:textSize="22sp"
-                            android:textStyle="bold" />
 
                         <LinearLayout
+                            android:id="@+id/ll_j_top"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="bottom"
-                            android:orientation="horizontal"
+                            android:layout_height="176dp"
+                            android:background="@drawable/j_top_home_layout_bg"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingStart="36dp"
+                            android:paddingEnd="36dp"
+                            android:paddingBottom="36dp"
                             android:weightSum="4"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/j_tv_st">
+                            app:layout_constraintTop_toTopOf="parent">
 
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/j_tv_st"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_translator" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Translator"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
+                                android:layout_marginBottom="12dp"
+                                android:text="Smart Tools"
+                                android:textColor="@color/navy_blue"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:weightSum="4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/j_tv_st">
 
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_calculator" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Calculator"
-                                    android:textColor="@color/navy_blue" />
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
 
-                            </LinearLayout>
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_translator" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Translator"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
 
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_recorder" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Recorder"
-                                    android:textColor="@color/navy_blue" />
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
 
-                            </LinearLayout>
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_calculator" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Calculator"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
 
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_more" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="View More"
-                                    android:textColor="@color/navy_blue" />
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_recorder" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Recorder"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_more" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="View More"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
 
                             </LinearLayout>
-
-
                         </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ll_j_middle"
-                        android:layout_width="match_parent"
-                        android:layout_height="176dp"
-                        android:gravity="bottom|center_horizontal"
-                        android:orientation="vertical"
-                        android:paddingStart="36dp"
-                        android:paddingEnd="36dp"
-                        android:paddingBottom="36dp"
-                        android:weightSum="4"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/ll_j_top">
-
-                        <TextView
-                            android:id="@+id/j_tv_ut"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="18dp"
-                            android:text="Utilities"
-                            android:textColor="@color/white"
-                            android:textSize="22sp"
-                            android:textStyle="bold" />
 
                         <LinearLayout
+                            android:id="@+id/ll_j_middle"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="bottom"
-                            android:orientation="horizontal"
+                            android:layout_height="176dp"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingStart="36dp"
+                            android:paddingEnd="36dp"
+                            android:paddingBottom="36dp"
                             android:weightSum="4"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/j_tv_st">
+                            app:layout_constraintTop_toBottomOf="@id/ll_j_top">
 
-                            <LinearLayout
-                                android:id="@+id/ll_contacts"
+                            <TextView
+                                android:id="@+id/j_tv_ut"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
+                                android:layout_marginBottom="18dp"
+                                android:text="Utilities"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
 
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_home_contacts" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:weightSum="4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/j_tv_st">
 
-                                <TextView
+                                <LinearLayout
+                                    android:id="@+id/ll_contacts"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Contacts"
-                                    android:textColor="@color/white" />
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_home_contacts" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Contacts"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/ll_notes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_home_notes" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Notes"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/ll_browser"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_home_browser" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Browser"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/ll_credentials"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_home_credentials" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Credentials"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_j_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="276dp"
+                            android:background="@drawable/j_top_home_layout_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="36dp"
+                            android:weightSum="4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ll_j_middle">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_photos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/j_lbg_photos"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <ImageView
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+                                        android:src="@drawable/j_home_img_mphotos" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Photos"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_videos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/j_home_img_mvideos"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <ImageView
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+                                        android:src="@drawable/j_img_home_video" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Videos"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
 
                             </LinearLayout>
 
-
                             <LinearLayout
-                                android:id="@+id/ll_notes"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_home_notes" />
-
-                                <TextView
+                                <LinearLayout
+                                    android:id="@+id/ll_appLock"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Notes"
-                                    android:textColor="@color/white" />
+                                    android:layout_height="80dp"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/j_img_home_app_lock"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <ImageView
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+                                        android:src="@drawable/j_img_lock" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="App Lock"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_other"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/j_img_home_other_files"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <ImageView
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+                                        android:src="@drawable/j_img_mfiles" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Other Files"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
 
                             </LinearLayout>
-
-
-                            <LinearLayout
-                                android:id="@+id/ll_browser"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_home_browser" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Browser"
-                                    android:textColor="@color/white" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:id="@+id/ll_credentials"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_home_credentials" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Credentials"
-                                    android:textColor="@color/white" />
-
-                            </LinearLayout>
-
 
                         </LinearLayout>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/ll_j_bottom"
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/mCLSecond"
                         android:layout_width="match_parent"
-                        android:layout_height="276dp"
-                        android:background="@drawable/j_top_home_layout_bg"
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:padding="36dp"
-                        android:weightSum="4"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/ll_j_middle">
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
+                            android:layout_height="400dp"
+                            android:background="@drawable/j_top_home_layout_bg"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingStart="36dp"
+                            android:paddingEnd="36dp"
+                            android:paddingBottom="36dp"
+                            android:weightSum="4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
 
                             <LinearLayout
-                                android:id="@+id/ll_photos"
-                                android:layout_width="wrap_content"
-                                android:layout_height="80dp"
-                                android:layout_margin="4dp"
-                                android:layout_weight="1"
-                                android:background="@drawable/j_lbg_photos"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="8dp">
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="76dp"
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
 
-                                <ImageView
-                                    android:layout_width="36dp"
-                                    android:layout_height="36dp"
-                                    android:src="@drawable/j_home_img_mphotos" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Photos"
-                                    android:textColor="@color/white" />
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_translator" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Translator"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_calculator" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Calculator"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_home_img_recorder" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Recorder"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/ll_videos"
-                                android:layout_width="wrap_content"
-                                android:layout_height="80dp"
-                                android:layout_margin="4dp"
-                                android:layout_weight="1"
-                                android:background="@drawable/j_home_img_mvideos"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="8dp">
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
 
-                                <ImageView
-                                    android:layout_width="36dp"
-                                    android:layout_height="36dp"
-                                    android:src="@drawable/j_img_home_video" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Videos"
-                                    android:textColor="@color/white" />
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_qr" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="QR Scanner"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_flashlight" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Flashlight"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_bmi" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="BMI"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
 
                             </LinearLayout>
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_age" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Age Calculator"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_tts" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Text to speech"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:src="@drawable/j_img_day_counter" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Day Counter"
+                                        android:textColor="@color/navy_blue" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:id="@+id/ll_appLock"
-                                android:layout_width="wrap_content"
-                                android:layout_height="80dp"
-                                android:layout_margin="4dp"
-                                android:layout_weight="1"
-                                android:background="@drawable/j_img_home_app_lock"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <ImageView
-                                    android:layout_width="36dp"
-                                    android:layout_height="36dp"
-                                    android:src="@drawable/j_img_lock" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="App Lock"
-                                    android:textColor="@color/white" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/ll_other"
-                                android:layout_width="wrap_content"
-                                android:layout_height="80dp"
-                                android:layout_margin="4dp"
-                                android:layout_weight="1"
-                                android:background="@drawable/j_img_home_other_files"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <ImageView
-                                    android:layout_width="36dp"
-                                    android:layout_height="36dp"
-                                    android:src="@drawable/j_img_mfiles" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Other Files"
-                                    android:textColor="@color/white" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:id="@+id/mCLSecond"
-                    android:visibility="gone"
-                    android:layout_height="match_parent">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="400dp"
-                        android:background="@drawable/j_top_home_layout_bg"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        android:paddingStart="36dp"
-                        android:paddingEnd="36dp"
-                        android:paddingBottom="36dp"
-                        android:weightSum="4"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="bottom"
-                            android:orientation="horizontal"
-                            android:weightSum="3"
-                            android:layout_marginTop="76dp" >
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_translator" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Translator"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_calculator" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Calculator"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_home_img_recorder" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Recorder"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="bottom"
-                            android:layout_marginTop="16dp"
-                            android:weightSum="3"
-                            android:orientation="horizontal" >
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_qr" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="QR Scanner"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_flashlight" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Flashlight"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_bmi" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="BMI"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="bottom"
-                            android:orientation="horizontal"
-                            android:layout_marginTop="16dp"
-                            android:weightSum="3" >
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_age" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Age Calculator"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_tts" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Text to speech"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"
-                                    android:src="@drawable/j_img_day_counter" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Day Counter"
-                                    android:textColor="@color/navy_blue" />
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
                 <!--<androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

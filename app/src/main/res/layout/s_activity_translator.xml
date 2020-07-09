@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:adjustViewBounds="false"
-    android:background="@color/black"
     android:orientation="vertical"
-    tools:context=".activity.TranslatorActivity">
+    tools:context=".smartkit.activity.TranslatorActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/rl_tool"
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/header_black">
+        android:background="@drawable/j_toolbar_bg">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,7 +28,6 @@
                 android:paddingTop="17dp"
                 android:paddingBottom="17dp"
                 android:src="@drawable/ic_back" />
-
 
 
             <RelativeLayout
@@ -89,8 +86,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:layout_height="56dp"
+        android:background="@drawable/j_nav_item_bg"
         android:orientation="horizontal"
         android:paddingTop="@dimen/_6sdp"
         android:paddingBottom="@dimen/_6sdp"
@@ -103,9 +100,9 @@
             android:layout_gravity="center"
             android:layout_weight="0.25"
             android:gravity="center"
-            android:text="Hindi"
             android:singleLine="true"
-            android:textColor="@color/white"
+            android:text="English"
+            android:textColor="@color/navy_blue"
             android:textSize="@dimen/_15ssp" />
 
         <ImageView
@@ -116,7 +113,7 @@
             android:layout_weight="0.5"
             android:gravity="center"
 
-            android:src="@drawable/ic_translate_book" />
+            android:src="@drawable/j_img_r_translate" />
 
         <TextView
             android:id="@+id/tv_show_name2"
@@ -125,9 +122,9 @@
             android:layout_gravity="center"
             android:layout_weight="0.25"
             android:gravity="center"
-            android:text="English"
             android:singleLine="true"
-            android:textColor="@color/white"
+            android:text="Hindi"
+            android:textColor="@color/navy_blue"
             android:textSize="@dimen/_15ssp" />
 
     </LinearLayout>
@@ -149,7 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.15"
-            android:background="@color/black"
+            android:background="@color/white"
             android:orientation="horizontal"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_8sdp"
@@ -163,24 +160,38 @@
                 android:layout_weight="0.25"
                 android:gravity="center"
                 android:text="From: "
-                android:textColor="@color/white"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_from_lang"
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:background="@drawable/curve_all_side_stokr_white_bg_black"
-                android:gravity="center"
-                android:padding="@dimen/_8sdp"
-                android:text="Hindi: "
-                android:textColor="@color/white"
-                android:singleLine="true"
-                android:textSize="@dimen/_15ssp"
-                android:textStyle="bold" />
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/j_img_eng" />
+
+                <TextView
+                    android:id="@+id/tv_from_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:singleLine="true"
+                    android:text="English "
+                    android:textColor="@color/navy_blue"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
 
             <ImageView
                 android:id="@+id/language_translator_tbutton"
@@ -191,7 +202,7 @@
                 android:gravity="center"
                 android:paddingTop="@dimen/_5sdp"
                 android:paddingBottom="@dimen/_5sdp"
-                android:src="@drawable/ic_translate_arrow_trans" />
+                android:src="@drawable/j_img_mshare" />
 
         </LinearLayout>
 
@@ -202,7 +213,7 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             android:layout_weight="0.35"
-            android:background="@drawable/curve_all_side_stroke_bg_white"
+            android:background="@drawable/j_bg_tra"
             android:orientation="vertical"
             android:weightSum="1">
 
@@ -216,9 +227,9 @@
                 <EditText
                     android:id="@+id/language_translator_srctext"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="80dp"
                     android:background="@null"
-                    android:hint="Type here..."
+                    android:hint="English"
                     android:inputType="textNoSuggestions|textMultiLine|textImeMultiLine"
                     android:paddingLeft="@dimen/_20sdp"
                     android:paddingTop="@dimen/_10sdp"
@@ -242,21 +253,21 @@
 
                 <ImageView
                     android:id="@+id/language_translator_iv_copy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_copy_trans" />
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/j_img_copy" />
 
                 <ImageView
                     android:id="@+id/language_translator_iv_paste"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_paste_trans" />
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/j_img_m_copy" />
 
                 <ImageView
                     android:id="@+id/language_translator_iv_mic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_record_trans" />
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/j_img_mic" />
 
             </LinearLayout>
         </LinearLayout>
@@ -266,7 +277,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.15"
-            android:background="@color/black"
             android:orientation="horizontal"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_8sdp"
@@ -279,7 +289,7 @@
                 android:layout_weight="0.25"
                 android:gravity="center"
                 android:text="To: "
-                android:textColor="@color/white"
+                android:textColor="@color/navy_blue"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold" />
 
@@ -289,13 +299,16 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.5"
-                android:background="@drawable/curve_all_side_stokr_white_bg_black"
-                android:gravity="center"
-                android:padding="@dimen/_8sdp"
-                android:text="English: "
-                android:textColor="@color/white"
-                android:textSize="@dimen/_15ssp"
+                android:background="@drawable/j_img_hindi"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="@dimen/_8sdp"
                 android:singleLine="true"
+                android:text="Hindi "
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_15ssp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -380,7 +393,7 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             android:layout_weight="0.35"
-            android:background="@drawable/curve_all_side_stroke_bg_white"
+            android:background="@drawable/j_bg_tra"
             android:orientation="vertical"
             android:weightSum="1">
 
@@ -396,8 +409,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:hint="Type here..."
                     android:enabled="false"
+                    android:hint=""
                     android:inputType="textNoSuggestions|textMultiLine|textImeMultiLine"
                     android:paddingLeft="@dimen/_20sdp"
                     android:paddingTop="@dimen/_10sdp"
@@ -421,21 +434,21 @@
 
                 <ImageView
                     android:id="@+id/language_translator_iv_copy1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_copy_trans" />
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/j_img_copy" />
 
                 <ImageView
                     android:id="@+id/spellhelper_iv_share"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_share_trans" />
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/j_img_mm_mshare" />
 
                 <ImageView
                     android:id="@+id/language_translator_iv_volum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_speech_trans" />
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/j_img_m_audio" />
 
             </LinearLayout>
         </LinearLayout>

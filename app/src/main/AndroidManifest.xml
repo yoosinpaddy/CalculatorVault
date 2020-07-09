@@ -480,8 +480,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GGTransparent" />
 
-        //SECON APPLICATION
-
         <activity
             android:name=".smartkit.activity.SplashScreenActivity"
             android:screenOrientation="portrait"
