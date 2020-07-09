@@ -833,6 +833,7 @@ dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
 drawable ic_sc_new
+drawable j_toolbar_orange2
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low

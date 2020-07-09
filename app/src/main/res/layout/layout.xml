@@ -130,6 +130,7 @@
                                 app:layout_constraintTop_toBottomOf="@id/j_tv_st">
 
                                 <LinearLayout
+                                    android:id="@+id/translator_top"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -151,6 +152,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/calculator_top"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -172,6 +174,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/recorder_top"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -193,6 +196,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/view_more_actions"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -496,6 +500,7 @@
                                 android:weightSum="3">
 
                                 <LinearLayout
+                                    android:id="@+id/translater_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -517,6 +522,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/calc_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -538,6 +544,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/recorder_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -569,6 +576,7 @@
                                 android:weightSum="3">
 
                                 <LinearLayout
+                                    android:id="@+id/qr_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -590,6 +598,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/light_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -611,6 +620,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/bmi_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -642,6 +652,7 @@
                                 android:weightSum="3">
 
                                 <LinearLayout
+                                    android:id="@+id/ageCalc_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -663,6 +674,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/textToSpeech_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -684,6 +696,7 @@
 
 
                                 <LinearLayout
+                                    android:id="@+id/dayCounter_two"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"

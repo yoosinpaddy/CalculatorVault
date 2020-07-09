@@ -79,7 +79,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     private SelectionActivity activity;
     private LinearLayout moLlPhotos, ll_videos, ll_contacts, ll_notes, ll_browser, ll_credentials,
             llBrowserSetting, llLockSetting, llBreakInReport, llDecoyPass, llRecoverPass, llContactUs,
-            llRateApp, llMoreApps, llRemoveAds, llShareApp, llBackToCalculator, llBackup, llOtherFiles, llAppLock, llAntiLostGuid, llUnintallProtection;
+            llRateApp, llMoreApps, llRemoveAds, llShareApp, llBackToCalculator, view_more, llBackup, llOtherFiles, llAppLock, llAntiLostGuid, llUnintallProtection;
     private View vBrowserSetting, vLockSetting, vBreakInReport, vDecoyPasscode, vRecoveryPasscode;
     private List<String> listPermissionsNeeded = new ArrayList<>();
     public final int STORAGE_PERMISSION_CODE = 23;
@@ -97,7 +97,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     private List<String> listPermissionsNeededContact = new ArrayList<>();
     private static final int STORAGE_PERMISSION_CODE_Contact = 1345;
     //private AdView adView;
-    private View vRemoveAds, vMoreApps, vShareApp;
+    private View vRemoveAds, vMoreApps, vShareApp, mCLMain, mCLSecond;
     private boolean isFromContacts = false;
     private boolean isAdmin = false;
     //private AdView adView;
@@ -270,6 +270,9 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //        flTwo = findViewById(R.id.fl_adplaceholder_two);
 
         moLlPhotos = findViewById(R.id.ll_photos);
+        view_more = findViewById(R.id.view_more_actions);
+        mCLSecond = findViewById(R.id.mCLSecond);
+        mCLMain = findViewById(R.id.mCLMain);
         llOtherFiles = findViewById(R.id.ll_other);
         llAppLock = findViewById(R.id.ll_appLock);
         ll_videos = findViewById(R.id.ll_videos);
@@ -297,7 +300,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+//        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu1);
@@ -326,17 +329,27 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         llBackup = nvDrawer.findViewById(R.id.ll_nav_backup);
         llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
         llUnintallProtection = nvDrawer.findViewById(R.id.ll_nav_uninstall_protection);
+        toolbar.setNavigationOnClickListener(v1 -> {
+                    if (mCLMain.getVisibility() == View.GONE) {
+                        mCLMain.setVisibility(View.VISIBLE);
+                        mCLSecond.setVisibility(View.GONE);
+                        toolbar.setNavigationIcon(R.drawable.ic_menu1);
+                    }
+                    view_more.setOnClickListener(v -> {
+                        mCLMain.setVisibility(View.GONE);
+                        mCLSecond.setVisibility(View.VISIBLE);
+                        toolbar.setNavigationIcon(R.drawable.ic_back);
+                    });
+                    //llContactUs.setVisibility(View.GONE);
+                    findViewById(R.id.view_contactUs).setVisibility(View.GONE);
 
-        //llContactUs.setVisibility(View.GONE);
-        findViewById(R.id.view_contactUs).setVisibility(View.GONE);
-
-        if (Share.isNeedToAdShow(getApplicationContext())) {
-            // iv_remove_ad.setVisibility(View.VISIBLE);
-            llRemoveAds.setVisibility(View.VISIBLE);
-            vRemoveAds.setVisibility(View.VISIBLE);
-            llShareApp.setVisibility(View.GONE);
-            vShareApp.setVisibility(View.GONE);
-            llMoreApps.setVisibility(View.VISIBLE);
+                    if (Share.isNeedToAdShow(getApplicationContext())) {
+                        // iv_remove_ad.setVisibility(View.VISIBLE);
+                        llRemoveAds.setVisibility(View.VISIBLE);
+                        vRemoveAds.setVisibility(View.VISIBLE);
+                        llShareApp.setVisibility(View.GONE);
+                        vShareApp.setVisibility(View.GONE);
+                        llMoreApps.setVisibility(View.VISIBLE);
             vMoreApps.setVisibility(View.VISIBLE);
 
             rotation = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
