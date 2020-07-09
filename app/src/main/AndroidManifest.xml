@@ -27,6 +27,11 @@
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACTION_TIME_CHANGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.vending.BILLING" />
 
 
     <!--  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -39,7 +44,6 @@
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
 
-    <uses-permission android:name="com.android.vending.BILLING" />
 
     <permission
         android:name="com.calculator.vault.gallery.locker.hide.data.WRITE_DATABASE"
@@ -64,6 +68,9 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:fullBackupContent,android:icon">
 
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <receiver
             android:name=".reciver.BootReceiver"
             android:enabled="true">
@@ -473,6 +480,100 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GGTransparent" />
 
+        //SECON APPLICATION
+
+        <activity
+            android:name=".smartkit.activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTranslucent">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".smartkit.activity.SplashHomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".smartkit.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".smartkit.activity.RecorderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".smartkit.activity.AgeCalculatorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".smartkit.activity.DayCounterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".smartkit.activity.CompassActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".smartkit.activity.BMIMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.BMICalculatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.UnitConverterCalculationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.UnitConverterinListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.ChooseUnitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.FlashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.WordToSpeakActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".smartkit.activity.TranslatorSpinerLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.TranslatorActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".smartkit.activity.RecordingListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".smartkit.activity.WorldClockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.WorldClockEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smartkit.activity.DisplayFormatActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".smartkit.activity.HomePageActivity" />
+
+        <activity android:name=".smartkit.activity.ScientificCalculatorActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="aaba71ede23b55130ffcd62732aef5fd34c72e5a" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />-->
     </application>
 
 </manifest>
