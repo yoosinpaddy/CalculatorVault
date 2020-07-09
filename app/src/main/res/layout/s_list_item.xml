@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_2ssp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardMaxElevation="@dimen/_5sdp"
+    android:orientation="horizontal"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/flag_hi"
+        android:contentDescription=""
+        android:paddingLeft="@dimen/padding_spinner" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="hello"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp" />
+
+    <ImageView
+        android:id="@+id/check_lang"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end"
+        android:padding="@dimen/_7sdp"
+        android:src="@drawable/ic_correct"
+        android:tint="@color/colorPrimary"
+        android:contentDescription="" />
+</androidx.cardview.widget.CardView>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -52,7 +52,6 @@
         <item name="android:colorForeground">#42221f1f</item>
     </style>
 
-    <dimen name="txt6">16sp</dimen>
 
     <style name="MyStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowNoTitle">true</item>
@@ -145,4 +144,103 @@
     </style>
 
     <color name="navy_blue">#0A0A39</color>
+
+    //BMI Style
+
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:buttonBarPositiveButtonStyle" tools:targetApi="lollipop">@style/positive</item>
+    </style><!--
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:buttonBarPositiveButtonStyle">@style/positive</item>
+    </style>-->
+
+    <style name="positive">
+        <item name="android:textColor">@color/colormain</item>
+    </style>
+
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    //Calculatar theme
+
+
+    <!--Curreny -->
+    <style name="Unit_Conversation">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@color/white</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="Unit_Edittext">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@color/white</item>
+        <item name="android:scrollHorizontally">true</item>ss
+        <item name="android:lines">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+<!--
+    <style name="SpinnerBgStyle">
+        <item name="android:background">@drawable/edittext_left_corners</item>
+        <item name="android:gravity">center</item>
+    </style>-->
+    <style name="SpinnerBgStyle">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Spinner_TextView_Style">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--<style name="AppTranslucent" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    //Native ad
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:width">20dp</item>
+        <item name="android:height">20dp</item>
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>-->
+
 </resources>

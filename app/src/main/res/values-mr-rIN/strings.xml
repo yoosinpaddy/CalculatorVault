@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">मुख्‍यपृष्‍ठ नेव्‍हिगेट करा</string>
+    <string name="abc_action_bar_up_description">वर नेव्‍हिगेट करा</string>
+    <string name="abc_action_menu_overflow_description">अधिक पर्याय</string>
+    <string name="abc_action_mode_done">पूर्ण झाले</string>
+    <string name="abc_activity_chooser_view_see_all">सर्व पहा</string>
+    <string name="abc_activitychooserview_choose_application">एक अ‍ॅप निवडा</string>
+    <string name="abc_searchview_description_clear">क्‍वेरी स्‍पष्‍ट करा</string>
+    <string name="abc_searchview_description_query">शोध क्वेरी</string>
+    <string name="abc_searchview_description_search">शोध</string>
+    <string name="abc_searchview_description_submit">क्वेरी सबमिट करा</string>
+    <string name="abc_searchview_description_voice">व्हॉइस शोध</string>
+    <string name="abc_shareactionprovider_share_with">यांच्यासह सामायिक करा</string>
+    <string name="abc_shareactionprovider_share_with_application">%s सह सामायिक करा</string>
+    <string name="abc_toolbar_collapse_description">संक्षिप्त करा</string>
+    <string name="common_google_play_services_enable_button">Google Play सेवा सक्षम करा</string>
+    <string name="common_google_play_services_enable_text">आपण Google Play सेवा सक्षम केल्याशिवाय हा अॅप कार्य करणार नाही.</string>
+    <string name="common_google_play_services_enable_title">Google Play सेवा सक्षम करा</string>
+    <string name="common_google_play_services_install_button">Google Play सेवा मिळवा</string>
+    <string name="common_google_play_services_install_title">Google Play सेवा मिळवा</string>
+    <string name="common_google_play_services_notification_ticker">Google Play सेवा त्रुटी</string>
+    <string name="common_google_play_services_unknown_issue">Google Play सेवांसह अज्ञात समस्या.</string>
+    <string name="common_google_play_services_unsupported_text">आपले काही अनुप्रयोग ज्यावर अवलंबून आहेत अशी, Google Play सेवा, आपल्या डिव्हाइसद्वारे समर्थित नाही. कृपया सहाय्यासाठी निर्मात्याशी संपर्क साधा.</string>
+    <string name="common_google_play_services_update_button">अद्यतनित करा</string>
+    <string name="common_google_play_services_update_text">आपण Google Play सेवा अद्यतनित केल्याशिवाय हा अॅप चालणार नाही.</string>
+    <string name="common_google_play_services_update_title">Google Play सेवा अद्यतनित करा</string>
+    <string name="common_open_on_phone">फोनवर उघडा</string>
+    <string name="common_signin_button_text">साइन इन करा</string>
+    <string name="common_signin_button_text_long">Google सह साइन इन करा</string>
+</resources>

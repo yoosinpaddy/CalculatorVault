@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navegar a la página principal</string>
+    <string name="abc_action_bar_up_description">Navegar hacia arriba</string>
+    <string name="abc_action_menu_overflow_description">Más opciones</string>
+    <string name="abc_action_mode_done">Listo</string>
+    <string name="abc_activity_chooser_view_see_all">Ver todo</string>
+    <string name="abc_activitychooserview_choose_application">Elige una aplicación.</string>
+    <string name="abc_searchview_description_clear">Eliminar la consulta</string>
+    <string name="abc_searchview_description_query">Consulta de búsqueda</string>
+    <string name="abc_searchview_description_search">Búsqueda</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Búsqueda por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartir con</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartir con %s</string>
+    <string name="abc_toolbar_collapse_description">Contraer</string>
+    <string name="common_google_play_services_enable_button">Activar Google Play Services</string>
+    <string name="common_google_play_services_enable_text">Esta aplicación no funcionará si no activas Google Play Services.</string>
+    <string name="common_google_play_services_enable_title">Activar Google Play Services</string>
+    <string name="common_google_play_services_install_button">Descargar Google Play Services</string>
+    <string name="common_google_play_services_install_title">Obtener Google Play Services</string>
+    <string name="common_google_play_services_notification_ticker">Error de Google Play Services</string>
+    <string name="common_google_play_services_unknown_issue">Error desconocido relacionado con Google Play Services</string>
+    <string name="common_google_play_services_unsupported_text">Google Play Services, del cual dependen algunas de tus aplicaciones, no es compatible con tu dispositivo. Comunícate con el fabricante para obtener ayuda.</string>
+    <string name="common_google_play_services_update_button">Actualizar</string>
+    <string name="common_google_play_services_update_text">Esta aplicación no se ejecutará si no actualizas Google Play Services.</string>
+    <string name="common_google_play_services_update_title">Actualizar Google Play Services</string>
+    <string name="common_open_on_phone">Abrir en el teléfono</string>
+    <string name="common_signin_button_text">Acceder</string>
+    <string name="common_signin_button_text_long">Acceder con Google</string>
+</resources>

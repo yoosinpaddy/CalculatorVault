@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/black">
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_chart"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BMI"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24.9"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Category"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Difference"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@dimen/bmTEXT_WEIGHT"
+                        android:text="Normal"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_done" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TableRow
+                        android:id="@+id/tablerow1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:weightSum="2"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:text="@string/bmiverySeverely"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="2"/>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/tv4"
+                            android:gravity="center"
+                            android:text="≤16"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tablerow2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="2"
+                            android:text="@string/bmiSeverely"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/tv6"
+                            android:text="16.0-16.9"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tablerow3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv7"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/bmiUnderweight"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:id="@+id/tv8"
+                            android:layout_weight="1"
+                            android:text="17.0-18.4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tablerow4"
+                        android:weightSum="2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/tv9"
+                            android:text="@string/bminormal"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv10"
+                            android:text="18.5-24.9"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:id="@+id/tablerow5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/tv11"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/bmiOverweight"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv12"
+                            android:text="25.0-29.9"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:id="@+id/tablerow6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/tv13"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/obese1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv14"
+                            android:text="30.0-34.9"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tablerow7"
+                        android:weightSum="2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/tv15"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/obese2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv16"
+                            android:text="35.0-39.9"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:id="@+id/tablerow8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/tv17"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/obese3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/tv18"
+                            android:gravity="center"
+                            android:text="≥40"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Normal "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/tv20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="18.5-24.9"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

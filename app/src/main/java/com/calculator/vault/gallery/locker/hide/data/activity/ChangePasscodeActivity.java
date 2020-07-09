@@ -174,7 +174,7 @@ public class ChangePasscodeActivity extends AppCompatActivity implements View.On
             fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
         } else {
             findViewById(R.id.ll_finger_lock).setVisibility(View.GONE);
-            findViewById(R.id.view_finger_lock).setVisibility(View.GONE);
+//            findViewById(R.id.view_finger_lock).setVisibility(View.GONE);
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -189,12 +189,12 @@ public class ChangePasscodeActivity extends AppCompatActivity implements View.On
                      * startActivity(intent);
                      */
                     findViewById(R.id.ll_finger_lock).setVisibility(View.GONE);
-                    findViewById(R.id.view_finger_lock).setVisibility(View.GONE);
+//                    findViewById(R.id.view_finger_lock).setVisibility(View.GONE);
                     Log.e("FINGER_PRINT", "Your Device does not have a Fingerprint Sensor");
                 }
             } else {
                 findViewById(R.id.ll_finger_lock).setVisibility(View.GONE);
-                findViewById(R.id.view_finger_lock).setVisibility(View.GONE);
+//                findViewById(R.id.view_finger_lock).setVisibility(View.GONE);
             }
         }
 
@@ -312,7 +312,7 @@ public class ChangePasscodeActivity extends AppCompatActivity implements View.On
                 startActivityForResult(loIntent, 123);
             } else {
                 moLlChangePattern.setVisibility(View.GONE);
-                findViewById(R.id.view_change_pattern).setVisibility(View.GONE);
+//                findViewById(R.id.view_change_pattern).setVisibility(View.GONE);
                 Preferences.setBooleanPref(ChangePasscodeActivity.this, Preferences.KEY_IS_PATTERN_LOCK_ENABLED, false);
                 Preferences.setStringPref(ChangePasscodeActivity.this, Preferences.KEY_SAVED_PATTERN,"");
             }
@@ -365,11 +365,11 @@ public class ChangePasscodeActivity extends AppCompatActivity implements View.On
         if (Preferences.getBooleanPref(ChangePasscodeActivity.this, Preferences.KEY_IS_PATTERN_LOCK_ENABLED)) {
             moSwPatternLock.setChecked(true);
             moLlChangePattern.setVisibility(View.VISIBLE);
-            findViewById(R.id.view_change_pattern).setVisibility(View.VISIBLE);
+//            findViewById(R.id.view_change_pattern).setVisibility(View.VISIBLE);
         } else {
             moSwPatternLock.setChecked(false);
             moLlChangePattern.setVisibility(View.GONE);
-            findViewById(R.id.view_change_pattern).setVisibility(View.GONE);
+//            findViewById(R.id.view_change_pattern).setVisibility(View.GONE);
         }
 
         // Gift Ads
@@ -403,10 +403,10 @@ public class ChangePasscodeActivity extends AppCompatActivity implements View.On
             if (resultCode == RESULT_CANCELED) {
                 moSwPatternLock.setChecked(false);
                 moLlChangePattern.setVisibility(View.GONE);
-                findViewById(R.id.view_change_pattern).setVisibility(View.GONE);
+//                findViewById(R.id.view_change_pattern).setVisibility(View.GONE);
             }else {
                 moLlChangePattern.setVisibility(View.VISIBLE);
-                findViewById(R.id.view_change_pattern).setVisibility(View.VISIBLE);
+//                findViewById(R.id.view_change_pattern).setVisibility(View.VISIBLE);
             }
         }
     }

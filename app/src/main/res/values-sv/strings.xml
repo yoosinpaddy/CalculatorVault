@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Visa startsidan</string>
+    <string name="abc_action_bar_up_description">Navigera uppåt</string>
+    <string name="abc_action_menu_overflow_description">Fler alternativ</string>
+    <string name="abc_action_mode_done">Klart</string>
+    <string name="abc_activity_chooser_view_see_all">Visa alla</string>
+    <string name="abc_activitychooserview_choose_application">Välj en app</string>
+    <string name="abc_searchview_description_clear">Ta bort frågan</string>
+    <string name="abc_searchview_description_query">Sökfråga</string>
+    <string name="abc_searchview_description_search">Sök</string>
+    <string name="abc_searchview_description_submit">Skicka fråga</string>
+    <string name="abc_searchview_description_voice">Röstsökning</string>
+    <string name="abc_shareactionprovider_share_with">Dela med</string>
+    <string name="abc_shareactionprovider_share_with_application">Dela med %s</string>
+    <string name="abc_toolbar_collapse_description">Komprimera</string>
+    <string name="common_google_play_services_enable_button">Aktivera Google Play Tjänster</string>
+    <string name="common_google_play_services_enable_text">Du måste aktivera Google Play Tjänster för att den här appen ska fungera.</string>
+    <string name="common_google_play_services_enable_title">Aktivera Google Play Tjänster</string>
+    <string name="common_google_play_services_install_button">Hämta Google Play Tjänster</string>
+    <string name="common_google_play_services_install_title">Hämta Google Play Tjänster</string>
+    <string name="common_google_play_services_notification_ticker">Fel på Google Play-tjänster</string>
+    <string name="common_google_play_services_unknown_issue">Okänt problem med Google Play Tjänster</string>
+    <string name="common_google_play_services_unsupported_text">Några av dina appar använder Google Play-tjänster som inte stöds av din enhet. Kontakta tillverkaren om du vill ha hjälp.</string>
+    <string name="common_google_play_services_update_button">Uppdatera</string>
+    <string name="common_google_play_services_update_text">Du måste uppdatera Google Play Tjänster innan du kan köra den här appen.</string>
+    <string name="common_google_play_services_update_title">Uppdatera Google Play Tjänster</string>
+    <string name="common_open_on_phone">Öppna på mobilen</string>
+    <string name="common_signin_button_text">Logga in</string>
+    <string name="common_signin_button_text_long">Logga in med Google</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curve_all_side_stroke_bg_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_6sdp"
+    android:paddingBottom="@dimen/_6sdp"
+
+    android:weightSum="1">
+
+    <Spinner
+        android:id="@+id/spinner_continent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_weight="0.9"
+        android:background="@color/white"
+        android:prompt="@string/continent_prompt" />
+
+    <ImageView
+        android:id="@+id/iv_spinner_open"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:src="@drawable/ic_down_arrow"
+        android:tint="@color/black" />
+
+</LinearLayout>

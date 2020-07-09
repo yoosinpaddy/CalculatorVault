@@ -14,4 +14,15 @@
     <dimen name="pattern_lock_dot_selected_size">24dp</dimen>
     <dimen name="native_main_image_height">200dp</dimen>
     <dimen name="adContentPadding">5dp</dimen>
+    <item name="bmTEXT_WEIGHT" type="dimen" format="float">2.6</item>
+
+    <dimen name="padding_spinner">5.0dip</dimen>
+    <dimen name="textsize_spinner">16.0sp</dimen>
+    <dimen name="half">1dp</dimen>
+    <dimen name="txt0">4dp</dimen>
+    <dimen name="txt1">10dp</dimen>
+    <dimen name="txt2">13dp</dimen>
+    //margintop //text size
+    <dimen name="txt6">17dp</dimen>
+    <dimen name="txt7">25dp</dimen>
 </resources>

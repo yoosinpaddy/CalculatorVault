@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Gå til startsiden</string>
+    <string name="abc_action_bar_up_description">Gå opp</string>
+    <string name="abc_action_menu_overflow_description">Flere alternativer</string>
+    <string name="abc_action_mode_done">Ferdig</string>
+    <string name="abc_activity_chooser_view_see_all">Se alle</string>
+    <string name="abc_activitychooserview_choose_application">Velg en app</string>
+    <string name="abc_searchview_description_clear">Slett søket</string>
+    <string name="abc_searchview_description_query">Søkeord</string>
+    <string name="abc_searchview_description_search">Søk</string>
+    <string name="abc_searchview_description_submit">Utfør søket</string>
+    <string name="abc_searchview_description_voice">Talesøk</string>
+    <string name="abc_shareactionprovider_share_with">Del med</string>
+    <string name="abc_shareactionprovider_share_with_application">Del med %s</string>
+    <string name="abc_toolbar_collapse_description">Skjul</string>
+    <string name="common_google_play_services_enable_button">Aktiver Google Play Tjenester</string>
+    <string name="common_google_play_services_enable_text">Denne appen fungerer ikke med mindre du aktiverer Google Play Tjenester.</string>
+    <string name="common_google_play_services_enable_title">Aktiver Google Play Tjenester</string>
+    <string name="common_google_play_services_install_button">Installer Google Play Tjenester</string>
+    <string name="common_google_play_services_install_title">Installer Google Play Tjenester</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Tjenester-feil</string>
+    <string name="common_google_play_services_unknown_issue">Det oppsto et ukjent problem med Google Play Tjenester.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play Tjenester, som noen av appene er avhengige av, støttes ikke av enheten. Ta kontakt med produsenten for å få hjelp.</string>
+    <string name="common_google_play_services_update_button">Oppdater</string>
+    <string name="common_google_play_services_update_text">Denne appen kan ikke kjøres før du oppdaterer Google Play Tjenester.</string>
+    <string name="common_google_play_services_update_title">Oppdater Google Play Tjenester</string>
+    <string name="common_open_on_phone">Åpne på telefonen</string>
+    <string name="common_signin_button_text">Logg på</string>
+    <string name="common_signin_button_text_long">Logg inn med Google</string>
+</resources>

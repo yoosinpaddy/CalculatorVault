@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.TranslatorSpinerLanguageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rl_tool"
+        style="@style/ToolBarStyle.Event"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                android:src="@drawable/ic_back" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Translator"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:id="@+id/iv_more_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/animation_list_filling"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_blast"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/blast_anim"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        style="@style/ToolBarStyle.Event"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/main_iv_back"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:src="@drawable/ic_back"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/main_txt_app_name"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:singleLine="true"
+                android:text="Select Language"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_gift"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="3dp">
+
+                <ImageView
+                    android:id="@+id/main_iv_more_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_blast"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>-->
+
+    <ListView
+        android:id="@+id/listview_translang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

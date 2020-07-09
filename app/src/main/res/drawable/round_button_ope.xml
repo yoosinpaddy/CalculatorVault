@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="oval">
+<corners android:radius="@dimen/_10sdp" />
+<solid android:color="@color/currenct_oprater_bg" />
+<size
+    android:width="@dimen/_50sdp"
+    android:height="@dimen/_50sdp" />
+</shape>

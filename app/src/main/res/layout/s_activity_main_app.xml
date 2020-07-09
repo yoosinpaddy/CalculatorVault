@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/rl_tool"
+            style="@style/ToolBarStyle.Event"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/iv_more_apps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/tl_more_apps" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Smart Tool Box"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_remove_ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_ads_remove"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/container_toolbar"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_calculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/ic_calculator" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Calculator"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_transltor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/ic_translator" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Translator"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_compass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_compass" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Compass"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recoder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_rec" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Recorder"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_qr_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_qr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="QR Scanner"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_flash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_flashight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Flashlight"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_currency" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Currency"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_world_clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_time_zone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Time Zone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_age_calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_age_claculator" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Age Calculator"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_bmi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="BMI"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_text_to_speak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_taxt_to_speech" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Text to Speech"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_day_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curve_all_side_stokr_white_bg_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_counter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Day Counter"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

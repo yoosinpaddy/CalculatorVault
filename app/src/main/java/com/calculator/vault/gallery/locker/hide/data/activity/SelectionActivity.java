@@ -266,8 +266,8 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         // iv_remove_ad = findViewById(R.id.iv_remove_ad);
         //  iv_remove_ad.setOnClickListener(this);
 
-        flOne = findViewById(R.id.fl_adplaceholder_one);
-        flTwo = findViewById(R.id.fl_adplaceholder_two);
+//        flOne = findViewById(R.id.fl_adplaceholder_one);
+//        flTwo = findViewById(R.id.fl_adplaceholder_two);
 
         moLlPhotos = findViewById(R.id.ll_photos);
         llOtherFiles = findViewById(R.id.ll_other);
@@ -1123,8 +1123,8 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         vShareApp.setVisibility(View.VISIBLE);
         llMoreApps.setVisibility(View.GONE);
         vMoreApps.setVisibility(View.GONE);
-        findViewById(R.id.fl_adplaceholder_one).setVisibility(View.GONE);
-        findViewById(R.id.fl_adplaceholder_two).setVisibility(View.GONE);
+//        findViewById(R.id.fl_adplaceholder_one).setVisibility(View.GONE);
+//        findViewById(R.id.fl_adplaceholder_two).setVisibility(View.GONE);
         //findViewById(R.id.flBanner).setVisibility(View.GONE);
     }
 

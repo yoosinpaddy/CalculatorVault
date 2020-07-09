@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rl_tool"
+        style="@style/ToolBarStyle.Event"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/header_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                android:src="@drawable/ic_back" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Flash Light"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:id="@+id/iv_more_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/animation_list_filling"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_blast"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/blast_anim"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_flash_off"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_off"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rl_tool" />
+
+    <ImageView
+        android:id="@+id/iv_flash_on"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_on"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_flash_off"
+        app:layout_constraintEnd_toEndOf="@+id/iv_flash_off"
+        app:layout_constraintStart_toStartOf="@+id/iv_flash_off"
+        app:layout_constraintTop_toTopOf="@+id/iv_flash_off" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        ads:layout_constraintBottom_toTopOf="@+id/ll_12"
+        ads:layout_constraintTop_toBottomOf="@+id/iv_flash_off"
+        app:layout_constraintEnd_toStartOf="@+id/ll_123"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:weightSum="1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/SeekBarOn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/image_layout"
+                android:padding="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                seekarc:arcColor="@color/header_black"
+                seekarc:arcWidth="5dp"
+                seekarc:progressColor="@color/white"
+                seekarc:progressWidth="5dp"
+                seekarc:rotation="180"
+                seekarc:startAngle="30"
+                seekarc:sweepAngle="300"
+                seekarc:touchInside="true" />
+
+            <TextView
+                android:id="@+id/TextViewOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 ms"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt6"
+                app:layout_constraintBottom_toBottomOf="@+id/SeekBarOn"
+                app:layout_constraintEnd_toEndOf="@+id/SeekBarOn"
+                app:layout_constraintStart_toStartOf="@+id/SeekBarOn"
+                app:layout_constraintTop_toTopOf="@+id/SeekBarOn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="On Time"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/ll_1"
+        android:weightSum="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            >
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/SeekBarOff"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/image_layout"
+                android:padding="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                seekarc:arcColor="@color/header_black"
+                seekarc:arcWidth="5dp"
+                seekarc:progressColor="@color/white"
+                seekarc:progressWidth="5dp"
+                seekarc:rotation="180"
+                seekarc:startAngle="30"
+                seekarc:sweepAngle="300"
+                seekarc:touchInside="true" />
+
+            <TextView
+                android:id="@+id/TextViewOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 ms"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt6"
+                app:layout_constraintBottom_toBottomOf="@+id/SeekBarOff"
+                app:layout_constraintEnd_toEndOf="@+id/SeekBarOff"
+                app:layout_constraintStart_toStartOf="@+id/SeekBarOff"
+                app:layout_constraintTop_toTopOf="@+id/SeekBarOff" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Off Time"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt6"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_123"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        ads:layout_constraintBottom_toBottomOf="@+id/ll_1"
+        ads:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:weightSum="1"
+        app:layout_constraintStart_toEndOf="@+id/ll_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/SeekBarFreq"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/image_layout"
+                android:padding="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                seekarc:arcColor="@color/header_black"
+                seekarc:arcWidth="5dp"
+                seekarc:progressColor="@color/white"
+                seekarc:progressWidth="5dp"
+                seekarc:rotation="180"
+                seekarc:startAngle="30"
+                seekarc:sweepAngle="300"
+                seekarc:touchInside="true" />
+
+
+
+            <TextView
+                android:id="@+id/textViewFreq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 ms"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt6"
+                app:layout_constraintBottom_toBottomOf="@+id/SeekBarFreq"
+                app:layout_constraintEnd_toEndOf="@+id/SeekBarFreq"
+                app:layout_constraintStart_toStartOf="@+id/SeekBarFreq"
+                app:layout_constraintTop_toTopOf="@+id/SeekBarFreq" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Frequency"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt6" />
+
+    </LinearLayout>
+
+
+    <!--<com.triggertrap.seekarc.SeekArc
+        android:id="@+id/SeekBarOn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_layout"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SeekBarFreq"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_flash_off"
+        app:layout_constraintVertical_bias="0.0"
+        seekarc:arcColor="@color/header_black"
+        seekarc:arcWidth="5dp"
+        seekarc:progressColor="@color/white"
+        seekarc:progressWidth="5dp"
+        seekarc:rotation="180"
+        seekarc:startAngle="30"
+        seekarc:sweepAngle="300"
+        seekarc:touchInside="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Time"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt6"
+        app:layout_constraintEnd_toEndOf="@+id/SeekBarOn"
+        app:layout_constraintStart_toStartOf="@+id/SeekBarOn"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBarOn" />
+
+    <TextView
+        android:id="@+id/TextViewOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00 ms"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt6"
+        app:layout_constraintBottom_toBottomOf="@+id/SeekBarOn"
+        app:layout_constraintEnd_toEndOf="@+id/SeekBarOn"
+        app:layout_constraintStart_toStartOf="@+id/SeekBarOn"
+        app:layout_constraintTop_toTopOf="@+id/SeekBarOn" />
+
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/SeekBarOff"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_layout"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SeekBarOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/SeekBarFreq"
+        app:layout_constraintTop_toTopOf="@+id/SeekBarOn"
+        seekarc:arcColor="@color/header_black"
+        seekarc:arcWidth="5dp"
+        seekarc:progressColor="@color/white"
+        seekarc:progressWidth="5dp"
+        seekarc:rotation="180"
+        seekarc:startAngle="30"
+        seekarc:sweepAngle="300"
+        seekarc:touchInside="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off Time"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt6"
+        app:layout_constraintEnd_toEndOf="@+id/SeekBarOff"
+        app:layout_constraintStart_toStartOf="@+id/SeekBarOff"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBarOff" />
+
+    <TextView
+        android:id="@+id/TextViewOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00 ms"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt6"
+        app:layout_constraintBottom_toBottomOf="@+id/SeekBarOff"
+        app:layout_constraintEnd_toEndOf="@+id/SeekBarOff"
+        app:layout_constraintStart_toStartOf="@+id/SeekBarOff"
+        app:layout_constraintTop_toTopOf="@+id/SeekBarOff" />
+
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/SeekBarFreq"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_layout"
+        android:layout_marginTop="8dp"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SeekBarOn"
+        app:layout_constraintEnd_toStartOf="@+id/SeekBarOff"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/SeekBarOn"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBarOn"
+        seekarc:arcColor="@color/header_black"
+        seekarc:arcWidth="5dp"
+        seekarc:progressColor="@color/white"
+        seekarc:progressWidth="5dp"
+        seekarc:rotation="180"
+        seekarc:startAngle="30"
+        seekarc:sweepAngle="300"
+        seekarc:touchInside="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Frequency"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt6"
+        app:layout_constraintEnd_toEndOf="@+id/SeekBarFreq"
+        app:layout_constraintStart_toStartOf="@+id/SeekBarFreq"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBarFreq" />
+
+    <TextView
+        android:id="@+id/textViewFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0 ms"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt6"
+        app:layout_constraintBottom_toBottomOf="@+id/SeekBarFreq"
+        app:layout_constraintEnd_toEndOf="@+id/SeekBarFreq"
+        app:layout_constraintStart_toStartOf="@+id/SeekBarFreq"
+        app:layout_constraintTop_toTopOf="@+id/SeekBarFreq" />-->
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

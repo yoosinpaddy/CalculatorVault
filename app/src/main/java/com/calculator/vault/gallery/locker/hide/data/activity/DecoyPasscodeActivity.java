@@ -365,7 +365,7 @@ public class DecoyPasscodeActivity extends AppCompatActivity implements View.OnC
     private void initView() {
         sw_decoypasscode = findViewById(R.id.sw_decoypasscode);
         iv_back = findViewById(R.id.iv_back);
-        moRlChangePassword = findViewById(R.id.ll_change_passcode);
+        moRlChangePassword = findViewById(R.id.view_change_pass);
 
         // Gift Ads
         moIvMoreApp = findViewById(R.id.iv_more_app);
@@ -433,7 +433,7 @@ public class DecoyPasscodeActivity extends AppCompatActivity implements View.OnC
                 onBackPressed();
                 break;
 
-            case R.id.ll_change_passcode:
+            case R.id.view_change_pass:
                 if (checkAndRequestPermissions()) {
                     showChangePasswordDialog();
 //                    Intent i = new Intent(DecoyPasscodeActivity.this, CalculatorActivity.class);

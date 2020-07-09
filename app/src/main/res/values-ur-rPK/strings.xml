@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ہوم پر نیویگیٹ کریں</string>
+    <string name="abc_action_bar_up_description">اوپر نیویگیٹ کریں</string>
+    <string name="abc_action_menu_overflow_description">مزید اختیارات</string>
+    <string name="abc_action_mode_done">ہو گیا</string>
+    <string name="abc_activity_chooser_view_see_all">سبھی دیکھیں</string>
+    <string name="abc_activitychooserview_choose_application">ایک ایپ منتخب کریں</string>
+    <string name="abc_searchview_description_clear">استفسار صاف کریں</string>
+    <string name="abc_searchview_description_query">استفسار تلاش کریں</string>
+    <string name="abc_searchview_description_search">تلاش کریں</string>
+    <string name="abc_searchview_description_submit">استفسار جمع کرائیں</string>
+    <string name="abc_searchview_description_voice">صوتی تلاش</string>
+    <string name="abc_shareactionprovider_share_with">اشتراک کریں مع</string>
+    <string name="abc_shareactionprovider_share_with_application">‏%s کے ساتھ اشتراک کریں</string>
+    <string name="abc_toolbar_collapse_description">سکیڑیں</string>
+    <string name="common_google_play_services_enable_button">‏Google Play سروسز فعال کریں</string>
+    <string name="common_google_play_services_enable_text">‏یہ ایپ تب تک کام نہیں کرے گی جب تک کہ آپ Google Play سروسز فعال نہیں کر لیتے ہیں۔</string>
+    <string name="common_google_play_services_enable_title">‏Google Play سروسز فعال کریں</string>
+    <string name="common_google_play_services_install_button">‏Google Play سروسز حاصل کریں</string>
+    <string name="common_google_play_services_install_title">‏Google Play سروسز حاصل کریں</string>
+    <string name="common_google_play_services_notification_ticker">‏Google Play سروسز کی خرابی</string>
+    <string name="common_google_play_services_unknown_issue">‏Google Play سروسز کے ساتھ نامعلوم مسئلہ۔</string>
+    <string name="common_google_play_services_unsupported_text">‏Google Play سروسز، جن پر آپ کی کچھ ایپلیکیشنز انحصار کرتی ہیں، آپ کے آلہ کے ذریعے تعاون یافتہ نہیں ہے۔ براہ کرم مدد کیلئے مینوفیکچرر سے رابطہ کریں۔</string>
+    <string name="common_google_play_services_update_button">اپ ڈیٹ کریں</string>
+    <string name="common_google_play_services_update_text">‏یہ ایپ تب تک نہیں چلے گی جب تک کہ آپ Google Play سروسز اپ ڈیٹ نہیں کر لیتے ہیں۔</string>
+    <string name="common_google_play_services_update_title">‏Google Play سروسز اپ ڈیٹ کریں</string>
+    <string name="common_open_on_phone">فون پر کھولیں</string>
+    <string name="common_signin_button_text">سائن ان کریں</string>
+    <string name="common_signin_button_text_long">‏Google کے ساتھ سائن ان کریں</string>
+</resources>

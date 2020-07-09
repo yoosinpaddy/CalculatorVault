@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ಮುಖಪುಟವನ್ನು ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ</string>
+    <string name="abc_action_bar_up_description">ಮೇಲಕ್ಕೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ</string>
+    <string name="abc_action_menu_overflow_description">ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು</string>
+    <string name="abc_action_mode_done">ಮುಗಿದಿದೆ</string>
+    <string name="abc_activity_chooser_view_see_all">ಎಲ್ಲವನ್ನೂ ನೋಡಿ</string>
+    <string name="abc_activitychooserview_choose_application">ಒಂದು ಅಪ್ಲಿಕೇಶನ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="abc_searchview_description_clear">ಪ್ರಶ್ನೆಯನ್ನು ತೆರವುಗೊಳಿಸು</string>
+    <string name="abc_searchview_description_query">ಪ್ರಶ್ನೆಯನ್ನು ಹುಡುಕಿ</string>
+    <string name="abc_searchview_description_search">ಹುಡುಕು</string>
+    <string name="abc_searchview_description_submit">ಪ್ರಶ್ನೆಯನ್ನು ಸಲ್ಲಿಸು</string>
+    <string name="abc_searchview_description_voice">ಧ್ವನಿ ಹುಡುಕಾಟ</string>
+    <string name="abc_shareactionprovider_share_with">ಇವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="abc_shareactionprovider_share_with_application">%s ಜೊತೆಗೆ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="abc_toolbar_collapse_description">ಸಂಕುಚಿಸು</string>
+    <string name="common_google_play_services_enable_button">Google Play ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="common_google_play_services_enable_text">Google Play ಸೇವೆಗಳನ್ನು ನೀವು ಸಕ್ರಿಯಗೊಳಿಸದ ಹೊರತು ಈ ಅಪ್ಲಿಕೇಶನ್ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_enable_title">Google Play ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="common_google_play_services_install_button">Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ</string>
+    <string name="common_google_play_services_install_title">Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ಸೇವೆಗಳ ದೋಷ</string>
+    <string name="common_google_play_services_unknown_issue">Google Play ಸೇವೆಗಳಿಗೆ ಅಜ್ಞಾತ ಸಮಸ್ಯೆ.</string>
+    <string name="common_google_play_services_unsupported_text">ನಿಮ್ಮ ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಅವಂಬಿಸಿರುವಂತಹ Google Play ಸೇವೆಗಳನ್ನು ನಿಮ್ಮ ಸಾಧನವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ನೆರವಿಗಾಗಿ ಉತ್ಪಾದಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="common_google_play_services_update_button">ನವೀಕರಿಸು</string>
+    <string name="common_google_play_services_update_text">ನೀವು Google Play ಸೇವೆಗಳನ್ನು ನವೀಕರಿಸದ ಹೊರತು ಈ ಅಪ್ಲಿಕೇಶನ್ ಚಾಲನೆಯಾಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_update_title">Google Play ಸೇವೆಗಳನ್ನು ನವೀಕರಿಸಿ</string>
+    <string name="common_open_on_phone">ಫೋನ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ</string>
+    <string name="common_signin_button_text">ಸೈನ್ ಇನ್ ಮಾಡು</string>
+    <string name="common_signin_button_text_long">Google ಜೊತೆ ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curv_dialog"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35ssp"
+            android:gravity="center_vertical"
+            android:background="#4DAF51">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingBottom="@dimen/_6ssp"
+                android:paddingTop="@dimen/_6ssp"
+                android:textSize="@dimen/_15ssp"
+                android:text="Recommanded Apps"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_more_apps"
+                android:layout_width="@dimen/_19ssp"
+                android:layout_height="@dimen/_19ssp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_9ssp"
+                android:src="@drawable/share"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_load_ads"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35ssp"
+                android:background="#4DAF51"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15ssp"
+                android:text="Exit"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35ssp"
+                android:layout_marginLeft="1dp"
+                android:textSize="@dimen/_15ssp"
+                android:background="#4DAF51"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

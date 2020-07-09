@@ -33,4 +33,31 @@
     <dimen name="ad_header_margin">6dp</dimen>
     <dimen name="ad_header">18dp</dimen>
 
+    <item name="bmTEXT_WEIGHT" type="dimen" format="float">2.6</item>
+
+    <!--Flash Code-->
+
+
+
+    //page 1
+    //height of button
+    //width of button
+    //height of button play
+
+    //width of button play
+
+
+    //new
+    //new
+    //new
+    //new
+    //new
+    //new
+
+    //Dimen for broken screen
+    <dimen name="sciebtn">@dimen/_35sdp</dimen>
+    <dimen name="pad">@dimen/_1sdp</dimen>
+    //left and right margin
+
+
 </resources>
