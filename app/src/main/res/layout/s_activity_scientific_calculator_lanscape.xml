@@ -14,7 +14,7 @@
         style="@style/ToolBarStyle.Event"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/header_black">
+        android:background="@drawable/j_toolbar_pink">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -127,10 +127,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="top|right"
                             android:padding="2dp"
+                            android:textStyle="bold"
                             android:paddingRight="@dimen/_2sdp"
                             android:text="DEG"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColor="@android:color/darker_gray"
+                            android:textColor="@color/navy_blue"
                             android:textSize="@dimen/txt2" />
 
                         <EditText
@@ -148,7 +149,7 @@
                             android:scrollbars="horizontal"
                             android:text=" Start"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColorHint="@android:color/black"
+                            android:textColorHint="@color/navy_blue"
                             android:textSize="@dimen/txt6" />
 
                     </LinearLayout>
@@ -188,20 +189,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:background="@color/no_back_bg_light_black"
+                        android:background="@drawable/j_img_calc_del_bg"
                         android:id="@+id/ll_delete"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
+                        android:layout_height="wrap_content"
+                        android:gravity="end|center_vertical"
                         android:paddingLeft="@dimen/txt1"
                         android:paddingRight="@dimen/half">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="@dimen/txt0"
-                            android:paddingRight="@dimen/half"
-                            android:src="@drawable/ic_clear_cal" />
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/j_img_calc_del" />
 
                     </LinearLayout>
 
@@ -234,7 +234,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8"
-            android:background="@color/colorPrimaryDark">
+            android:background="@drawable/j_img_calc_bg">
 
             <LinearLayout
                 android:id="@+id/ll_calc"
@@ -266,7 +266,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -294,7 +294,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -322,7 +322,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -350,7 +350,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -381,7 +381,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -423,7 +423,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -451,7 +451,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -479,7 +479,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -510,7 +510,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -541,7 +541,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -584,7 +584,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -615,7 +615,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -643,7 +643,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -674,7 +674,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -705,7 +705,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -744,7 +744,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:id="@+id/tv_rad"
@@ -773,7 +773,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -805,7 +805,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -838,7 +838,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -871,7 +871,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -914,7 +914,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -945,7 +945,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -978,7 +978,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:id="@+id/tv_cosh"
@@ -1008,7 +1008,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -1041,7 +1041,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -1084,7 +1084,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -1115,7 +1115,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -1148,7 +1148,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -1181,7 +1181,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn"
 
 
                             />
@@ -1213,7 +1213,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1" />
+                            android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -1253,7 +1253,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_2"
+                            android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                             />
@@ -1284,7 +1284,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_2"
+                            android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                             />
@@ -1315,7 +1315,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_2"
+                            android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                             />
@@ -1346,7 +1346,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn_pink"
 
 
                             />
@@ -1378,7 +1378,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn_pink"
 
 
                             />
@@ -1421,7 +1421,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_2" />
+                            android:src="@drawable/j_img_calc_scie_btn_light" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -1449,7 +1449,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_2"
+                            android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                             />
@@ -1480,7 +1480,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_2"
+                            android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                             />
@@ -1511,7 +1511,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn_pink"
 
 
                             />
@@ -1542,7 +1542,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:padding="@dimen/half"
-                            android:src="@drawable/landscape1_oval_color_1"
+                            android:src="@drawable/j_img_calc_scie_btn_pink"
 
 
                             />
@@ -1600,7 +1600,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_2"
+                                    android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                                     />
@@ -1631,7 +1631,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_2"
+                                    android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                                     />
@@ -1662,7 +1662,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_2"
+                                    android:src="@drawable/j_img_calc_scie_btn_light"
 
                                     />
 
@@ -1693,7 +1693,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_1"
+                                    android:src="@drawable/j_img_calc_scie_btn_pink"
 
 
                                     />
@@ -1738,7 +1738,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_2"
+                                    android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                                     />
@@ -1769,7 +1769,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_2"
+                                    android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                                     />
@@ -1800,7 +1800,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_2"
+                                    android:src="@drawable/j_img_calc_scie_btn_light"
 
 
                                     />
@@ -1832,7 +1832,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent"
                                     android:padding="@dimen/half"
-                                    android:src="@drawable/landscape1_oval_color_1"
+                                    android:src="@drawable/j_img_calc_scie_btn_pink"
 
 
                                     />
@@ -1876,7 +1876,7 @@
                                 android:layout_height="match_parent"
                                 android:background="@android:color/transparent"
                                 android:padding="@dimen/half"
-                                android:src="@drawable/theme1_button_3"
+                                android:src="@drawable/j_img_calc_scie_btn_equals"
 
 
                                 />

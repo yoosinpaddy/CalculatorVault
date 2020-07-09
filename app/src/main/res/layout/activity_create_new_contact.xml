@@ -107,7 +107,8 @@
                 android:gravity="center"
                 android:text="@string/ContactName"
                 android:textSize="@dimen/_14ssp"
-                android:visibility="gone" />
+                android:textColor="@color/navy_blue"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="match_parent"

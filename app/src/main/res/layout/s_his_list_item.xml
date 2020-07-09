@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/black"
+    android:layout_height="120dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/j_img_m_bmi_card"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,8 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/black"
+            android:layout_height="match_parent" 
             android:orientation="horizontal">
 
             <LinearLayout
@@ -35,8 +35,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="AGE :"
-                        android:textColor="@color/white"
+                        android:text="Age :"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
@@ -45,7 +45,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:text="age"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
                 </LinearLayout>
 
@@ -59,8 +59,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="WEIGHT :"
-                        android:textColor="@color/white"
+                        android:text="weight :"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
@@ -69,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:text="weight"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                 </LinearLayout>
@@ -84,8 +84,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="HEIGHT :"
-                        android:textColor="@color/white"
+                        android:text="height :"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
@@ -94,7 +94,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:text="height"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                 </LinearLayout>
@@ -116,7 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="BMI :"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
@@ -125,7 +125,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:text="age"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
 
@@ -143,7 +143,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="weight"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                 </LinearLayout>
@@ -159,7 +159,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="height"
-                        android:textColor="@color/white"
+                        android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_15ssp" />
 
                 </LinearLayout>
