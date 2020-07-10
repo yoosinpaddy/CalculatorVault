@@ -39,7 +39,7 @@ import static com.calculator.vault.gallery.locker.hide.data.smartkit.activity.Sp
 public class DayCounterActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView tvStartDate, tvEndDate;
-    Button btn_show_data;
+    Button btn_show_data, btn_clear_date_data;
     TextView tv_days, tv_hours, tv_minutes, tv_seconds, tv_years, tv_months, tv_weeks, tvDifferenceCustom;
     DatePickerDialog picker;
     private SimpleDateFormat mSimpleDateFormat;
@@ -72,7 +72,7 @@ public class DayCounterActivity extends AppCompatActivity implements View.OnClic
         initAction();
 
         if (Share.isNeedToAdShow(this)) {
-            NativeAdvanceHelper.loadAdBannerSize(activity, (FrameLayout) findViewById(R.id.fl_adplaceholder));
+//            NativeAdvanceHelper.loadAdBannerSize(activity, (FrameLayout) findViewById(R.id.fl_adplaceholder));
             setActionBar();
         }
     }
@@ -82,6 +82,7 @@ public class DayCounterActivity extends AppCompatActivity implements View.OnClic
         tvStartDate = findViewById(R.id.tvStartDate);
         tvEndDate = findViewById(R.id.tvEndDate);
         btn_show_data = findViewById(R.id.btn_show_data);
+        btn_clear_date_data = findViewById(R.id.btn_clear_date_data);
         iv_back = findViewById(R.id.iv_back);
         iv_currentdate = findViewById(R.id.iv_currentdate);
         iv_enddate = findViewById(R.id.iv_enddate);
@@ -104,6 +105,7 @@ public class DayCounterActivity extends AppCompatActivity implements View.OnClic
         tvStartDate.setOnClickListener(this);
         tvEndDate.setOnClickListener(this);
         btn_show_data.setOnClickListener(this);
+        btn_clear_date_data.setOnClickListener(this);
         iv_back.setOnClickListener(this);
 
         tv_days.setOnClickListener(this);
@@ -125,6 +127,10 @@ public class DayCounterActivity extends AppCompatActivity implements View.OnClic
 
             case R.id.iv_back:
                 onBackPressed();
+                break;
+            case R.id.btn_clear_date_data:
+                tvStartDate.setText("");
+                tvEndDate.setText("");
                 break;
 
             case R.id.iv_currentdate:

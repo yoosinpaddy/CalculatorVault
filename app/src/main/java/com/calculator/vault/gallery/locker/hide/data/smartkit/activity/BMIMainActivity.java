@@ -39,7 +39,7 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
     Activity activity;
     ImageView iv_back, iv_history;
     ImageView iv_female, iv_male;
-    LinearLayout ll_calculate;
+    LinearLayout ll_calculate, ll_clear;
     String gen;
     AlertDialog alertDialog1;
     static Dialog d;
@@ -83,6 +83,7 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
         iv_male = findViewById(R.id.iv_male);
         iv_female = findViewById(R.id.iv_female);
         ll_calculate = findViewById(R.id.ll_calculate);
+        ll_clear = findViewById(R.id.ll_clear);
         iv_back = findViewById(R.id.iv_back);
         iv_history = findViewById(R.id.iv_history);
 
@@ -96,6 +97,7 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
         iv_male.setOnClickListener(this);
         iv_female.setOnClickListener(this);
         ll_calculate.setOnClickListener(this);
+        ll_clear.setOnClickListener(this);
         iv_back.setOnClickListener(this);
         iv_history.setOnClickListener(this);
 
@@ -120,7 +122,7 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
         sp_height.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
 
                 tinyDB.putInt(BMIShareData.key_he, BMIShareData.hei);
             }
@@ -146,7 +148,7 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
         sp_weight.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
                 tinyDB.putInt(BMIShareData.key_we, BMIShareData.wei);
             }
 
@@ -171,7 +173,7 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
         sp_age.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
             }
 
             @Override
@@ -314,6 +316,12 @@ public class BMIMainActivity extends AppCompatActivity implements View.OnClickLi
 
             case R.id.ll_calculate:
                 calculate_bni();
+                break;
+
+            case R.id.ll_clear:
+                sp_age.setSelection(0);
+                sp_height.setSelection(0);
+                sp_weight.setSelection(0);
                 break;
 
             case R.id.iv_back:

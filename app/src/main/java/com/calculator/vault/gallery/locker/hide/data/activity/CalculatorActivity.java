@@ -608,7 +608,7 @@ public class CalculatorActivity extends HiddenCameraActivity implements View.OnC
     private void bindServices() {
         Log.e(TAG, "onCreate: ::::::::::::::::::::::::::::::::::");
         try {
-            bindService(InAppBillingHandler.getBindServiceIntent(), mServiceConn, Context.BIND_AUTO_CREATE);
+//            bindService(InAppBillingHandler.getBindServiceIntent(), mServiceConn, Context.BIND_AUTO_CREATE);
         } catch (Exception e) {
             e.printStackTrace();
         }

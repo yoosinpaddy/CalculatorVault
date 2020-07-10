@@ -1,17 +1,19 @@
 <resources>
 
+    <!--BMI Code-->
+    <item name="bmTEXT_WEIGHT" type="dimen" format="float">2.6</item>
+
+    <!--Flash -->
+    <dimen name="image_layout_flash">140dp</dimen>
+    <dimen name="cal_key_padding">2dp</dimen>
+
+
+    <!--calc-->
     <!-- Default screen margins, per the Android Design guidelines. -->
-
-    <dimen name="txt6">17dp</dimen>
-    <dimen name="profile_iconsize">@dimen/_45sdp</dimen>
-    <dimen name="horizontalscroll">@dimen/_40sdp</dimen>
-    <dimen name="yesnopadding">@dimen/_5sdp</dimen>
-
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-
-    <!-- tex size -->
     <dimen name="txt_clbl">5dp</dimen>
+    <dimen name="half">4dp</dimen>
     <dimen name="txt0">9dp</dimen>
     <dimen name="txt1">11dp</dimen>
     <dimen name="check_dimen">48px</dimen>
@@ -24,9 +26,16 @@
     <dimen name="pad_score_golf_ball">5dp</dimen>
     <dimen name="image_layout">120dp</dimen>
     <dimen name="font_size">30dp</dimen>
-    <dimen name="ad_text">11dp</dimen>
+    <dimen name="ads_size_height">160dp</dimen>
 
+    <dimen name="ad_text">11dp</dimen>
     <dimen name="ad_header_margin">6dp</dimen>
-    <dimen name="ad_header">16dp</dimen>
+    <dimen name="ad_icon_size">50dp</dimen>
+    <dimen name="clac_size">@dimen/_170sdp</dimen>
+    <dimen name="sciebtn">@dimen/_35sdp</dimen>
+    <dimen name="pad">@dimen/_1sdp</dimen>
+    <dimen name="cal_size">@dimen/_140sdp</dimen>
+
+    <dimen name="text_size_small">13sp</dimen>
 
 </resources>

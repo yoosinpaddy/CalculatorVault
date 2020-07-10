@@ -14,6 +14,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            app:contentInsetStart="0dp"
             android:background="@color/white"
             android:fitsSystemWindows="true"
             android:minHeight="?attr/actionBarSize">
@@ -57,7 +58,34 @@
                     android:paddingRight="10dp"
                     android:src="@drawable/ic_ads_remove"
                     android:tint="@color/navy_blue"
-                    android:visibility="gone" />
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/babalao"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="TODO"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_menu1"
+                    android:tint="@color/navy_blue"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/babalao_dagote"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="TODO"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:onClick="settings"
+                    android:clickable="true"
+                    android:src="@drawable/ic_setting"
+                    android:tint="@color/navy_blue"
+                    android:visibility="visible" />
 
             </RelativeLayout>
 
@@ -73,19 +101,20 @@
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
+        android:layout_below="@id/toolbar_top"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="56dp">
+            android:layout_height="match_parent">
 
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 

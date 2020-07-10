@@ -106,6 +106,7 @@
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="220dp"
+                    android:padding="16dp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/j_bg_table_bmi"
                     android:gravity="center_vertical">
@@ -114,6 +115,7 @@
                         android:id="@+id/tablerow1"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
                         android:weightSum="2">
 
                         <TextView

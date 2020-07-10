@@ -41,7 +41,7 @@
                     android:layout_height="@dimen/_22sdp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="@dimen/_8sdp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/j_btn_back" />
 
                 <LinearLayout
                     android:id="@+id/ll_delete_all_images"

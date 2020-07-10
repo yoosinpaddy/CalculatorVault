@@ -10,6 +10,7 @@ import android.app.admin.DevicePolicyManager;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -62,12 +63,25 @@ import com.calculator.vault.gallery.locker.hide.data.common.Utils;
 import com.calculator.vault.gallery.locker.hide.data.commonCode.activities.HomePageActivity;
 import com.calculator.vault.gallery.locker.hide.data.commonCode.utils.DisplayMetricsHandler;
 import com.calculator.vault.gallery.locker.hide.data.reciver.MyAdminReceiver;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.Database.DBHelperClass;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.AgeCalculatorActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.BMIMainActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.DayCounterActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.FlashActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.MainActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.RecorderActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.ScientificCalculatorActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.TranslatorActivity;
+import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.WordToSpeakActivity;
 import com.calculator.vault.gallery.locker.hide.data.subscription.SubscriptionActivity;
 import com.google.android.material.navigation.NavigationView;
+import com.google.zxing.integration.android.IntentIntegrator;
 import com.hsalf.smilerating.SmileRating;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import example.zxing.ToolbarCaptureActivity;
 
 import static android.Manifest.permission.READ_CONTACTS;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
@@ -76,11 +90,13 @@ import static android.Manifest.permission.WRITE_CONTACTS;
 public class SelectionActivity extends AppCompatActivity implements View.OnClickListener, BillingProcessor.IBillingHandler
         /*MoPubInterstitial.InterstitialAdListener*//*InterstitialAdHelper.onInterstitialAdListener*/ {/*, NavigationView.OnNavigationItemSelectedListener {*/
 
+    private static final int PERMISSION_REQUEST_CODE = 200;
+    private final int STORAGE_PERMISSION = 33;
+
     private SelectionActivity activity;
     private LinearLayout moLlPhotos, ll_videos, ll_contacts, ll_notes, ll_browser, ll_credentials,
-            llBrowserSetting, llLockSetting, llBreakInReport, llDecoyPass, llRecoverPass, llContactUs,
-            llRateApp, llMoreApps, llRemoveAds, llShareApp, llBackToCalculator, view_more, llBackup, llOtherFiles, llAppLock, llAntiLostGuid, llUnintallProtection;
-    private View vBrowserSetting, vLockSetting, vBreakInReport, vDecoyPasscode, vRecoveryPasscode;
+            llRateApp, llRemoveAds, llBackToCalculator, view_more, llOtherFiles, llAppLock;
+   // private View vBrowserSetting, vLockSetting, vBreakInReport, vDecoyPasscode, vRecoveryPasscode;
     private List<String> listPermissionsNeeded = new ArrayList<>();
     public final int STORAGE_PERMISSION_CODE = 23;
     private String image_name;
@@ -89,10 +105,25 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     //NavigationView navigationView;
     private SwitchCompat sw_breakinreport;
 
+    private LinearLayout translaterTwo;
+    private LinearLayout calcTwo;
+    private LinearLayout recorderTwo;
+    private LinearLayout qrTwo;
+    private LinearLayout lightTwo;
+    private LinearLayout bmiTwo;
+    private LinearLayout ageCalcTwo;
+    private LinearLayout textToSpeechTwo;
+    private LinearLayout dayCounterTwo;
+
+    private LinearLayout translatorTop;
+    private LinearLayout calculatorTop;
+    private LinearLayout recorderTop;
+    private LinearLayout viewMoreActions;
+
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
-    private ImageView iv_back;
+    private ImageView iv_back,babalao,babalao_dagote;
     // private ImageView iv_remove_ad;
     private List<String> listPermissionsNeededContact = new ArrayList<>();
     private static final int STORAGE_PERMISSION_CODE_Contact = 1345;
@@ -101,6 +132,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     private boolean isFromContacts = false;
     private boolean isAdmin = false;
     //private AdView adView;
+    final DBHelperClass dba = new DBHelperClass(this);
 
     // TODO: 06/11/18 in app purchase
 
@@ -202,6 +234,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout);
         activity = this;
+        initView();
         Share.ChangePassword = false;
 
 //        mInterstitial = new MoPubInterstitial(this, getString(R.string.mopub_int_id));
@@ -222,7 +255,6 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 
 //        interstitial = InterstitialAdHelper.getInstance().load1(activity, this);
 
-        initView();
         initViewListener();
         initViewAction();
 
@@ -269,7 +301,22 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //        flOne = findViewById(R.id.fl_adplaceholder_one);
 //        flTwo = findViewById(R.id.fl_adplaceholder_two);
 
+        translaterTwo = (LinearLayout)findViewById( R.id.translater_two );
+        calcTwo = (LinearLayout)findViewById( R.id.calc_two );
+        recorderTwo = (LinearLayout)findViewById( R.id.recorder_two );
+        qrTwo = (LinearLayout)findViewById( R.id.qr_two );
+        lightTwo = (LinearLayout)findViewById( R.id.light_two );
+        bmiTwo = (LinearLayout)findViewById( R.id.bmi_two );
+        ageCalcTwo = (LinearLayout)findViewById( R.id.ageCalc_two );
+        textToSpeechTwo = (LinearLayout)findViewById( R.id.textToSpeech_two );
+        dayCounterTwo = (LinearLayout)findViewById( R.id.dayCounter_two );
+
+        translatorTop = (LinearLayout)findViewById( R.id.translator_top );
+        calculatorTop = (LinearLayout)findViewById( R.id.calculator_top );
+        recorderTop = (LinearLayout)findViewById( R.id.recorder_top );
         moLlPhotos = findViewById(R.id.ll_photos);
+        babalao = findViewById(R.id.babalao);
+        babalao_dagote = findViewById(R.id.babalao_dagote);
         view_more = findViewById(R.id.view_more_actions);
         mCLSecond = findViewById(R.id.mCLSecond);
         mCLMain = findViewById(R.id.mCLMain);
@@ -279,6 +326,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         ll_contacts = findViewById(R.id.ll_contacts);
         ll_notes = findViewById(R.id.ll_notes);
         ll_browser = findViewById(R.id.ll_browser);
+        llRemoveAds = findViewById(R.id.ll_nav_removeAds);
         ll_credentials = findViewById(R.id.ll_credentials);
         sw_breakinreport = findViewById(R.id.sw_breakinreport);
 
@@ -299,11 +347,11 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         navigationView = findViewById(R.id.nav_view);*/
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        /*setSupportActionBar(toolbar);
 //        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu1);
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu1);*/
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
@@ -313,44 +361,66 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         //navigation items...
 
         llBackToCalculator = nvDrawer.findViewById(R.id.ll_back_to_calculator);
-        llBrowserSetting = nvDrawer.findViewById(R.id.ll_nav_browserSetting);
-        llLockSetting = nvDrawer.findViewById(R.id.ll_nav_lockSetting);
-        llBreakInReport = nvDrawer.findViewById(R.id.ll_nav_breakIn);
-        llDecoyPass = nvDrawer.findViewById(R.id.ll_nav_decoyPass);
-        llRecoverPass = nvDrawer.findViewById(R.id.ll_nav_recoveryPass);
         //llContactUs = nvDrawer.findViewById(R.id.ll_nav_contactUs);
         llRateApp = nvDrawer.findViewById(R.id.ll_nav_rateApp);
-        llMoreApps = nvDrawer.findViewById(R.id.ll_nav_moreApps);
+        //llMoreApps = nvDrawer.findViewById(R.id.ll_nav_moreApps);
         llRemoveAds = nvDrawer.findViewById(R.id.ll_nav_removeAds);
-        llShareApp = nvDrawer.findViewById(R.id.ll_nav_shareApp);
-        vRemoveAds = nvDrawer.findViewById(R.id.view_removeAds);
-        vMoreApps = nvDrawer.findViewById(R.id.view_moreApps);
         vShareApp = nvDrawer.findViewById(R.id.view_shareApp);
-        llBackup = nvDrawer.findViewById(R.id.ll_nav_backup);
-        llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
-        llUnintallProtection = nvDrawer.findViewById(R.id.ll_nav_uninstall_protection);
-        toolbar.setNavigationOnClickListener(v1 -> {
-                    if (mCLMain.getVisibility() == View.GONE) {
-                        mCLMain.setVisibility(View.VISIBLE);
-                        mCLSecond.setVisibility(View.GONE);
-                        toolbar.setNavigationIcon(R.drawable.ic_menu1);
-                    }
-                    view_more.setOnClickListener(v -> {
-                        mCLMain.setVisibility(View.GONE);
-                        mCLSecond.setVisibility(View.VISIBLE);
-                        toolbar.setNavigationIcon(R.drawable.ic_back);
-                    });
-                    //llContactUs.setVisibility(View.GONE);
-                    findViewById(R.id.view_contactUs).setVisibility(View.GONE);
+       // llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
+//        toolbar.setNavigationIcon(R.drawable.ic_menu1);
+        translatorTop.setOnClickListener(v -> {
+            Intent i5 = new Intent(this, TranslatorActivity.class);
+            i5.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i5);
+        });
+        calculatorTop.setOnClickListener(v -> {
+            Intent i1 = new Intent(this, ScientificCalculatorActivity.class);
+            i1.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i1);
+        });
+        recorderTop.setOnClickListener(v -> {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkAndRequestPermissionsRecoder(STORAGE_PERMISSION_CODE)) {
+                    Intent i9 = new Intent(this, RecorderActivity.class);
+                    i9.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(i9);
+                }
+            } else {
+                Intent i9 = new Intent(this, RecorderActivity.class);
+                i9.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(i9);
+            }
+        });
+        view_more.setOnClickListener(v -> {
+            mCLMain.setVisibility(View.GONE);
+            mCLSecond.setVisibility(View.VISIBLE);
+            babalao.setImageDrawable(getResources().getDrawable(R.drawable.ic_back));
+        });
+        babalao.setOnClickListener(v1 -> {
+            if (mCLMain.getVisibility() == View.GONE) {
+                Log.e(TAG, "initView: visible" );
+                mCLMain.setVisibility(View.VISIBLE);
+                mCLSecond.setVisibility(View.GONE);
+                babalao.setImageDrawable(getResources().getDrawable(R.drawable.ic_menu1));
+            }else {
+                Log.e(TAG, "initView: invisible" );
+                if (mDrawer.isDrawerOpen(GravityCompat.START)) {
+                    mDrawer.closeDrawer(GravityCompat.START);
+                } else {
+                    mDrawer.openDrawer(GravityCompat.START);
+                }
+            }
+        });
+        //llContactUs.setVisibility(View.GONE);
 
-                    if (Share.isNeedToAdShow(getApplicationContext())) {
-                        // iv_remove_ad.setVisibility(View.VISIBLE);
-                        llRemoveAds.setVisibility(View.VISIBLE);
-                        vRemoveAds.setVisibility(View.VISIBLE);
-                        llShareApp.setVisibility(View.GONE);
-                        vShareApp.setVisibility(View.GONE);
-                        llMoreApps.setVisibility(View.VISIBLE);
-            vMoreApps.setVisibility(View.VISIBLE);
+        if (Share.isNeedToAdShow(getApplicationContext())) {
+            // iv_remove_ad.setVisibility(View.VISIBLE);
+            llRemoveAds.setVisibility(View.VISIBLE);
+            //vRemoveAds.setVisibility(View.VISIBLE);
+//            llShareApp.setVisibility(View.GONE);
+//            //vShareApp.setVisibility(View.GONE);
+//            llMoreApps.setVisibility(View.VISIBLE);
+            //vMoreApps.setVisibility(View.VISIBLE);
 
             rotation = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
             rotation.setRepeatCount(Animation.ABSOLUTE);
@@ -359,21 +429,39 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         } else {
             //  iv_remove_ad.setVisibility(View.GONE);
             llRemoveAds.setVisibility(View.GONE);
-            vRemoveAds.setVisibility(View.GONE);
-            llShareApp.setVisibility(View.VISIBLE);
-            vShareApp.setVisibility(View.VISIBLE);
-            llMoreApps.setVisibility(View.GONE);
-            vMoreApps.setVisibility(View.GONE);
+            //vRemoveAds.setVisibility(View.GONE);
+//            llShareApp.setVisibility(View.VISIBLE);
+//            //vShareApp.setVisibility(View.VISIBLE);
+//            llMoreApps.setVisibility(View.GONE);
+//            //vMoreApps.setVisibility(View.GONE);
         }
 
-        vBrowserSetting = nvDrawer.findViewById(R.id.view_browser);
-        vLockSetting = nvDrawer.findViewById(R.id.view_lock);
-        vBreakInReport = nvDrawer.findViewById(R.id.view_breakIn);
-        vDecoyPasscode = nvDrawer.findViewById(R.id.view_decoyPass);
-        vRecoveryPasscode = nvDrawer.findViewById(R.id.view_recoveryPass);
 
     }
 
+
+    public void settings(View v){
+        Log.e(TAG, "onNavigationItemSelected: " + " nav_lockSetting");
+        Intent intentpass = new Intent(SelectionActivity.this, ChangePasscodeActivity.class);
+        startActivity(intentpass);
+    }
+
+    private void mStartActivity(Intent mIntent){
+
+    }
+
+    private boolean checkAndRequestPermissionsRecoder(int code) {
+
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO}, code);
+            return false;
+        } else {
+            return true;
+        }
+    }
     // ToDo: Drawer menu listener is set here...
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
@@ -388,13 +476,13 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         // Create a new fragment and specify the fragment to show based on nav item clicked
         // Fragment fragment = null;
         switch (menuItem.getItemId()) {
-            case R.id.back_to_calculator:
+            /*case R.id.back_to_calculator:
                 Intent loIntent1 = new Intent(SelectionActivity.this, CalculatorActivity.class);
                 loIntent1.putExtra("isFrom", "app");
                 startActivity(loIntent1);
                 finish();
                 break;
-            case R.id.nav_browser_setting:
+            case R.id.nav_browser_settingm:
                 Log.e(TAG, "onNavigationItemSelected: " + " nav_browser_setting");
                 Intent browserintent = new Intent(SelectionActivity.this, BrowserSelectionActivity.class);
                 startActivity(browserintent);
@@ -428,7 +516,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.nav_rate_us:
                 Log.e(TAG, "onNavigationItemSelected: " + " nav_rate_us");
-                break;
+                break;*/
         }
 
 
@@ -457,15 +545,87 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         ll_notes.setOnClickListener(this);
         ll_browser.setOnClickListener(this);
         ll_credentials.setOnClickListener(this);
-        llBackup.setOnClickListener(this);
+        //llBackup.setOnClickListener(this);
         llAppLock.setOnClickListener(this);
         llOtherFiles.setOnClickListener(this);
-        llAntiLostGuid.setOnClickListener(this);
-        llUnintallProtection.setOnClickListener(this);
+        //llAntiLostGuid.setOnClickListener(this);
+       /////**/ //
+
+        translaterTwo.setOnClickListener(v->{
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkAndRequestPermissions(STORAGE_PERMISSION)) {
+                    Intent i5 = new Intent(this, TranslatorActivity.class);
+                    i5.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(i5);
+                }
+            } else {
+                Intent i5 = new Intent(this, TranslatorActivity.class);
+                i5.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(i5);
+            }
+        });
+        calcTwo.setOnClickListener(v->{
+            Intent i1 = new Intent(this, ScientificCalculatorActivity.class);
+            i1.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i1);});
+        recorderTwo.setOnClickListener(v->{
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkAndRequestPermissionsRecoder(STORAGE_PERMISSION_CODE)) {
+                    Intent i9 = new Intent(this, RecorderActivity.class);
+                    i9.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(i9);
+                }
+            } else {
+                Intent i9 = new Intent(this, RecorderActivity.class);
+                i9.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(i9);
+            }
+        });
+        qrTwo.setOnClickListener(v->{
+            if (checkPermission()) {
+                new IntentIntegrator(SelectionActivity.this).setCaptureActivity(ToolbarCaptureActivity.class).initiateScan();
+            } else {
+                requestPermission();
+            }});
+        lightTwo.setOnClickListener(v->{
+            Intent i3 = new Intent(this, FlashActivity.class);
+            i3.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i3);});
+        bmiTwo.setOnClickListener(v->{
+            Intent i = new Intent(this, BMIMainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i);});
+        ageCalcTwo.setOnClickListener(v->{
+            Intent i8 = new Intent(this, AgeCalculatorActivity.class);
+            i8.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i8);});
+        textToSpeechTwo.setOnClickListener(v->{
+            Intent i4 = new Intent(this, WordToSpeakActivity.class);
+            i4.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i4);});
+        dayCounterTwo.setOnClickListener(v->{
+            Intent i7 = new Intent(this, DayCounterActivity.class);
+            i7.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i7);});
 //        iv_back.setOnClickListener(this);
         //navigationView.setNavigationItemSelectedListener(this);
     }
 
+
+    private boolean checkPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Permission is not granted
+            return false;
+        }
+        return true;
+    }
+
+    private void requestPermission() {
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.CAMERA},
+                PERMISSION_REQUEST_CODE);
+    }
     private void initViewAction() {
         Log.e(TAG, "initViewAction: " + nvDrawer.getMenu().size());
 
@@ -481,57 +641,53 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //        MenuItem menu_recover_passcode = menu.findItem(R.id.nav_recover_passcode);
 
         llBackToCalculator.setOnClickListener(this);
-        llBrowserSetting.setOnClickListener(this);
-        llLockSetting.setOnClickListener(this);
-        llBreakInReport.setOnClickListener(this);
-        llDecoyPass.setOnClickListener(this);
-        llRecoverPass.setOnClickListener(this);
+//        llBrowserSetting.setOnClickListener(this);
+//        llLockSetting.setOnClickListener(this);
+//        llBreakInReport.setOnClickListener(this);
+//        llDecoyPass.setOnClickListener(this);
+//        llRecoverPass.setOnClickListener(this);
         //llContactUs.setOnClickListener(this);
         llRateApp.setOnClickListener(this);
-        llMoreApps.setOnClickListener(this);
+        //llMoreApps.setOnClickListener(this);
         llRemoveAds.setOnClickListener(this);
-        llShareApp.setOnClickListener(this);
+        //llShareApp.setOnClickListener(this);
 
 
         String isDecoy = SharedPrefs.getString(SelectionActivity.this, SharedPrefs.DecoyPassword, "false");
 
         if (isDecoy.equals("true")) {
 
-            llBrowserSetting.setVisibility(View.GONE);
-            llLockSetting.setVisibility(View.GONE);
-            llBreakInReport.setVisibility(View.GONE);
-            llDecoyPass.setVisibility(View.GONE);
-            llRecoverPass.setVisibility(View.GONE);
+//            llBrowserSetting.setVisibility(View.GONE);
+//            llLockSetting.setVisibility(View.GONE);
+//            llBreakInReport.setVisibility(View.GONE);
+//            llDecoyPass.setVisibility(View.GONE);
+//            llRecoverPass.setVisibility(View.GONE);
+//            llBackup.setVisibility(View.GONE);
+//            llUnintallProtection.setVisibility(View.GONE);
             llRemoveAds.setVisibility(View.GONE);
-            llBackup.setVisibility(View.GONE);
-            llUnintallProtection.setVisibility(View.GONE);
-
-            vBrowserSetting.setVisibility(View.GONE);
-            vLockSetting.setVisibility(View.GONE);
-            vBreakInReport.setVisibility(View.GONE);
-            vDecoyPasscode.setVisibility(View.GONE);
-            vRecoveryPasscode.setVisibility(View.GONE);
-            findViewById(R.id.view_backup).setVisibility(View.GONE);
-            findViewById(R.id.view_uninstall_protection).setVisibility(View.GONE);
+//
+//            vBrowserSetting.setVisibility(View.GONE);
+//            vLockSetting.setVisibility(View.GONE);
+//            vBreakInReport.setVisibility(View.GONE);
+//            vDecoyPasscode.setVisibility(View.GONE);
+//            vRecoveryPasscode.setVisibility(View.GONE);
 
         } else {
 
-            llBrowserSetting.setVisibility(View.VISIBLE);
-            llLockSetting.setVisibility(View.VISIBLE);
-            llBreakInReport.setVisibility(View.VISIBLE);
-            llDecoyPass.setVisibility(View.VISIBLE);
-            llRecoverPass.setVisibility(View.VISIBLE);
+//            llBrowserSetting.setVisibility(View.VISIBLE);
+//            llLockSetting.setVisibility(View.VISIBLE);
+//            llBreakInReport.setVisibility(View.VISIBLE);
+//            llDecoyPass.setVisibility(View.VISIBLE);
+//            llRecoverPass.setVisibility(View.VISIBLE);
             llRemoveAds.setVisibility(View.VISIBLE);
-            llBackup.setVisibility(View.VISIBLE);
-            llUnintallProtection.setVisibility(View.VISIBLE);
-
-            vBrowserSetting.setVisibility(View.VISIBLE);
-            vLockSetting.setVisibility(View.VISIBLE);
-            vBreakInReport.setVisibility(View.VISIBLE);
-            vDecoyPasscode.setVisibility(View.VISIBLE);
-            vRecoveryPasscode.setVisibility(View.VISIBLE);
-            findViewById(R.id.view_backup).setVisibility(View.VISIBLE);
-            findViewById(R.id.view_uninstall_protection).setVisibility(View.VISIBLE);
+//            llBackup.setVisibility(View.VISIBLE);
+//            llUnintallProtection.setVisibility(View.VISIBLE);
+//
+//            vBrowserSetting.setVisibility(View.VISIBLE);
+//            vLockSetting.setVisibility(View.VISIBLE);
+//            vBreakInReport.setVisibility(View.VISIBLE);
+//            vDecoyPasscode.setVisibility(View.VISIBLE);
+//            vRecoveryPasscode.setVisibility(View.VISIBLE);
         }
 
         mDrawer.addDrawerListener(
@@ -563,6 +719,18 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                     }
                 }
         );
+    }
+
+    private boolean checkAndRequestPermissions(int code) {
+
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_EXTERNAL_STORAGE}, code);
+            return false;
+        } else {
+            return true;
+        }
     }
 
     private boolean checkAndRequestPermissions() {
@@ -605,69 +773,81 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     protected void onResume() {
         //  Share.RestartApp(this);
         super.onResume();
+        llRemoveAds = nvDrawer.findViewById(R.id.ll_nav_removeAds);
         if (Share.isNeedToAdShow(SelectionActivity.this)) {
             //   iv_remove_ad.setVisibility(View.VISIBLE);
             llRemoveAds.setVisibility(View.VISIBLE);
-            vRemoveAds.setVisibility(View.VISIBLE);
-            llShareApp.setVisibility(View.GONE);
-            vShareApp.setVisibility(View.GONE);
-            llMoreApps.setVisibility(View.VISIBLE);
-            vMoreApps.setVisibility(View.VISIBLE);
+            //llShareApp.setVisibility(View.GONE);
         } else {
             //   iv_remove_ad.setVisibility(View.GONE);
             llRemoveAds.setVisibility(View.GONE);
-            vRemoveAds.setVisibility(View.GONE);
-            llShareApp.setVisibility(View.VISIBLE);
-            vShareApp.setVisibility(View.VISIBLE);
-            llMoreApps.setVisibility(View.GONE);
-            vMoreApps.setVisibility(View.GONE);
+            //llShareApp.setVisibility(View.VISIBLE);
         }
     }
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
         switch (requestCode) {
-            case STORAGE_PERMISSION_CODE:
+                case STORAGE_PERMISSION_CODE:
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
-                        || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                        || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                        || ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
 
                     if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                            || ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE)) {
-
-                        Log.e("TAG", "onRequestPermissionsResult: deny");
+                            || ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                            || ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.RECORD_AUDIO)) {
 
                     } else {
-                        Log.e("TAG", "onRequestPermissionsResult: dont ask again");
-
-                        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-                        alertDialogBuilder.setTitle("Permissions Required")
-                                .setMessage("Please allow permission for storage")
-                                .setPositiveButton("Cancel", (dialog, which) -> {
-                                })
-                                .setNegativeButton("Ok", (dialog, which) -> {
-                                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.fromParts("package", getPackageName(), null));
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    startActivity(intent);
-                                })
-                                .setCancelable(false)
-                                .create()
-                                .show();
-                    }
-
-                } else {
-                    // Permission has already been granted
-                    if (image_name == "gallery") {
-                        image_name = "gallery";
-                       /* Intent i = new Intent(Splash_MenuActivity.this, FaceActivity.class);
-                        startActivity(i);
-                        this.finish();*/
-
-                       /* Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                        startActivityForResult(i, SelectPicture);*/
-                        //overridePendingTransition(R.anim.app_right_in, R.anim.app_left_out); //forward
+                        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                                || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                            alertDialogBuilder.setTitle("Permissions Required")
+                                    .setMessage("Please allow permission for storage")
+                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    })
+                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                                    Uri.fromParts("package", getPackageName(), null));
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                        }
+                                    })
+                                    .setCancelable(false)
+                                    .create()
+                                    .show();
+                        } else if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                            alertDialogBuilder.setTitle("Permissions Required")
+                                    .setMessage("Please allow permission for microphone")
+                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    })
+                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                                    Uri.fromParts("package", getPackageName(), null));
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                        }
+                                    })
+                                    .setCancelable(false)
+                                    .create()
+                                    .show();
+                        }
 
                     }
                 }
+                break;
+
+
             case STORAGE_PERMISSION_CODE_Contact:
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_CONTACTS) != PackageManager.PERMISSION_GRANTED
                         || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
@@ -711,6 +891,44 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                     }
                 }
                 break;
+                case STORAGE_PERMISSION:
+                if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                        || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                        || ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                            || ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                            || ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.RECORD_AUDIO)) {
+
+                    } else {
+                        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                                || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                            alertDialogBuilder.setTitle("Permissions Required")
+                                    .setMessage("Please allow permission for storage")
+                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    })
+                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                                    Uri.fromParts("package", getPackageName(), null));
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                        }
+                                    })
+                                    .setCancelable(false)
+                                    .create()
+                                    .show();
+                        }
+
+                    }
+                }
+                break;
+
         }
     }
 
@@ -870,7 +1088,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //                mDrawer.closeDrawer(Gravity.START,true);
                 break;
 
-            case R.id.ll_nav_browserSetting:
+            /*case R.id.ll_nav_browserSetting:
                 Log.e(TAG, "onNavigationItemSelected: " + " nav_browser_setting");
                 Intent browserintent = new Intent(SelectionActivity.this, BrowserSelectionActivity.class);
                 startActivity(browserintent);
@@ -954,7 +1172,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //                    DevicePolicyManager mDPM = (DevicePolicyManager)getSystemService(Context.DEVICE_POLICY_SERVICE);
 //                    mDPM.removeActiveAdmin(devAdminReceiver);
                 }
-                break;
+                break;*/
 
 //            case R.id.ll_nav_contactUs:
 //                Log.e(TAG, "onNavigationItemSelected: " + " nav_contact_us");
@@ -988,7 +1206,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 startActivity(iMoreApps);
                 break;
 
-            case R.id.ll_nav_shareApp:
+            /*case R.id.ll_nav_shareApp:
                 Log.e("onClick", "onClick: onClick share ");
                 try {
                     Intent iShare = new Intent(Intent.ACTION_SEND);
@@ -1015,7 +1233,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 } else {
                     ActivityCompat.requestPermissions(SelectionActivity.this, listPermissionsNeededContact.toArray(new String[listPermissionsNeededContact.size()]), STORAGE_PERMISSION_CODE_Contact);
                 }
-                break;
+                break;*/
 
             case R.id.ll_nav_anti_lost:
                 startActivity(new Intent(SelectionActivity.this, AntiLostGuidActivity.class));
@@ -1132,9 +1350,9 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         // iv_remove_ad.setVisibility(View.GONE);
         llRemoveAds.setVisibility(View.GONE);
         vRemoveAds.setVisibility(View.GONE);
-        llShareApp.setVisibility(View.VISIBLE);
+       // llShareApp.setVisibility(View.VISIBLE);
         vShareApp.setVisibility(View.VISIBLE);
-        llMoreApps.setVisibility(View.GONE);
+       // llMoreApps.setVisibility(View.GONE);
         vMoreApps.setVisibility(View.GONE);
 //        findViewById(R.id.fl_adplaceholder_one).setVisibility(View.GONE);
 //        findViewById(R.id.fl_adplaceholder_two).setVisibility(View.GONE);
@@ -1391,4 +1609,6 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 });
         return false;
     }
+
 }
+

@@ -55,7 +55,7 @@ public class TranslatorAdapter {
     public List<Customlangmodel> getAllLanguages() {
         List<Customlangmodel> languagesList = new ArrayList();
         Cursor cursor = mDb.rawQuery("SELECT _id, language FROM `languages`", null);
-        Log.e(TAG, "getAllLanguages: => cursor => "+cursor );
+        Log.e(TAG, "getAllLanguages: => cursor => "+cursor.getCount() );
         if (cursor.moveToFirst()) {
             do {
                 String ilang = cursor.getString(1);

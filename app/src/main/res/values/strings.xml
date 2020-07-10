@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">Calculator</string>
 
     <string name="grant" translatable="false">GRANT NOW</string>
@@ -207,13 +207,13 @@
     <!--in-app purchase live id-->
     <string name="ads_product_key"  translatable="false">com.calculator.vault.adsremove</string>
     <string name="licenseKey"  translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtuOnNXSdbWDJp0h2QbrgLopfyP91qsOie11XlPNEH7OHVlEB7b2Iwvj6aSTbuPd8CXEN+9RTm93V+A2P4Twi7rJkddPqQ3nx7SgKQ7tMtu2gdry9/ivxhFttPXtzVzP/5W3/i1NFd9r1EMPQibSYUC3IicHFtWh0B/T7Xe6U7Jnr1Ym0RgBrtikBdNSY9Lz3IKN0EXmw4jog9tYP012RaKVf0eRdNQcKFEW0xGEkzgD91CUcRAR9tizWw90mpl6DadT0ZxHSgTmICWVZGrBW5VMtetSWQwNklYIaDO0hut93hJaKBQJPiYLmsK0kpSJecnnjevsmOowJyq17dJcmfQIDAQAB</string>
-
+<!--
     <string name="remove_ad_msg"  translatable="false">Do you want to remove ads?</string>
     <string name="purchased_msg"  translatable="false">You have already purchased.</string>
     <string name="remove_ads_msg"  translatable="false">Ads remove successfully from app. Enjoy using app without any interference.</string>
     <string name="something_wrong"  translatable="false">Somthing went Wrong</string>
     <string name="yes"  translatable="false">Yes</string>
-    <string name="no"  translatable="false">No</string>
+    <string name="no"  translatable="false">No</string>-->
     <string name="remove_ads"  translatable="false">Remove Ads</string>
     <string name="share_app"  translatable="false">Share App</string>
     <string name="title_amp_subject"  translatable="false">Title and Subject</string>
@@ -256,8 +256,8 @@ This application don't store or send any kind of your information. This service 
     <string name="admob_app_id"  translatable="false">ca-app-pub-1168261283036318~1076159555</string>
     <string name="interstitial_full_screen"  translatable="false">ca-app-pub-1168261283036318/1846261846</string>/
     <string name="native_ad_id"  translatable="false">ca-app-pub-1168261283036318/1846261846</string>
-
-    <!--bmi index-->
+<!--
+    bmi index
     <string name="bmiverySeverely"  translatable="false">Very Severely Underweight</string>
     <string name="bmiSeverely"  translatable="false">Severely Underweight </string>
     <string name="bmiUnderweight"  translatable="false">Underweight</string>
@@ -267,7 +267,7 @@ This application don't store or send any kind of your information. This service 
     <string name="obese2"  translatable="false">Obese Class 2</string>
     <string name="obese3"  translatable="false">Obese Class 3</string>
 
-    <!--textbmi-->
+    textbmi
     <string name="bmiunder"  translatable="false">16.0-18.5</string>
     <string name="normal"  translatable="false">18.6-25.0</string>
     <string name="over"  translatable="false">25.1-40.0</string>
@@ -277,7 +277,7 @@ This application don't store or send any kind of your information. This service 
     <string name="no_internet_retry"  translatable="false">Try again</string>
 
 
-    <!--Calculator text-->
+    Calculator text
     <string name="from"  translatable="false">From</string>
     <string name="to"  translatable="false">To</string>
     <string name="_from"  translatable="false">_from</string>
@@ -286,7 +286,7 @@ This application don't store or send any kind of your information. This service 
     <string name="no_match_found"  translatable="false">No match Found</string>
     <string name="unit_already_selected"  translatable="false">This Unit is already Selected</string>
 
-    <!--Translator-->
+    Translator
     <string name="sttfail"  translatable="false">"Your device doesn't support Speech to Text"</string>
     <string name="check_ur_internet"  translatable="false">Check your internet connection</string>
     <string name="loading"  translatable="false">Loading...</string>
@@ -294,28 +294,266 @@ This application don't store or send any kind of your information. This service 
     <string name="copyfail"  translatable="false">Nothing to copy</string>
     <string name="emptytext"  translatable="false">Write any text</string>
 
-    <string name="common_google_play_services_enable_button">Enable</string>
-    <string name="common_google_play_services_enable_text">%1$s won\'t work unless you enable Google Play services.</string>
-    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
-    <string name="common_google_play_services_install_button">Get Google Play services</string>
-    <string name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
-    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
-    <string name="common_google_play_services_unsupported_text">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
-    <string name="common_google_play_services_update_button">Update</string>
-    <string name="common_google_play_services_update_text">%1$s won\'t run unless you update Google Play services.</string>
-    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_enable_button"  tools:ignore="MissingTranslation">Enable</string>
+    <string name="common_google_play_services_enable_text"  tools:ignore="MissingTranslation">%1$s won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title"  tools:ignore="MissingTranslation">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button"  tools:ignore="MissingTranslation">Get Google Play services</string>
+    <string name="common_google_play_services_install_title"  tools:ignore="MissingTranslation">Get Google Play services</string>
+    <string name="common_google_play_services_notification_ticker"  tools:ignore="MissingTranslation">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue"  tools:ignore="MissingTranslation">%1$s is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
+    <string name="common_google_play_services_unsupported_text"  tools:ignore="MissingTranslation">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_update_button"  tools:ignore="MissingTranslation">Update</string>
+    <string name="common_google_play_services_update_text"  tools:ignore="MissingTranslation">%1$s won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title"  tools:ignore="MissingTranslation">Update Google Play services</string>
     <string name="common_google_play_services_updating_text"  translatable="false">%1$s won\'t run without Google Play services, which are currently updating.</string>
     <string name="common_google_play_services_wear_update_text"  translatable="false">New version of Google Play services needed. It will update itself shortly.</string>
-    <string name="common_open_on_phone">Open on phone</string>
-    <string name="common_signin_button_text">Sign in</string>
-    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="common_open_on_phone"  tools:ignore="MissingTranslation">Open on phone</string>
+    <string name="common_signin_button_text"  tools:ignore="MissingTranslation">Sign in</string>
+    <string name="common_signin_button_text_long"  tools:ignore="MissingTranslation">Sign in with Google</string>
     <string name="about"  translatable="false">About</string>
     <string name="choose_a_location"  translatable="false">Choose a location</string>
     <string name="continent_prompt"  translatable="false">Choose a continent</string>
     <string name="display_format"  translatable="false">Display Format</string>
-    <string name="no_no">No</string>
-    <!--<string name="no">Cancel</string>-->
-    <!--<string name="decline">Decline</string>-->
+    <string name="no_no"  tools:ignore="MissingTranslation" translatable="false">No</string>
+    <string name="no">Cancel</string>
+    <string name="decline">Decline</string>-->
+
+    <!--bmi index-->
+    <string name="bmiverySeverely" translatable="false">Very Severely Underweight</string>
+    <string name="bmiSeverely" translatable="false">Severely Underweight </string>
+    <string name="bmiUnderweight" translatable="false">Underweight</string>
+    <string name="bminormal" translatable="false">Normal</string>
+    <string name="bmiOverweight" translatable="false">Overweight</string>
+    <string name="obese1" translatable="false">Obese Class 1</string>
+    <string name="obese2" translatable="false">Obese Class 2</string>
+    <string name="obese3" translatable="false">Obese Class 3</string>
+
+    <!--textbmi-->
+    <string name="bmiunder" translatable="false">16.0-18.5</string>
+    <string name="normal" translatable="false">18.6-25.0</string>
+    <string name="over" translatable="false">25.1-40.0</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+
+    <string name="dlg_more_apps" translatable="false">Would you like to try more?</string>
+    <string name="no_internet" translatable="false">No Internet Connection</string>
+    <string name="no_internet_retry" translatable="false">Try again</string>
+
+
+
+
+    <string name="remove_ad_msg" translatable="false">Do you want to remove ads?</string>
+    <string name="purchased_msg" translatable="false">You have already purchased.</string>
+    <string name="remove_ads_msg" translatable="false">Ads remove successfully from app. Enjoy using app without any interference.</string>
+    <string name="something_wrong" translatable="false">Somthing went Wrong</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no_no" translatable="false">No</string>
+
+    <!--Calculator text-->
+    <string name="speech_prompt" translatable="false">Say something&#8230;</string>
+    <string name="speech_not_supported" translatable="false">Sorry! Your device doesn\'t support speech input</string>
+    <string name="appwidget_text" translatable="false">Voice Calculator</string>
+    <string name="unit_converter" translatable="false">Unit Converter</string>
+    <string name="from" translatable="false">From</string>
+    <string name="to" translatable="false">To</string>
+    <string name="_from" translatable="false">_from</string>
+    <string name="_to" translatable="false">_to</string>
+    <string name="search" translatable="false">Search...</string>
+    <string name="no_match_found" translatable="false">No match Found</string>
+    <string name="unit_already_selected" translatable="false">This Unit is already Selected</string>
+    <string name="monthly" translatable="false">Monthly</string>
+    <string name="quarterly" translatable="false">Quarterly</string>
+    <string name="half_quarterly" translatable="false">Half Yearly</string>
+    <string name="yearly" translatable="false">Yearly</string>
+
+    <!--Translator-->
+    <string name="sttfail" translatable="false">"Your device doesn't support Speech to Text"</string>
+    <string name="sttempty" translatable="false">Nothing to speech</string>
+    <string name="check_ur_internet" translatable="false">Check your internet connection</string>
+    <string name="loading" translatable="false">Loading...</string>
+    <string name="copy" translatable="false">Text coppied to clipboard</string>
+    <string name="copyfail" translatable="false">Nothing to copy</string>
+    <string name="emptytext" translatable="false">Write any text</string>
+
+    <string name="af" translatable="false">Afrikaans</string>
+    <string name="ar" translatable="false">Arabic</string>
+    <string name="az" translatable="false">Azerbaijani</string>
+    <string name="be" translatable="false">Belarusian</string>
+    <string name="bg" translatable="false">Bulgarian</string>
+    <string name="bn" translatable="false">Bengali</string>
+    <string name="bs" translatable="false">Bosnian</string>
+    <string name="ca" translatable="false">Catalan</string>
+    <string name="ceb" translatable="false">Cebuano</string>
+    <string name="cs" translatable="false">Czech</string>
+    <string name="cy" translatable="false">Welsh</string>
+    <string name="da" translatable="false">Danish</string>
+    <string name="de" translatable="false">German</string>
+    <string name="decline" translatable="false">Decline</string>
+    <string name="el" translatable="false">Greek</string>
+    <string name="en" translatable="false">English</string>
+    <string name="eo" translatable="false">Esperanto</string>
+    <string name="es" translatable="false">Spanish</string>
+    <string name="et" translatable="false">Estonian</string>
+    <string name="eu" translatable="false">Basque</string>
+    <string name="fa" translatable="false">Persian</string>
+    <string name="fi" translatable="false">Finnish</string>
+    <string name="fr" translatable="false">French</string>
+    <string name="ga" translatable="false">Irish</string>
+    <string name="gl" translatable="false">Galician</string>
+    <string name="gu" translatable="false">Gujarati</string>
+    <string name="ha" translatable="false">Hausa</string>
+    <string name="hi" translatable="false">Hindi</string>
+    <string name="hmn" translatable="false">Hmong</string>
+    <string name="hr" translatable="false">Croatian</string>
+    <string name="ht" translatable="false">Haitian creole</string>
+    <string name="hu" translatable="false">Hungarian</string>
+    <string name="hy" translatable="false">Armenian</string>
+    <string name="id" translatable="false">Indonesian</string>
+    <string name="ig" translatable="false">Igbo</string>
+    <string name="is" translatable="false">Icelandic</string>
+    <string name="it" translatable="false">Italian</string>
+    <string name="iw" translatable="false">Hebrew</string>
+    <string name="ja" translatable="false">Japanese</string>
+    <string name="jw" translatable="false">Javanese</string>
+    <string name="ka" translatable="false">Georgian</string>
+    <string name="kk" translatable="false">Kazakh</string>
+    <string name="km" translatable="false">Khmer</string>
+    <string name="kn" translatable="false">Kannada</string>
+    <string name="ko" translatable="false">Korean</string>
+    <string name="la" translatable="false">Latin</string>
+    <string name="lo" translatable="false">Lao</string>
+    <string name="lt" translatable="false">Lithuanian</string>
+    <string name="lv" translatable="false">Latvian</string>
+    <string name="mg" translatable="false">Malagasy</string>
+    <string name="mi" translatable="false">Maori</string>
+    <string name="mk" translatable="false">Macedonian</string>
+    <string name="ml" translatable="false">Malayalam</string>
+    <string name="mn" translatable="false">Mongolian</string>
+    <string name="mr" translatable="false">Marathi</string>
+    <string name="ms" translatable="false">Malay</string>
+    <string name="mt" translatable="false">Maltese</string>
+    <string name="my" translatable="false">Myanmar (burmese)</string>
+    <string name="ne" translatable="false">Nepali</string>
+    <string name="nl" translatable="false">Dutch</string>
+    <string name="no" translatable="false">Norwegian</string>
+    <string name="ny" translatable="false">Chichewa</string>
+    <string name="pa" translatable="false">Punjabi</string>
+    <string name="pl" translatable="false">Polish</string>
+    <string name="pt" translatable="false">Portuguese</string>
+    <string name="ro" translatable="false">Romanian</string>
+    <string name="ru" translatable="false">Russian</string>
+    <string name="si" translatable="false">Sinhala</string>
+    <string name="sk" translatable="false">Slovak</string>
+    <string name="sl" translatable="false">Slovenian</string>
+    <string name="so" translatable="false">Somali</string>
+    <string name="sq" translatable="false">Albanian</string>
+    <string name="sr" translatable="false">Serbian</string>
+    <string name="st" translatable="false">Sesotho</string>
+    <string name="su" translatable="false">Sundanese</string>
+    <string name="sv" translatable="false">Swedish</string>
+    <string name="sw" translatable="false">Swahili</string>
+    <string name="ta" translatable="false">Tamil</string>
+    <string name="te" translatable="false">Telugu</string>
+    <string name="tg" translatable="false">Tajik</string>
+    <string name="th" translatable="false">Thai</string>
+    <string name="tl" translatable="false">Filipino</string>
+    <string name="tr" translatable="false">Turkish</string>
+    <string name="uk" translatable="false">Ukrainian</string>
+    <string name="ur" translatable="false">Urdu</string>
+    <string name="uz" translatable="false">Uzbek</string>
+    <string name="vi" translatable="false">Vietnamese</string>
+    <string name="yi" translatable="false">Yiddish</string>
+    <string name="yo" translatable="false">Yoruba</string>
+    <string name="zh" translatable="false">Chinese (simplified)</string>
+    <string name="zh_TW" translatable="false">Chinese (traditional)</string>
+    <string name="zu" translatable="false">Zulu</string>
+
+    <string name="common_google_play_services_enable_button" translatable="false">Enable</string>
+    <string name="common_google_play_services_enable_text" translatable="false">%1$s won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title" translatable="false">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button" translatable="false">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone" translatable="false">%1$s won\'t run without Google Play services, which are missing from your phone.</string>
+    <string name="common_google_play_services_install_text_tablet" translatable="false">%1$s won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string name="common_google_play_services_install_title" translatable="false">Get Google Play services</string>
+    <string name="common_google_play_services_notification_ticker" translatable="false">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue" translatable="false">%1$s is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
+    <string name="common_google_play_services_unsupported_text" translatable="false">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title" translatable="false">Google Play services</string>
+    <string name="common_google_play_services_update_button" translatable="false">Update</string>
+    <string name="common_google_play_services_update_text" translatable="false">%1$s won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title" translatable="false">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text" translatable="false">%1$s won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_updating_title" translatable="false">Google Play services are updating</string>
+    <string name="common_google_play_services_wear_update_text" translatable="false">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone" translatable="false">Open on phone</string>
+    <string name="common_signin_button_text" translatable="false">Sign in</string>
+    <string name="common_signin_button_text_long" translatable="false">Sign in with Google</string>
+    <string name="about" translatable="false">About</string>
+    <string name="app_about" translatable="false">Version %s\nCopyright © 2010 - 2016\nwhph.net</string>
+    <string name="app_site" translatable="false">http://whph.net</string>
+    <string name="choose_a_location" translatable="false">Choose a location</string>
+    <string name="continent_prompt" translatable="false">Choose a continent</string>
+    <string name="date_format" translatable="false">Date Format</string>
+    <string name="delete_entry_confirm" translatable="false">This entry will be deleted.</string>
+    <string name="display_format" translatable="false">Display Format</string>
+    <string name="edit" translatable="false">Change Location</string>
+    <string name="exit" translatable="false">Exit</string>
+    <string name="more_app" translatable="false">More Apps</string>
+    <string name="move_down" translatable="false">Move Down</string>
+    <string name="move_up" translatable="false">Move Up</string>
+    <string name="new_entry" translatable="false">New Entry</string>
+    <!--<string name="no" translatable="false">Cancel</string>-->
+    <string name="wrong_url" translatable="false">The URL is not valid and cannot be loaded.</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="accept" translatable="false">Accept</string>
+    <string name="create_calendar_message" translatable="false">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title" translatable="false">Create calendar event</string>
+    <!--<string name="decline" translatable="false">Decline</string>-->
+    <string name="store_picture_message" translatable="false">Allow Ad to store image in Picture gallery?</string>
+    <string name="store_picture_title" translatable="false">Save image</string>
+
+
+    <string name="search_label" translatable="false">Search city</string>
+    <string name="search_hint" translatable="false">Lookup city or timezone</string>
+    <string name="settings_description" translatable="false">Lookup time of city around the world</string>
+    <string name="reverse" translatable="false">Reverse</string>
+    <string name="add" translatable="false">Add</string>
+    <string name="info" translatable="false">Info</string>
+    <string name="searchCity" translatable="false">Search city</string>
+    <string name="showDefaultList" translatable="false">Show default list</string>
+    <string name="copyright" translatable="false">(c) 2009, 2010, 2012 by Dr KlukasLong-press row to edit clock.Contains time zone data for ~21000 cities from geonames.org.Hint: if available, Froyo cloud backup service is used to auto-backup/restore clock list.</string>
+    <string name="mon" translatable="false">Mon</string>
+    <string name="tue" translatable="false">Tue</string>
+    <string name="wed" translatable="false">Wed</string>
+    <string name="thu" translatable="false">Thu</string>
+    <string name="fri" translatable="false">Fri</string>
+    <string name="sat" translatable="false">Sat</string>
+    <string name="sun" translatable="false">Sun</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="rename" translatable="false">Rename</string>
+    <string name="changeTimezone" translatable="false">Change timezone</string>
+    <string name="timezoneItem" translatable="false">Timezone</string>
+    <string name="timezone" translatable="false">List timezones</string>
+    <string name="removedClockFor" translatable="false">Removed clock for</string>
+    <string name="renameClock" translatable="false">Rename clock</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="am" translatable="false">AM</string>
+    <string name="pm" translatable="false">PM</string>
+    <string name="noHits" translatable="false">No database hits. Showing default list!</string>
+    <string name="subsetShown" translatable="false">Subset is shown (small cities omitted)</string>
+    <string name="consult" translatable="false">Database query...</string>
+    <string name="sortByName" translatable="false">Sort by name</string>
+    <string name="sortByZone" translatable="false">Sort by zone</string>
+    <string name="sortBySize" translatable="false">Sort by size</string>
+    <string name="showDefault" translatable="false">Show default</string>
+    <string name="filter" translatable="false">Filter</string>
+    <string name="filterList" translatable="false">Filter list</string>
+    <string name="clock" translatable="false">Clock</string>
+    <string name="addClock" translatable="false">Add clock</string>
 
 </resources>

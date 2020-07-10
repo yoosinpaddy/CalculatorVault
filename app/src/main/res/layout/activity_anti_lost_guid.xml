@@ -67,7 +67,7 @@
                 android:layout_height="@dimen/_22sdp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_8sdp"
-                android:src="@drawable/ic_back_arrow" />
+                android:src="@drawable/j_btn_back" />
 
         </RelativeLayout>
 
@@ -282,7 +282,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/textView24"
                 app:layout_constraintEnd_toEndOf="@+id/imageView9"
                 app:layout_constraintTop_toTopOf="@+id/textView24"
-                app:srcCompat="@drawable/ic_anti_lost_checkbox" />
+                android:src="@drawable/ic_anti_lost_checkbox" />
 
             <TextView
                 android:id="@+id/textView26"

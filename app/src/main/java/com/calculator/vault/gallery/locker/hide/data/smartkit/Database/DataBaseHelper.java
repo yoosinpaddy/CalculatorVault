@@ -18,7 +18,7 @@ import java.io.OutputStream;
 public class DataBaseHelper extends SQLiteOpenHelper
 {
     private static String DB_NAME = "translator.sqlite";
-    private static String DB_PATH = "/data/data/com.kit.tools.box.disk.news.shopping/databases/";
+    private static String DB_PATH = "/data/data/com.calculator.vault.gallery.locker.hide.data/databases/";
     private static int DB_VERSION = 1;
     private static String TAG = "DataBaseHelper";
     private final Context mContext;
@@ -28,6 +28,7 @@ public class DataBaseHelper extends SQLiteOpenHelper
     {
         super(context, DB_NAME, null, DB_VERSION);
         DB_PATH = "/data/data/" + context.getPackageName() + "/databases/";
+        Log.e(TAG, "DataBaseHelper: PATH"+DB_PATH );
         this.mContext = context;
     }
 
