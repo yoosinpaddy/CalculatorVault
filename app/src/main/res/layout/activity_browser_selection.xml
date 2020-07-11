@@ -22,6 +22,7 @@
                 android:background="@drawable/j_toolbar_browser">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="@dimen/_180sdp"
                     android:layout_height="wrap_content"
@@ -29,6 +30,7 @@
                     android:ellipsize="end"
                     android:gravity="center"
                     android:singleLine="true"
+                    android:textStyle="bold"
                     android:text="@string/browser_setting"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@color/white" />
@@ -90,12 +92,13 @@
                 android:padding="@dimen/_8sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Google"
                     android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_16ssp"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true" />
 
                 <ImageView
                     android:id="@+id/iv_googletick_image"
@@ -118,12 +121,13 @@
                 android:padding="@dimen/_8sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Yahoo"
                     android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_16ssp"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true" />
 
                 <ImageView
                     android:id="@+id/iv_yahootick_image"
@@ -146,12 +150,13 @@
                 android:padding="@dimen/_8sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Bing"
                     android:textColor="@color/navy_blue"
                     android:textSize="@dimen/_16ssp"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true" />
 
                 <ImageView
                     android:id="@+id/iv_bingtick_image"

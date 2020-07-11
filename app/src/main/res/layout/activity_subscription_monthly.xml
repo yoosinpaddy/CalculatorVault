@@ -39,6 +39,7 @@
 
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_full"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +52,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_access"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,6 +67,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_free"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,6 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_free" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_emoji"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,6 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_emoji" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_gif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -133,6 +138,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_gif" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_ads"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,6 +172,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_continue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -181,6 +188,7 @@
         </RelativeLayout>
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_plan_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -33,6 +33,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="@dimen/_5sdp"
@@ -41,6 +42,7 @@
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/age"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -57,6 +59,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
@@ -65,6 +68,7 @@
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/weight"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -82,6 +86,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
@@ -90,6 +95,7 @@
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/height"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -114,6 +120,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="BMI :"
@@ -121,6 +128,7 @@
                         android:textSize="@dimen/_15ssp" />
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/bmi"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -139,6 +147,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
 
                         android:id="@+id/date"
                         android:layout_width="match_parent"
@@ -156,6 +165,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/time"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

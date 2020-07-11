@@ -19,11 +19,13 @@
             android:background="@drawable/j_toolbar_blue_2">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
+                android:textStyle="bold"
                 android:gravity="center"
                 android:singleLine="true"
                 android:text="@string/anti_lost"
@@ -116,6 +118,7 @@
                 app:srcCompat="@drawable/ic_anti_lost_hidden" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView18"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -132,6 +135,7 @@
                 tools:text="Where The Hidden Files Are Stored?" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView19"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -147,6 +151,7 @@
                 tools:text="/.androidData" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView20"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -192,6 +197,7 @@
                 app:srcCompat="@drawable/ic_anti_lost_backup" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView21"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -208,6 +214,7 @@
                 tools:text="Please! Carefull About Clean Tools" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView22"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -223,6 +230,7 @@
                 tools:text="Don't clean any files in /.androidData" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView23"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -240,6 +248,7 @@
                 tools:text="Backup Your Files If" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -252,6 +261,7 @@
                 tools:text="Change to new device" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -285,6 +295,7 @@
                 android:src="@drawable/ic_anti_lost_checkbox" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView26"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

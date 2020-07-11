@@ -31,6 +31,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@+id/iv_empty"
                     android:layout_toLeftOf="@+id/iv_empty"
+                    android:fontFamily="@font/poppins_regular"
                     android:gravity="center"
                     android:text="Calculator Vault"
                     android:textColor="@color/navy_blue"
@@ -143,6 +144,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="12dp"
+                                android:fontFamily="@font/poppins_regular"
                                 android:text="Smart Tools"
                                 android:textColor="@color/navy_blue"
                                 android:textSize="22sp"
@@ -175,9 +177,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Translator"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -199,9 +202,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Calculator"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -223,9 +227,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Recorder"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -247,9 +252,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="View More"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -272,6 +278,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="18dp"
+                                android:fontFamily="@font/poppins_regular"
                                 android:text="Utilities"
                                 android:textColor="@color/white"
                                 android:textSize="22sp"
@@ -302,9 +309,10 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Contacts"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -325,9 +333,10 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Notes"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -348,9 +357,10 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Browser"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -371,9 +381,10 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Credentials"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -420,6 +431,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Photos"
                                         android:textColor="@color/white"
                                         android:textStyle="bold" />
@@ -446,6 +458,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Videos"
                                         android:textColor="@color/white"
                                         android:textStyle="bold" />
@@ -480,6 +493,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="App Lock"
                                         android:textColor="@color/white"
                                         android:textStyle="bold" />
@@ -506,6 +520,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Other Files"
                                         android:textColor="@color/white"
                                         android:textStyle="bold" />
@@ -561,9 +576,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Translator"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -585,9 +601,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Calculator"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -609,9 +626,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Recorder"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -643,9 +661,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="QR Scanner"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -667,9 +686,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Flashlight"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -691,9 +711,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="BMI"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -725,9 +746,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Age Calculator"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -749,9 +771,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Text to speech"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -773,9 +796,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:text="Day Counter"
-                                        android:textColor="@color/navy_blue" />
+                                        android:textColor="@color/navy_blue"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -829,6 +853,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Photos"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
 
@@ -864,6 +889,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Videos"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
 
@@ -899,6 +925,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/appLock"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
@@ -949,6 +976,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Other"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
@@ -983,6 +1011,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Notes"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
@@ -1033,6 +1062,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Contact"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
@@ -1067,6 +1097,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Browser"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
@@ -1101,6 +1132,7 @@
                             android:background="@color/colorPrimary"
                             android:gravity="center"
                             android:text="@string/Credentials"
+                            android:fontFamily="@font/poppins_regular"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>

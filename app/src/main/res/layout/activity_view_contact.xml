@@ -17,6 +17,7 @@
             android:background="@drawable/j_toolbar_green">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
@@ -109,6 +110,7 @@
             android:src="@drawable/j_img_user"  />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_contact_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -125,6 +127,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -149,6 +152,7 @@
                 app:srcCompat="@drawable/ic_username" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_contactFirstname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -289,6 +293,7 @@
                 app:srcCompat="@drawable/ic_username" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -301,6 +306,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view5" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_contactLastname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -325,6 +331,7 @@
                 app:srcCompat="@drawable/ic_mobile_number" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -337,6 +344,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view6" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_contactPhonenumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -361,6 +369,7 @@
                 app:srcCompat="@drawable/ic_mail" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -373,6 +382,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view10" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_contactemail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -397,6 +407,7 @@
                 app:srcCompat="@drawable/ic_birthday" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/textView12"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -409,6 +420,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view12" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_contactBirthday"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

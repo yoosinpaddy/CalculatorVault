@@ -21,6 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/pattern_tv_appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

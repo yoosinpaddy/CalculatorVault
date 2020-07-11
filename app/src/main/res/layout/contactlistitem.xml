@@ -60,6 +60,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_contact_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,6 +72,7 @@
                     tools:text="Title" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_contact_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -81,6 +83,7 @@
                     tools:text="@string/Number" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/recycle_repeat_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

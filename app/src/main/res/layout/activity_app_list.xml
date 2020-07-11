@@ -21,6 +21,7 @@
             android:background="@drawable/j_toolbar_green">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"

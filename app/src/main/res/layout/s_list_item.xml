@@ -19,6 +19,7 @@
         android:paddingLeft="@dimen/padding_spinner" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/title1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

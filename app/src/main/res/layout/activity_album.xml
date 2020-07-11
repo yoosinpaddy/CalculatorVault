@@ -26,12 +26,14 @@
                 android:src="@drawable/j_btn_back"/>
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Choose Photo"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:maxLength="20"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />

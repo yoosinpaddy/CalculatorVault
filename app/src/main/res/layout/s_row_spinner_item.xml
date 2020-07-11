@@ -23,6 +23,7 @@
             android:paddingTop="10dp">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_popup_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

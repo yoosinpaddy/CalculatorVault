@@ -28,6 +28,7 @@
                 android:src="@drawable/ic_back" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,6 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
             android:layout_weight="0.15"
             android:gravity="center"
             android:textColor="@color/navy_blue"
@@ -98,6 +100,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight="0.1"
+            android:fontFamily="@font/poppins_regular"
             android:background="@drawable/j_universal_btn_bg"
             android:backgroundTint="@color/navy_blue"
             android:text="Start"

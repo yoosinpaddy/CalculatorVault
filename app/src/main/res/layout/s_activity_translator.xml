@@ -36,6 +36,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -95,6 +96,7 @@
         android:weightSum="1">
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_show_name1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -117,6 +119,7 @@
             android:src="@drawable/j_img_r_translate" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_show_name2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -154,6 +157,7 @@
             android:weightSum="1">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
 
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -171,6 +175,7 @@
                 android:layout_weight="0.5">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_from_lang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -277,6 +282,7 @@
             android:weightSum="1">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -288,6 +294,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_to_lang"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

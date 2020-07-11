@@ -24,6 +24,7 @@
                 android:background="@drawable/j_toolbar_pink">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="@dimen/_180sdp"
                     android:layout_height="wrap_content"
@@ -93,6 +94,7 @@
                 android:padding="@dimen/_10sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -122,6 +124,7 @@
                 android:padding="@dimen/_10sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"

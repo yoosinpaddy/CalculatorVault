@@ -41,6 +41,7 @@
 
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_choose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,6 +54,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_your"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,6 +69,7 @@
 
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_plan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,6 +104,7 @@
 
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_standard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -116,6 +120,7 @@
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_month"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -137,6 +142,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_month_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -151,6 +157,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_month_disc"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -184,6 +191,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cl_monthly_plan">
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/iv_value_plan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -199,6 +207,7 @@
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -220,6 +229,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_year_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -236,6 +246,7 @@
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_year_desc"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -249,6 +260,7 @@
             app:layout_constraintTop_toTopOf="@+id/iv_year_crown" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -266,9 +278,8 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_sevenday_free_trial"
         android:layout_width="0dp"
         android:layout_height="@dimen/_53sdp"
@@ -291,6 +302,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cl_yearly_plan" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_weekly_desc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -308,6 +320,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_sevenday_free_trial" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/tv_renew_hint"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

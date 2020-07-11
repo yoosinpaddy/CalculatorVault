@@ -437,12 +437,8 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 
     public void settings(View v){
         Log.e(TAG, "onNavigationItemSelected: " + " nav_lockSetting");
-        Intent intentpass = new Intent(SelectionActivity.this, ChangePasscodeActivity.class);
+        Intent intentpass = new Intent(SelectionActivity.this, SettingsActivity.class);
         startActivity(intentpass);
-    }
-
-    private void mStartActivity(Intent mIntent){
-
     }
 
     private boolean checkAndRequestPermissionsRecoder(int code) {

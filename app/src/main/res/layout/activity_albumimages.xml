@@ -28,11 +28,13 @@
             android:src="@drawable/j_btn_back"/>
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_title"
             android:layout_width="@dimen/_150sdp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Images"
+            android:textStyle="bold"
             android:ellipsize="end"
             android:maxLines="1"
             android:gravity="center"
@@ -52,14 +54,14 @@
             android:paddingTop="3dp">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Done"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textSize="@dimen/_12ssp"
-                android:textColor="@color/white"
-                />
+                android:textColor="@color/white" />
         </LinearLayout>
 
     </RelativeLayout>

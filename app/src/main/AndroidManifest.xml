@@ -22,7 +22,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS"
@@ -32,18 +31,16 @@
     <uses-permission android:name="android.permission.ACTION_TIME_CHANGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="com.android.vending.BILLING" />
-
-
-    <!--  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
-
+    <!--
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
-
 
     <permission
         android:name="com.calculator.vault.gallery.locker.hide.data.WRITE_DATABASE"
@@ -67,10 +64,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:fullBackupContent,android:icon">
+        <activity android:name=".activity.SettingsActivity"></activity>
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+
         <receiver
             android:name=".reciver.BootReceiver"
             android:enabled="true">
@@ -264,19 +263,15 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyStyle" />
-
         <activity
             android:name=".subscription.SubscriptionActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".subscription.MonthlySubscriptionActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".subscription.DiscountSubscriptionActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".activity.HowToRecoverPassActivity"
             android:screenOrientation="portrait"
@@ -367,8 +362,6 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessiblity_config" />
         </service>
-
-
         <service
             android:name=".appLock.QuickSettingsLockService"
             android:directBootAware="true"
@@ -404,7 +397,6 @@
             android:resizeableActivity="false"
             android:theme="@android:style/Theme.NoTitleBar"
             tools:ignore="UnusedAttribute" />
-
         <activity
             android:name=".activity.PermissionActivity"
             android:theme="@android:style/Theme.Translucent" />
@@ -417,41 +409,28 @@
             <intent-filter>
                 <action android:name="com.inmobi.share.id" />
             </intent-filter>
-        </receiver>
-
-
-        <!--MoPub Ads-->
-
+        </receiver> <!-- MoPub Ads -->
         <!-- MoPub's consent dialog -->
         <activity
             android:name="com.mopub.common.privacy.ConsentDialogActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
-
-        <!-- All ad formats -->
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- All ad formats -->
         <activity
             android:name="com.mopub.common.MoPubBrowser"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
-
-        <!-- Interstitials -->
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- Interstitials -->
         <activity
             android:name="com.mopub.mobileads.MoPubActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name="com.mopub.mobileads.MraidActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
-
-        <!-- Rewarded Video and Rewarded Playables -->
-        <!--<activity android:name="com.mopub.mobileads.RewardedMraidActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>-->
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- Rewarded Video and Rewarded Playables -->
+        <!-- <activity android:name="com.mopub.mobileads.RewardedMraidActivity" android:configChanges="keyboardHidden|orientation|screenSize"/> -->
         <activity
             android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="@string/applovin_sdk_key" />
-
-
-        <!--Greedy Game Declarations-->
+            android:value="@string/applovin_sdk_key" /> <!-- Greedy Game Declarations -->
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
@@ -463,7 +442,6 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GGTransparent" />
-
         <activity
             android:name="com.greedygame.android.core.mediation.greedygame.GGS2SActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
@@ -471,7 +449,6 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GGTransparent" />
-
         <activity
             android:name="com.greedygame.android.core.mediation.admob.GGAdMobActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
@@ -479,38 +456,28 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GGTransparent" />
-
         <activity
             android:name=".smartkit.activity.SplashScreenActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTranslucent">
-        </activity>
-
+            android:theme="@style/AppTranslucent"></activity>
         <activity
             android:name=".smartkit.activity.SplashHomeActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".smartkit.activity.MainActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".smartkit.activity.RecorderActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".smartkit.activity.AgeCalculatorActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".smartkit.activity.DayCounterActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".smartkit.activity.CompassActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".smartkit.activity.BMIMainActivity"
             android:screenOrientation="portrait" />
@@ -544,7 +511,6 @@
         <activity
             android:name=".smartkit.activity.RecordingListActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".smartkit.activity.WorldClockActivity"
             android:screenOrientation="portrait" />
@@ -555,17 +521,9 @@
             android:name=".smartkit.activity.DisplayFormatActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".smartkit.activity.HomePageActivity" />
-
-        <activity android:name=".smartkit.activity.ScientificCalculatorActivity"
-            android:screenOrientation="portrait"/>
-
-        <!--<meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="aaba71ede23b55130ffcd62732aef5fd34c72e5a" />
-
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/admob_app_id" />-->
+        <activity
+            android:name=".smartkit.activity.ScientificCalculatorActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

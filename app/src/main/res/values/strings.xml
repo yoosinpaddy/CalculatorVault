@@ -1,74 +1,72 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name" translatable="false">Calculator</string>
 
     <string name="grant" translatable="false">GRANT NOW</string>
     <string name="dialog_permission" translatable="false">To use this app, allow access to your device manage read and write external storage and camera permission.</string>
 
 
+    <string name="NoHiddenImages" translatable="false">No Photos</string>
+    <string name="Photos" translatable="false">Photos</string>
+    <string name="files" translatable="false">Files</string>
+    <string name="backup_title" translatable="false">Backup</string>
+    <string name="Videos" translatable="false">Videos</string>
+    <string name="Browser" translatable="false">Browser</string>
+    <string name="Credentials" translatable="false">Credentials</string>
+    <string name="Notes" translatable="false">Notes</string>
+    <string name="appLock" translatable="false">App Lock</string>
+    <string name="Contact" translatable="false">Contacts</string>
+    <string name="anti_lost" translatable="false">Anti-Lost Guide</string>
+    <string name="add_direction" translatable="false">Tap { + } on the top bar to add one</string>
+    <string name="Edit" translatable="false">EDIT</string>
+    <string name="Share" translatable="false">Share</string>
+    <string name="Save" translatable="false">Save</string>
+    <string name="Delete" translatable="false">Delete</string>
+    <string name="Cancel" translatable="false">CANCEL</string>
+    <string name="DeleteFromSystem" translatable="false">Delete from system</string>
 
-
-    <string name="NoHiddenImages"  translatable="false">No Photos</string>
-    <string name="Photos"  translatable="false">Photos</string>
-    <string name="files"  translatable="false">Files</string>
-    <string name="backup_title"  translatable="false">Backup</string>
-    <string name="Videos"  translatable="false">Videos</string>
-    <string name="Browser"  translatable="false">Browser</string>
-    <string name="Credentials"  translatable="false">Credentials</string>
-    <string name="Notes"  translatable="false">Notes</string>
-    <string name="appLock"  translatable="false">App Lock</string>
-    <string name="Contact"  translatable="false">Contacts</string>
-    <string name="anti_lost"  translatable="false">Anti-Lost Guide</string>
-    <string name="add_direction"  translatable="false">Tap { + } on the top bar to add one</string>
-    <string name="Edit"  translatable="false">EDIT</string>
-    <string name="Share"  translatable="false">Share</string>
-    <string name="Save"  translatable="false">Save</string>
-    <string name="Delete"  translatable="false">Delete</string>
-    <string name="Cancel"  translatable="false">CANCEL</string>
-    <string name="DeleteFromSystem"  translatable="false">Delete from system</string>
-
-    <string name="oldPass"  translatable="false">Enter your Old Password (4 - Digit)</string>
-    <string name="newPass"  translatable="false">Enter New Password (4 - Digit)</string>
-    <string name="confPass"  translatable="false">Confirm Password (4 - Digit)</string>
-    <string name="DONE"  translatable="false">DONE</string>
-    <string name="OldPassword"  translatable="false">Old Password</string>
-    <string name="NewPassword"  translatable="false">New Password</string>
-    <string name="ConfirmPassword"  translatable="false">Confirm Password</string>
-    <string name="browserSettings"  translatable="false">Browser Settings</string>
-    <string name="lockSettings"  translatable="false">Lock Settings</string>
-    <string name="breakReport"  translatable="false">Break-in-Report</string>
-    <string name="breakAlert"  translatable="false">Break in Alert</string>
-    <string name="DecoyPasscode"  translatable="false">Decoy Passcode</string>
-    <string name="help"  translatable="false">Help</string>
-    <string name="ContactUS"  translatable="false">Contact Us</string>
-    <string name="RateUs"  translatable="false">Rate us</string>
+    <string name="oldPass" translatable="false">Enter your Old Password (4 - Digit)</string>
+    <string name="newPass" translatable="false">Enter New Password (4 - Digit)</string>
+    <string name="confPass" translatable="false">Confirm Password (4 - Digit)</string>
+    <string name="DONE" translatable="false">DONE</string>
+    <string name="OldPassword" translatable="false">Old Password</string>
+    <string name="NewPassword" translatable="false">New Password</string>
+    <string name="ConfirmPassword" translatable="false">Confirm Password</string>
+    <string name="browserSettings" translatable="false">Browser Settings</string>
+    <string name="lockSettings" translatable="false">Lock Settings</string>
+    <string name="breakReport" translatable="false">Break-in-Report</string>
+    <string name="breakAlert" translatable="false">Break in Alert</string>
+    <string name="DecoyPasscode" translatable="false">Decoy Passcode</string>
+    <string name="help" translatable="false">Help</string>
+    <string name="ContactUS" translatable="false">Contact Us</string>
+    <string name="RateUs" translatable="false">Rate us</string>
 
     <!--Notes-->
-    <string name="Number"  translatable="false">number</string>
-    <string name="ContactDetails"  translatable="false">Contact Details</string>
-    <string name="ContactName"  translatable="false">Contact Name</string>
-    <string name="FirstName"  translatable="false">First Name</string>
-    <string name="LastName"  translatable="false">Last Name</string>
-    <string name="PhoneNumber"  translatable="false">Phone Number</string>
-    <string name="Email"  translatable="false">Email</string>
-    <string name="Birthday"  translatable="false">Birthday</string>
-    <string name="NotAvailable"  translatable="false">Not Available</string>
-    <string name="NoContacts"  translatable="false">No Contacts Found</string>
-    <string name="Add_contacts"  translatable="false">Add contacts from here.</string>
+    <string name="Number" translatable="false">number</string>
+    <string name="ContactDetails" translatable="false">Contact Details</string>
+    <string name="ContactName" translatable="false">Contact Name</string>
+    <string name="FirstName" translatable="false">First Name</string>
+    <string name="LastName" translatable="false">Last Name</string>
+    <string name="PhoneNumber" translatable="false">Phone Number</string>
+    <string name="Email" translatable="false">Email</string>
+    <string name="Birthday" translatable="false">Birthday</string>
+    <string name="NotAvailable" translatable="false">Not Available</string>
+    <string name="NoContacts" translatable="false">No Contacts Found</string>
+    <string name="Add_contacts" translatable="false">Add contacts from here.</string>
 
     <!--Browser-->
-    <string name="Google"  translatable="false">Google</string>
-    <string name="Yahoo"  translatable="false">Yahoo</string>
-    <string name="Bing"  translatable="false">Bing</string>
-    <string name="googlelink"  translatable="false">https://www.google.com/</string>
-    <string name="yahoolink"  translatable="false">https://in.yahoo.com/?p=us</string>
-    <string name="binglink"  translatable="false">https://www.bing.com/</string>
-    <string name="Title"  translatable="false">Title:</string>
-    <string name="Website"  translatable="false">Website:</string>
-    <string name="Username"  translatable="false">Username:</string>
-    <string name="Password"  translatable="false">Password:</string>
-    <string name="Notescred"  translatable="false">Notes:</string>
-    <string name="ChoosePhoto"  translatable="false">Choose Photo</string>
-    <string name="ChooseVideo"  translatable="false">Choose Video</string>
+    <string name="Google" translatable="false">Google</string>
+    <string name="Yahoo" translatable="false">Yahoo</string>
+    <string name="Bing" translatable="false">Bing</string>
+    <string name="googlelink" translatable="false">https://www.google.com/</string>
+    <string name="yahoolink" translatable="false">https://in.yahoo.com/?p=us</string>
+    <string name="binglink" translatable="false">https://www.bing.com/</string>
+    <string name="Title" translatable="false">Title:</string>
+    <string name="Website" translatable="false">Website:</string>
+    <string name="Username" translatable="false">Username:</string>
+    <string name="Password" translatable="false">Password:</string>
+    <string name="Notescred" translatable="false">Notes:</string>
+    <string name="ChoosePhoto" translatable="false">Choose Photo</string>
+    <string name="ChooseVideo" translatable="false">Choose Video</string>
 
     <!--Calculator-->
     <string name="ac" translatable="false">AC</string>
@@ -95,51 +93,51 @@
     <string name="equals" translatable="false">=</string>
 
     <!-- Messages -->
-    <string name="invalid_expression_message"  translatable="false">Invalid expression</string>
-    <string name="pick_image_intent_text"  translatable="false">Pick Image</string>
+    <string name="invalid_expression_message" translatable="false">Invalid expression</string>
+    <string name="pick_image_intent_text" translatable="false">Pick Image</string>
     <!--http://stackoverflow.com/questions/17502824/whats-wrong-with-this-format-string-->
 
     <!--Crop module main fragment-->
-    <string name="permission_pick_rationale"  translatable="false">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
-    <string name="permission_crop_rationale"  translatable="false">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
-    <string name="button_allow"  translatable="false">Allow</string>
-    <string name="button_deny"  translatable="false">Deny</string>
+    <string name="permission_pick_rationale" translatable="false">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale" translatable="false">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="button_allow" translatable="false">Allow</string>
+    <string name="button_deny" translatable="false">Deny</string>
 
-    <string name="ChangePassword"  translatable="false">Change Password</string>
-    <string name="decoy_message"  translatable="false">Your all Decoy account data will be lost. Do you want to continue?</string>
-    <string name="success_backup_msg_dialog"  translatable="false"><![CDATA[Your data has been backup into your Google Drive with name <b>CalculatorBackup.zip</b>, so please don\'t delete that file otherwise you can\'t restore your data. ]]></string>
-    <string name="success_restore_msg_dialog"  translatable="false"><![CDATA[Your backup will automatically restore after download. ]]></string>
-    <string name="confirmation"  translatable="false">Are you sure want to leave this page?</string>
-    <string name="delete_image_message"  translatable="false">Are you sure you want to delete from vault?</string>
-    <string name="share_intent_images"  translatable="false">Image</string>
-    <string name="share_intent_Videos"  translatable="false">Video</string>
-    <string name="how_to_recover_passcode"  translatable="false">How To Recover Passcode</string>
-    <string name="step_1"  translatable="false">Step 1 :</string>
-    <string name="first_enter_0000"  translatable="false">First enter 0000 in Calculator and press % button.</string>
-    <string name="step_2"  translatable="false">Step 2 :</string>
-    <string name="give_correct_answer"  translatable="false">Give correct answer of your question and click on show passcode then you will get back your passcode.</string>
-    <string name="security"  translatable="false">Security</string>
-    <string name="give_answer_of"  translatable="false">Give answer of your question and retrieve your forgot passcode.</string>
-    <string name="answer"  translatable="false">Answer :</string>
-    <string name="answer_"  translatable="false">Answer</string>
-    <string name="show_passcode"  translatable="false">Show Passcode</string>
-    <string name="set_answer"  translatable="false">Set Answer</string>
-    <string name="break_in_report"  translatable="false">Break-in-Report</string>
-    <string name="recovery_passcode"  translatable="false">Recover Passcode</string>
-    <string name="backup"  translatable="false">Backup</string>
-    <string name="backup_and_restore"  translatable="false">Backup And Restore</string>
-    <string name="rate_app"  translatable="false">Rate App</string>
-    <string name="more_apps"  translatable="false">More Apps</string>
-    <string name="please_wait"  translatable="false">Please wait...</string>
-    <string name="browser_setting"  translatable="false">Browser Settings</string>
-    <string name="back_to_calculator"  translatable="false">Back To Calculator</string>
-    <string name="lock_setting"  translatable="false">Lock Settings</string>
-    <string name="write_your_note_here"  translatable="false">Description</string>
-    <string name="add_notes"  translatable="false">Add notes from here.</string>
-    <string name="add_credentials"  translatable="false">Add credentials from here.</string>
-    <string name="add_photos"  translatable="false">Add photos from here.</string>
-    <string name="add_videos"  translatable="false">Add videos from here.</string>
-    <string name="search_here"  translatable="false">Search Here</string>
+    <string name="ChangePassword" translatable="false">Change Password</string>
+    <string name="decoy_message" translatable="false">Your all Decoy account data will be lost. Do you want to continue?</string>
+    <string name="success_backup_msg_dialog" translatable="false"><![CDATA[Your data has been backup into your Google Drive with name <b>CalculatorBackup.zip</b>, so please don\'t delete that file otherwise you can\'t restore your data. ]]></string>
+    <string name="success_restore_msg_dialog" translatable="false"><![CDATA[Your backup will automatically restore after download. ]]></string>
+    <string name="confirmation" translatable="false">Are you sure want to leave this page?</string>
+    <string name="delete_image_message" translatable="false">Are you sure you want to delete from vault?</string>
+    <string name="share_intent_images" translatable="false">Image</string>
+    <string name="share_intent_Videos" translatable="false">Video</string>
+    <string name="how_to_recover_passcode" translatable="false">How To Recover Passcode</string>
+    <string name="step_1" translatable="false">Step 1 :</string>
+    <string name="first_enter_0000" translatable="false">First enter 0000 in Calculator and press % button.</string>
+    <string name="step_2" translatable="false">Step 2 :</string>
+    <string name="give_correct_answer" translatable="false">Give correct answer of your question and click on show passcode then you will get back your passcode.</string>
+    <string name="security" translatable="false">Security</string>
+    <string name="give_answer_of" translatable="false">Give answer of your question and retrieve your forgot passcode.</string>
+    <string name="answer" translatable="false">Answer :</string>
+    <string name="answer_" translatable="false">Answer</string>
+    <string name="show_passcode" translatable="false">Show Passcode</string>
+    <string name="set_answer" translatable="false">Set Answer</string>
+    <string name="break_in_report" translatable="false">Break-in-Report</string>
+    <string name="recovery_passcode" translatable="false">Recover Passcode</string>
+    <string name="backup" translatable="false">Backup</string>
+    <string name="backup_and_restore" translatable="false">Backup And Restore</string>
+    <string name="rate_app" translatable="false">Rate App</string>
+    <string name="more_apps" translatable="false">More Apps</string>
+    <string name="please_wait" translatable="false">Please wait...</string>
+    <string name="browser_setting" translatable="false">Browser Settings</string>
+    <string name="back_to_calculator" translatable="false">Back To Calculator</string>
+    <string name="lock_setting" translatable="false">Lock Settings</string>
+    <string name="write_your_note_here" translatable="false">Description</string>
+    <string name="add_notes" translatable="false">Add notes from here.</string>
+    <string name="add_credentials" translatable="false">Add credentials from here.</string>
+    <string name="add_photos" translatable="false">Add photos from here.</string>
+    <string name="add_videos" translatable="false">Add videos from here.</string>
+    <string name="search_here" translatable="false">Search Here</string>
 
     <string-array name="forgot_passcode_questions">
         <item>What is your favorite team?</item>
@@ -150,7 +148,7 @@
         <item>Who was your childhood hero?</item>
     </string-array>
 
-    <string name="ad_attribution"  translatable="false">Ad</string>
+    <string name="ad_attribution" translatable="false">Ad</string>
     <string-array name="continent">
         <item>Africa</item>
         <item>America</item>
@@ -185,78 +183,79 @@
 
 
     <!--ad IDs LIVE-->
-    <string name="banner_ad_unit_id"  translatable="false">ca-app-pub-1168261283036318/5360510180</string>
-    <string name="inter_ad_unit_id"  translatable="false">ca-app-pub-1168261283036318/9108183509</string>
-    <string name="inter_ad_unit_id1"  translatable="false">ca-app-pub-1168261283036318/1960339074</string>
-    <string name="inter_ad_unit_id2"  translatable="false">ca-app-pub-1168261283036318/6449982495</string>
-    <string name="native_ad_unit_id"  translatable="false">ca-app-pub-1168261283036318/6060839027</string>
-    <string name="native_ad_unit_id1"  translatable="false">ca-app-pub-1168261283036318/2605449719</string>
-    <string name="native_ad_unit_id2"  translatable="false">ca-app-pub-1168261283036318/5568199566</string>
-    <string name="app_id"  translatable="false">ca-app-pub-1168261283036318~6865163546</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-1168261283036318/5360510180</string>
+    <string name="inter_ad_unit_id" translatable="false">ca-app-pub-1168261283036318/9108183509</string>
+    <string name="inter_ad_unit_id1" translatable="false">ca-app-pub-1168261283036318/1960339074</string>
+    <string name="inter_ad_unit_id2" translatable="false">ca-app-pub-1168261283036318/6449982495</string>
+    <string name="native_ad_unit_id" translatable="false">ca-app-pub-1168261283036318/6060839027</string>
+    <string name="native_ad_unit_id1" translatable="false">ca-app-pub-1168261283036318/2605449719</string>
+    <string name="native_ad_unit_id2" translatable="false">ca-app-pub-1168261283036318/5568199566</string>
+    <string name="app_id" translatable="false">ca-app-pub-1168261283036318~6865163546</string>
 
     <!-- Mopub Ads intID -->
-    <string name="mopub_int_id"  translatable="false">98dfc4753cf54d58afa7be129898f56e</string>
+    <string name="mopub_int_id" translatable="false">98dfc4753cf54d58afa7be129898f56e</string>
 
     <!-- Applovin applovin.sdk.key-->
-    <string name="applovin_sdk_key"  translatable="false">eruI7aE39Fwu0q7Jmet5Sk1p7p3rJSR-oFggKdAWDdsTAux2__wIXaFIh8Re3c1IgWRs1QZa8n1KQdupymguA5</string>
+    <string name="applovin_sdk_key" translatable="false">eruI7aE39Fwu0q7Jmet5Sk1p7p3rJSR-oFggKdAWDdsTAux2__wIXaFIh8Re3c1IgWRs1QZa8n1KQdupymguA5</string>
 
     <!--in-app purchase test id-->
     <!--<string name="ads_product_key"  translatable="false">android.test.purchased</string>-->
     <!--<string name="licenseKey"  translatable="false">bGoa+V7g/yqDXvKRqq+JTFn4uQZbPiQJo4pf9RzJ</string>-->
 
     <!--in-app purchase live id-->
-    <string name="ads_product_key"  translatable="false">com.calculator.vault.adsremove</string>
-    <string name="licenseKey"  translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtuOnNXSdbWDJp0h2QbrgLopfyP91qsOie11XlPNEH7OHVlEB7b2Iwvj6aSTbuPd8CXEN+9RTm93V+A2P4Twi7rJkddPqQ3nx7SgKQ7tMtu2gdry9/ivxhFttPXtzVzP/5W3/i1NFd9r1EMPQibSYUC3IicHFtWh0B/T7Xe6U7Jnr1Ym0RgBrtikBdNSY9Lz3IKN0EXmw4jog9tYP012RaKVf0eRdNQcKFEW0xGEkzgD91CUcRAR9tizWw90mpl6DadT0ZxHSgTmICWVZGrBW5VMtetSWQwNklYIaDO0hut93hJaKBQJPiYLmsK0kpSJecnnjevsmOowJyq17dJcmfQIDAQAB</string>
-<!--
+    <string name="ads_product_key" translatable="false">com.calculator.vault.adsremove</string>
+    <string name="licenseKey" translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtuOnNXSdbWDJp0h2QbrgLopfyP91qsOie11XlPNEH7OHVlEB7b2Iwvj6aSTbuPd8CXEN+9RTm93V+A2P4Twi7rJkddPqQ3nx7SgKQ7tMtu2gdry9/ivxhFttPXtzVzP/5W3/i1NFd9r1EMPQibSYUC3IicHFtWh0B/T7Xe6U7Jnr1Ym0RgBrtikBdNSY9Lz3IKN0EXmw4jog9tYP012RaKVf0eRdNQcKFEW0xGEkzgD91CUcRAR9tizWw90mpl6DadT0ZxHSgTmICWVZGrBW5VMtetSWQwNklYIaDO0hut93hJaKBQJPiYLmsK0kpSJecnnjevsmOowJyq17dJcmfQIDAQAB</string>
+    <!--
     <string name="remove_ad_msg"  translatable="false">Do you want to remove ads?</string>
     <string name="purchased_msg"  translatable="false">You have already purchased.</string>
     <string name="remove_ads_msg"  translatable="false">Ads remove successfully from app. Enjoy using app without any interference.</string>
     <string name="something_wrong"  translatable="false">Somthing went Wrong</string>
     <string name="yes"  translatable="false">Yes</string>
     <string name="no"  translatable="false">No</string>-->
-    <string name="remove_ads"  translatable="false">Remove Ads</string>
-    <string name="share_app"  translatable="false">Share App</string>
-    <string name="title_amp_subject"  translatable="false">Title and Subject</string>
-    <string name="notes"  translatable="false">Notes</string>
-    <string name="Other"  translatable="false">Other Files</string>
-    <string name="other_files"  translatable="false">Other Files</string>
+    <string name="remove_ads" translatable="false">Remove Ads</string>
+    <string name="share_app" translatable="false">Share App</string>
+    <string name="title_amp_subject" translatable="false">Title and Subject</string>
+    <string name="notes" translatable="false">Notes</string>
+    <string name="Other" translatable="false">Other Files</string>
+    <string name="other_files" translatable="false">Other Files</string>
 
-    <string name="accessibility_service_desc"  translatable="false">"Calculator Vault locks applications that you have chosen to be locked.\n
+    <string name="accessibility_service_desc" translatable="false">"Calculator Vault locks applications that you have chosen to be locked.\n
 Calculator Vault performs:\n
 Observe your actions:-\n
 Calculator Vault observers \"typeWindowStateChanged\" event to detect current focus when you open any locked app.\n
 Privacy Note:-\n
 This application don't store or send any kind of your information. This service is only used to retrieve application window when user opens locked app."</string>
-    <string name="accessibility_service_summary"  translatable="false">Lock app using CalculatorVault</string>
-    <string name="lock_theme"  translatable="false">Lock Theme</string>
-    <string name="change_pattern"  translatable="false">Change Pattern</string>
-    <string name="enable_pattern_lock"  translatable="false">Enable Pattern Lock</string>
-    <string name="use_fingerprint_to_unlock"  translatable="false">Use Fingerprint To Unlock</string>
+    <string name="accessibility_service_summary" translatable="false">Lock app using CalculatorVault</string>
+    <string name="lock_theme" translatable="false">Lock Theme</string>
+    <string name="change_pattern" translatable="false">Change Pattern</string>
+    <string name="enable_pattern_lock" translatable="false">Enable Pattern Lock</string>
+    <string name="use_fingerprint_to_unlock" translatable="false">Use Fingerprint To Unlock</string>
 
-    <string name="message_pattern_dot_added"  translatable="false">Dot added to pattern</string>
-    <string name="message_pattern_started"  translatable="false">Pattern drawing started</string>
-    <string name="message_pattern_detected"  translatable="false">Pattern drawing completed</string>
-    <string name="message_pattern_cleared"  translatable="false">Pattern cleared</string>
-    <string name="set_new_pattern"  translatable="false">Set new pattern.</string>
-    <string name="draw_old_pattern"  translatable="false">Draw old pattern.</string>
-    <string name="uninstall_protection"  translatable="false">Uninstall Protection</string>
+    <string name="message_pattern_dot_added" translatable="false">Dot added to pattern</string>
+    <string name="message_pattern_started" translatable="false">Pattern drawing started</string>
+    <string name="message_pattern_detected" translatable="false">Pattern drawing completed</string>
+    <string name="message_pattern_cleared" translatable="false">Pattern cleared</string>
+    <string name="set_new_pattern" translatable="false">Set new pattern.</string>
+    <string name="draw_old_pattern" translatable="false">Draw old pattern.</string>
+    <string name="uninstall_protection" translatable="false">Uninstall Protection</string>
 
-    <string name="description"  translatable="false">Click Activate to On/Off device</string>
-    <string name="learn_more"  translatable="false">Learn More</string>
-    <string name="sponsored"  translatable="false">Sponsored</string>
+    <string name="description" translatable="false">Click Activate to On/Off device</string>
+    <string name="learn_more" translatable="false">Learn More</string>
+    <string name="sponsored" translatable="false">Sponsored</string>
 
-    <string name="notification_access"  translatable="false">Notification access</string>
-    <string name="Accessibility"  translatable="false">Accessibility</string>
-    <string name="Usage_Access"  translatable="false">Usage Access</string>
-    <string name="an_application_with"  translatable="false"><![CDATA[An application with Backup and Restore & without any Ads]]></string>
+    <string name="notification_access" translatable="false">Notification access</string>
+    <string name="Accessibility" translatable="false">Accessibility</string>
+    <string name="Usage_Access" translatable="false">Usage Access</string>
+    <string name="an_application_with" translatable="false"><![CDATA[An application with Backup and Restore & without any Ads]]></string>
     // Live Ids
-   <!-- <string name="ads_product_key"  translatable="false">com.smart.toolbox.adsremove</string>
+    <!-- <string name="ads_product_key"  translatable="false">com.smart.toolbox.adsremove</string>
     <string name="licenseKey"  translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApjtk4DFAUvan5a1IscrGp1DnIVuGXbRrIkgq+ybJuz3Ne+1Hv6hpVL89cdFVMdV9eeZYddmRaK60TWNgrIRkqMg/FutvMC6wO4mkhSXR2PyQ3hYfyTTrlIJ8j9+jdvHA/7m2nGbfzYfTyF77v774MTnNcyMzUIk3yD2zy7SyFrqHXRxvllgebotalABGJModFr73cg8a3tMEbR5hME86uTR7p2qYHjUamyds5dqpyl8djlmIUkrewUgqFCnpOEwoE58tlZBKq3lP8TkYInhGP9orAnORAJZWuU4cL/2hC/B0xEDrwcISTrMm6VW7rAvgHcjQLOLacxpgSYyYHj2CQQIDAQAB</string>
 -->
-    <string name="admob_app_id"  translatable="false">ca-app-pub-1168261283036318~1076159555</string>
-    <string name="interstitial_full_screen"  translatable="false">ca-app-pub-1168261283036318/1846261846</string>/
-    <string name="native_ad_id"  translatable="false">ca-app-pub-1168261283036318/1846261846</string>
-<!--
+    <string name="admob_app_id" translatable="false">ca-app-pub-1168261283036318~1076159555</string>
+    <string name="interstitial_full_screen" translatable="false">ca-app-pub-1168261283036318/1846261846</string>
+    /
+    <string name="native_ad_id" translatable="false">ca-app-pub-1168261283036318/1846261846</string>
+    <!--
     bmi index
     <string name="bmiverySeverely"  translatable="false">Very Severely Underweight</string>
     <string name="bmiSeverely"  translatable="false">Severely Underweight </string>
@@ -343,8 +342,6 @@ This application don't store or send any kind of your information. This service 
     <string name="dlg_more_apps" translatable="false">Would you like to try more?</string>
     <string name="no_internet" translatable="false">No Internet Connection</string>
     <string name="no_internet_retry" translatable="false">Try again</string>
-
-
 
 
     <string name="remove_ad_msg" translatable="false">Do you want to remove ads?</string>

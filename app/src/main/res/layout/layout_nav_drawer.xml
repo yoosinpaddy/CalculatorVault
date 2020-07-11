@@ -5,9 +5,9 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/img_nav_header"
@@ -22,6 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
                 android:text="Smart Tools App"
                 android:textColor="@color/white"
@@ -53,6 +54,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
                 android:text="@string/back_to_calculator"
                 android:textColor="@color/navy_blue"
                 android:textSize="18sp"
@@ -73,15 +75,15 @@
                 app:srcCompat="@drawable/ic_right_arrow" />
 
         </LinearLayout>
-   
-       
+
+
         <LinearLayout
             android:id="@+id/ll_nav_anti_lost"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="@dimen/_25sdp"
@@ -96,6 +98,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
                 android:text="@string/anti_lost"
                 android:textColor="@color/navy_blue"
                 android:textSize="18sp"
@@ -138,6 +141,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
                 android:text="@string/rate_app"
                 android:textColor="@color/navy_blue"
                 android:textSize="18sp"
@@ -180,6 +184,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
                 android:text="@string/more_apps"
                 android:textColor="@color/navy_blue"
                 android:textSize="18sp"
@@ -225,6 +230,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
                 android:text="@string/remove_ads"
                 android:textColor="@color/navy_blue"
                 android:textSize="18sp"

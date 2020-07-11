@@ -39,6 +39,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv_msg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -76,6 +77,7 @@
 
 
                             <TextView
+                                android:fontFamily="@font/poppins_regular"
                                 android:id="@+id/tv_yes"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"

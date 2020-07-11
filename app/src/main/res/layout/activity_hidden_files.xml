@@ -19,6 +19,7 @@
             android:background="@drawable/j_toolbar_green">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
@@ -46,6 +47,7 @@
                     android:src="@drawable/j_edit" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/jTvCancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -150,6 +152,7 @@
                         android:layout_weight="1">
 
                         <TextView
+                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -171,6 +174,7 @@
                         android:layout_weight="1">
 
                         <TextView
+                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -192,6 +196,7 @@
                         android:layout_weight="1">
 
                         <TextView
+                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -253,7 +258,7 @@
             android:gravity="center"
             android:layout_height="@dimen/_20sdp">
 
-            <TextView
+            <TextView android:fontFamily="@font/poppins_regular"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -267,6 +272,7 @@
     </LinearLayout>
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/iv_no_images"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -317,6 +323,7 @@
                 app:layout_constraintTop_toTopOf="@+id/iv_add_photos" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/no_photos_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

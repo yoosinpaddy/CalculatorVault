@@ -40,6 +40,7 @@
                 android:layout_height="@dimen/_45sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_file_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

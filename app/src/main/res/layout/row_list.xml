@@ -29,6 +29,7 @@
                 android:src="@drawable/j_note_img" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_note_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,6 +47,7 @@
                 tools:text="John Files" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_note_timestamp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -17,6 +17,7 @@
             android:background="@drawable/j_toolbar_blue">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_titleVideos"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
                 android:gravity="center_vertical">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_editcontrol"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,6 +118,7 @@
                         android:layout_weight="1">
 
                         <TextView
+                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -137,6 +140,7 @@
                         android:layout_weight="1">
 
                         <TextView
+                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -158,6 +162,7 @@
                         android:layout_weight="1">
 
                         <TextView
+                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -209,7 +214,7 @@
             android:gravity="center"
             android:layout_height="@dimen/_40sdp">
 
-            <TextView
+            <TextView android:fontFamily="@font/poppins_regular"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -222,6 +227,7 @@
     </LinearLayout>
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/iv_no_images"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -269,6 +275,7 @@
                 app:layout_constraintStart_toEndOf="@+id/iv_add_videos" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/no_videos_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -25,6 +25,7 @@
             tools:srcCompat="@tools:sample/avatars[2]" />
 
         <TextView
+            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_appName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

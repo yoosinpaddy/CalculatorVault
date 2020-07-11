@@ -23,6 +23,7 @@
                 android:background="@drawable/j_toolbar_orange">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="@dimen/_180sdp"
                     android:layout_height="wrap_content"
@@ -87,13 +88,14 @@
                 android:padding="@dimen/_10sdp">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_weight="1"
                     android:text="@string/breakAlert"
                     android:textColor="@color/navy_blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:textSize="@dimen/_16ssp"/>
+                    android:textSize="@dimen/_16ssp" />
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/sw_breakinreport"

@@ -22,6 +22,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_recording_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,6 +43,7 @@
                     android:layout_weight="0.5">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Date: "
@@ -50,6 +52,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv_date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -66,6 +69,7 @@
                     android:layout_weight="0.5">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Time: "
@@ -74,6 +78,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

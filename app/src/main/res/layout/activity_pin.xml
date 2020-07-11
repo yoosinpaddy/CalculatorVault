@@ -38,6 +38,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/pin_tv_appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -236,6 +237,7 @@
         app:layout_constraintTop_toTopOf="@+id/pin_tv_zero" />
 
     <TextView
+        android:fontFamily="@font/poppins_regular"
         android:id="@+id/pin_tv_blank"
         android:layout_width="@dimen/_32sdp"
         android:layout_height="@dimen/_32sdp"

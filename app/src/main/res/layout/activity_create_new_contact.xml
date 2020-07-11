@@ -15,12 +15,14 @@
             android:background="@drawable/j_toolbar_green">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:singleLine="true"
                 android:text="@string/ContactDetails"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -101,6 +103,7 @@
                 android:src="@drawable/j_img_user" />
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_contact_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,6 +121,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -140,6 +144,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -162,6 +167,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -185,6 +191,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -207,6 +214,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -215,6 +223,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/ed_contactBirthday"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"

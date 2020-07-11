@@ -26,6 +26,7 @@
             android:paddingRight="@dimen/_5ssp">
 
             <TextView
+                android:fontFamily="@font/poppins_regular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_5ssp"
@@ -52,6 +53,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
@@ -91,7 +93,7 @@
                      android:gravity="center"
                      android:padding="@dimen/_4sdp">
 
-                     <TextView
+                     <TextView android:fontFamily="@font/poppins_regular"
                          android:id="@+id/tv_btn_no"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
@@ -114,7 +116,7 @@
                      android:gravity="center"
                      android:padding="@dimen/_4sdp">
 
-                     <TextView
+                     <TextView android:fontFamily="@font/poppins_regular"
                          android:id="@+id/tv_btn_yes"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
