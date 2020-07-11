@@ -195,12 +195,13 @@
 
                     <Button
                         android:id="@+id/btn_show_data"
-                        android:layout_width="wrap_content"
-                        android:layout_height="56dp"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/j_universal_btn_bg"
+                        android:backgroundTint="#F27D8D"
                         android:layout_gravity="center"
                         android:layout_margin="12dp"
                         android:layout_weight="1"
-                        android:background="@drawable/j_img_btn_calculate"
                         android:capitalize="none"
                         android:text="Calculate"
                         android:textColor="@color/white"
@@ -208,12 +209,13 @@
 
                     <Button
                         android:id="@+id/btn_clear_data"
-                        android:layout_width="wrap_content"
-                        android:layout_height="56dp"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/j_universal_btn_bg"
+                        android:backgroundTint="#1A1C1E"
                         android:layout_gravity="center"
                         android:layout_margin="12dp"
                         android:layout_weight="1"
-                        android:background="@drawable/j_img_btn_m_clear"
                         android:capitalize="none"
                         android:text="Clear"
                         android:textColor="@color/white"

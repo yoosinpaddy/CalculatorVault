@@ -229,11 +229,12 @@
 
                 <TextView
                     android:id="@+id/ll_save_notes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="56dp"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:background="@drawable/j_btn_save_blue"
+                    android:background="@drawable/j_universal_btn_bg"
+                    android:backgroundTint="#3F70FF"
                     android:gravity="center"
                     android:text="@string/Save"
                     android:textColor="@color/white"
@@ -242,11 +243,12 @@
 
                 <TextView
                     android:id="@+id/btnClearNotesE"
-                    android:layout_width="wrap_content"
-                    android:layout_height="56dp"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:background="@drawable/j_add_cre_clear"
+                    android:background="@drawable/j_universal_btn_bg"
+                    android:backgroundTint="#1A1C1E"
                     android:gravity="center"
                     android:text="Clear"
                     android:textColor="@color/white"

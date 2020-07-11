@@ -89,6 +89,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:padding="4dp"
+                app:tabPadding="4dp"
                 app:tabBackground="@drawable/my_tabs_selector"
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@color/transparent"

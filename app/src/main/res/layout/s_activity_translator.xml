@@ -27,6 +27,7 @@
 
                 android:paddingTop="17dp"
                 android:paddingBottom="17dp"
+                android:layout_marginStart="8dp"
                 android:src="@drawable/ic_back" />
 
 
@@ -169,18 +170,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/j_img_eng" />
-
                 <TextView
                     android:id="@+id/tv_from_lang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginEnd="4dp"
                     android:gravity="center"
@@ -299,8 +293,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.5"
-                android:background="@drawable/j_img_hindi"
-                android:gravity="end|center_vertical"
+                android:gravity="center"
                 android:paddingStart="@dimen/_8sdp"
                 android:paddingTop="@dimen/_8sdp"
                 android:paddingEnd="8dp"

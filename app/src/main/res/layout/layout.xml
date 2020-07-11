@@ -14,10 +14,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            app:contentInsetStart="0dp"
             android:background="@color/white"
             android:fitsSystemWindows="true"
-            android:minHeight="?attr/actionBarSize">
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -58,17 +58,17 @@
                     android:paddingRight="10dp"
                     android:src="@drawable/ic_ads_remove"
                     android:tint="@color/navy_blue"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/babalao"
                     android:layout_width="@dimen/_35sdp"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_alignParentStart="true"
+                    android:clickable="true"
                     android:contentDescription="TODO"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:clickable="true"
                     android:src="@drawable/ic_menu1"
                     android:tint="@color/navy_blue"
                     android:visibility="visible" />
@@ -78,11 +78,11 @@
                     android:layout_width="@dimen/_35sdp"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_alignParentEnd="true"
+                    android:clickable="true"
                     android:contentDescription="TODO"
+                    android:onClick="settings"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:onClick="settings"
-                    android:clickable="true"
                     android:src="@drawable/ic_setting"
                     android:tint="@color/navy_blue"
                     android:visibility="visible" />
@@ -101,9 +101,9 @@
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
-        android:layout_below="@id/toolbar_top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_top">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -114,9 +114,9 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/mCLMain"
@@ -128,13 +128,12 @@
                         <LinearLayout
                             android:id="@+id/ll_j_top"
                             android:layout_width="match_parent"
-                            android:layout_height="176dp"
-                            android:background="@drawable/j_top_home_layout_bg"
+                            android:layout_height="180dp"
+                            android:layout_margin="16dp"
+                            android:background="@drawable/j_img_cardddd"
                             android:gravity="bottom|center_horizontal"
                             android:orientation="vertical"
-                            android:paddingStart="36dp"
-                            android:paddingEnd="36dp"
-                            android:paddingBottom="36dp"
+                            android:padding="16dp"
                             android:weightSum="4"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -152,6 +151,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:gravity="bottom"
                                 android:orientation="horizontal"
                                 android:weightSum="4"
@@ -174,6 +174,8 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Translator"
                                         android:textColor="@color/navy_blue" />
 
@@ -196,6 +198,8 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Calculator"
                                         android:textColor="@color/navy_blue" />
 
@@ -218,6 +222,8 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Recorder"
                                         android:textColor="@color/navy_blue" />
 
@@ -240,7 +246,9 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
                                         android:text="View More"
+                                        android:textStyle="bold"
                                         android:textColor="@color/navy_blue" />
 
                                 </LinearLayout>
@@ -252,13 +260,10 @@
                         <LinearLayout
                             android:id="@+id/ll_j_middle"
                             android:layout_width="match_parent"
-                            android:layout_height="176dp"
+                            android:layout_height="wrap_content"
                             android:gravity="bottom|center_horizontal"
                             android:orientation="vertical"
-                            android:paddingStart="36dp"
-                            android:paddingEnd="36dp"
-                            android:paddingBottom="36dp"
-                            android:weightSum="4"
+                            android:padding="16dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/ll_j_top">
 
@@ -290,14 +295,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="64dp"
+                                        android:layout_height="64dp"
                                         android:src="@drawable/j_img_home_contacts" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Contacts"
+                                        android:textStyle="bold"
                                         android:textColor="@color/white" />
 
                                 </LinearLayout>
@@ -312,14 +318,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="64dp"
+                                        android:layout_height="64dp"
                                         android:src="@drawable/j_img_home_notes" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Notes"
+                                        android:textStyle="bold"
                                         android:textColor="@color/white" />
 
                                 </LinearLayout>
@@ -334,14 +341,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="64dp"
+                                        android:layout_height="64dp"
                                         android:src="@drawable/j_img_home_browser" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Browser"
+                                        android:textStyle="bold"
                                         android:textColor="@color/white" />
 
                                 </LinearLayout>
@@ -356,14 +364,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="64dp"
+                                        android:layout_height="64dp"
                                         android:src="@drawable/j_img_home_credentials" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Credentials"
+                                        android:textStyle="bold"
                                         android:textColor="@color/white" />
 
                                 </LinearLayout>
@@ -375,11 +384,12 @@
                         <LinearLayout
                             android:id="@+id/ll_j_bottom"
                             android:layout_width="match_parent"
-                            android:layout_height="276dp"
-                            android:background="@drawable/j_top_home_layout_bg"
+                            android:layout_height="264dp"
+                            android:layout_margin="16dp"
+                            android:background="@drawable/j_img_cardddd"
                             android:gravity="center_vertical"
                             android:orientation="vertical"
-                            android:padding="36dp"
+                            android:padding="16dp"
                             android:weightSum="4"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/ll_j_middle">
@@ -393,7 +403,7 @@
                                 <LinearLayout
                                     android:id="@+id/ll_photos"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="80dp"
+                                    android:layout_height="96dp"
                                     android:layout_margin="4dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/j_lbg_photos"
@@ -409,15 +419,17 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
                                         android:text="Photos"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
                                 <LinearLayout
                                     android:id="@+id/ll_videos"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="80dp"
+                                    android:layout_height="96dp"
                                     android:layout_margin="4dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/j_home_img_mvideos"
@@ -433,8 +445,10 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
                                         android:text="Videos"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -449,7 +463,7 @@
                                 <LinearLayout
                                     android:id="@+id/ll_appLock"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="80dp"
+                                    android:layout_height="96dp"
                                     android:layout_margin="4dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/j_img_home_app_lock"
@@ -465,15 +479,17 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
                                         android:text="App Lock"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
                                 <LinearLayout
                                     android:id="@+id/ll_other"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="80dp"
+                                    android:layout_height="96dp"
                                     android:layout_margin="4dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/j_img_home_other_files"
@@ -489,8 +505,10 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
                                         android:text="Other Files"
-                                        android:textColor="@color/white" />
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
@@ -509,13 +527,12 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="400dp"
-                            android:background="@drawable/j_top_home_layout_bg"
-                            android:gravity="center_horizontal"
+                            android:layout_height="416dp"
+                            android:layout_margin="16dp"
+                            android:background="@drawable/j_img_cardddd"
+                            android:gravity="center_vertical"
                             android:orientation="vertical"
-                            android:paddingStart="36dp"
-                            android:paddingEnd="36dp"
-                            android:paddingBottom="36dp"
+                            android:padding="16dp"
                             android:weightSum="4"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -523,7 +540,6 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="76dp"
                                 android:gravity="bottom"
                                 android:orientation="horizontal"
                                 android:weightSum="3">
@@ -537,13 +553,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_home_img_translator" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Translator"
                                         android:textColor="@color/navy_blue" />
 
@@ -559,13 +577,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_home_img_calculator" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Calculator"
                                         android:textColor="@color/navy_blue" />
 
@@ -581,13 +601,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_home_img_recorder" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Recorder"
                                         android:textColor="@color/navy_blue" />
 
@@ -613,13 +635,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_img_qr" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="QR Scanner"
                                         android:textColor="@color/navy_blue" />
 
@@ -635,13 +659,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_img_flashlight" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Flashlight"
                                         android:textColor="@color/navy_blue" />
 
@@ -657,13 +683,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_img_bmi" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="BMI"
                                         android:textColor="@color/navy_blue" />
 
@@ -689,13 +717,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_img_age" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Age Calculator"
                                         android:textColor="@color/navy_blue" />
 
@@ -711,13 +741,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_img_tts" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Text to speech"
                                         android:textColor="@color/navy_blue" />
 
@@ -733,13 +765,15 @@
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:layout_width="56dp"
-                                        android:layout_height="56dp"
+                                        android:layout_width="72dp"
+                                        android:layout_height="72dp"
                                         android:src="@drawable/j_img_day_counter" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:textStyle="bold"
                                         android:text="Day Counter"
                                         android:textColor="@color/navy_blue" />
 

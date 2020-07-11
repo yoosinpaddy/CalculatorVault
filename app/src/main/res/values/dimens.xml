@@ -25,4 +25,6 @@
     //margintop //text size
     <dimen name="txt6">17dp</dimen>
     <dimen name="txt7">25dp</dimen>
+
+    <dimen name="radius_spinner">12dp</dimen>
 </resources>
