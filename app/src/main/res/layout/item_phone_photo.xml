@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="16dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:padding="5px">
+        android:gravity="center">
 
         <TableRow
             android:layout_width="match_parent"
@@ -27,22 +28,24 @@
                 tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
         </TableRow>
+
         <ImageView
             android:id="@+id/checkbox"
-            android:layout_margin="@dimen/_5sdp"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:layout_alignParentLeft="true"
-            android:visibility="invisible"
-            android:src="@drawable/mytickselect"/>
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/mytickselect"
+            android:visibility="invisible" />
+
         <ImageView
             android:id="@+id/play_iv"
             android:layout_width="@dimen/_35sdp"
             android:layout_height="@dimen/_35sdp"
             android:layout_centerInParent="true"
-            android:src="@drawable/ic_play1"
-            android:visibility="gone"
-            />
+            android:src="@drawable/j_img_play"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/tv_album_name"
             android:layout_width="match_parent"
@@ -60,4 +63,4 @@
     </RelativeLayout>
 
 
-</RelativeLayout>
+</androidx.cardview.widget.CardView>

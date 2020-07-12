@@ -66,10 +66,12 @@
 
             <ImageView
                 android:id="@+id/iv_back"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="12dp"
+                android:padding="2dp"
                 android:src="@drawable/j_btn_back" />
 
         </RelativeLayout>
@@ -92,12 +94,6 @@
             android:layout_height="match_parent"
             android:layout_weight=".9"
             android:orientation="vertical">
-
-            <View
-                android:id="@+id/view_ShareDeleteSave"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey" />
 
             <RelativeLayout
                 android:id="@+id/rl_ShareDeleteSave"

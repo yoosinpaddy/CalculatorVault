@@ -20,15 +20,13 @@
 
             <ImageView
                 android:id="@+id/iv_back"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
-
-                android:paddingTop="17dp"
-                android:paddingBottom="17dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_back" />
+                android:layout_marginStart="12dp"
+                android:padding="2dp"
+                android:src="@drawable/j_btn_back" />
 
 
             <RelativeLayout
@@ -36,12 +34,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
                     android:singleLine="true"
                     android:text="Translator"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -96,12 +94,12 @@
         android:weightSum="1">
 
         <TextView
-            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_show_name1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.25"
+            android:fontFamily="@font/poppins_regular"
             android:gravity="center"
             android:singleLine="true"
             android:text="English"
@@ -119,12 +117,12 @@
             android:src="@drawable/j_img_r_translate" />
 
         <TextView
-            android:fontFamily="@font/poppins_regular"
             android:id="@+id/tv_show_name2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.25"
+            android:fontFamily="@font/poppins_regular"
             android:gravity="center"
             android:singleLine="true"
             android:text="Hindi"
@@ -157,12 +155,12 @@
             android:weightSum="1">
 
             <TextView
-                android:fontFamily="@font/poppins_regular"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.25"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
                 android:text="From: "
                 android:textColor="@color/navy_blue"
@@ -175,13 +173,13 @@
                 android:layout_weight="0.5">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_from_lang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/poppins_regular"
                     android:gravity="center"
                     android:padding="@dimen/_8sdp"
                     android:singleLine="true"
@@ -282,11 +280,11 @@
             android:weightSum="1">
 
             <TextView
-                android:fontFamily="@font/poppins_regular"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.25"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
                 android:text="To: "
                 android:textColor="@color/navy_blue"
@@ -294,12 +292,12 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:fontFamily="@font/poppins_regular"
                 android:id="@+id/tv_to_lang"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.5"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
                 android:paddingStart="@dimen/_8sdp"
                 android:paddingTop="@dimen/_8sdp"
