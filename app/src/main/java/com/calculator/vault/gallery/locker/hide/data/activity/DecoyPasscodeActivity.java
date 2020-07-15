@@ -166,7 +166,7 @@ public class DecoyPasscodeActivity extends AppCompatActivity implements View.OnC
                 @Override
                 public void onLoad() {
                     moIvBlast.setVisibility(View.GONE);
-                    moIvMoreApp.setVisibility(View.VISIBLE);
+//                    moIvMoreApp.setVisibility(View.VISIBLE);
                 }
 
                 @Override

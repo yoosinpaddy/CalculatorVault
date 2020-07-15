@@ -48,21 +48,21 @@ public class BMI_TAB extends Fragment {
 
         //get data from s_activity_world_clock activity to fragment
         //tv_1.setText("" + BMIShareData.bmidata);
-       tv_1.setText(String.format("%.2f", BMIShareData.bmidata));
+        tv_1.setText(String.format("%.2f", BMIShareData.bmidata));
         //set text color
-         if (BMIShareData.bmidata < 16.0){
+        if (BMIShareData.bmidata < 16.0) {
             tv_1.setTextColor(getResources().getColor(R.color.bmi_text7));
             // tv_2.setTextColor(getResources().getColor(R.color.bmi_text7));
-        }else if (BMIShareData.bmidata < 18.5){
+        } else if (BMIShareData.bmidata < 18.5) {
             tv_1.setTextColor(getResources().getColor(R.color.bmi_text2));
-             //tv_2.setTextColor(getResources().getColor(R.color.bmi_text2));
-         }else if (BMIShareData.bmidata < 25.0) {
+            //tv_2.setTextColor(getResources().getColor(R.color.bmi_text2));
+        } else if (BMIShareData.bmidata < 25.0) {
             tv_1.setTextColor(getResources().getColor(R.color.bmi_text4));
             // tv_2.setTextColor(getResources().getColor(R.color.bmi_text4));
-        }else  {
-             tv_1.setTextColor(getResources().getColor(R.color.bmi_text4));
-             //tv_2.setTextColor(getResources().getColor(R.color.bmi_text4));
-         }
+        } else {
+            tv_1.setTextColor(getResources().getColor(R.color.bmi_text4));
+            //tv_2.setTextColor(getResources().getColor(R.color.bmi_text4));
+        }
 
         // set text color
         int bmiColor = colorBMI(BMIShareData.bmidata);
@@ -79,47 +79,47 @@ public class BMI_TAB extends Fragment {
 
 
         Animation myAnim = AnimationUtils.loadAnimation(getContext(), R.anim.zoom_out_in_textview);
-        if (BMIShareData.bmidata < 16.0){
-                tv_3.setTextColor(getResources().getColor(R.color.bmi_text7));
-                tv_4.setTextColor(getResources().getColor(R.color.bmi_text7));
-                tv_3.startAnimation(myAnim);
-                tv_4.startAnimation(myAnim);
-            } else if (BMIShareData.bmidata < 16.9){
-                tv_5.setTextColor(getResources().getColor(R.color.bmi_text7));
-                tv_6.setTextColor(getResources().getColor(R.color.bmi_text7));
+        if (BMIShareData.bmidata < 16.0) {
+            tv_3.setTextColor(getResources().getColor(R.color.bmi_text7));
+            tv_4.setTextColor(getResources().getColor(R.color.bmi_text7));
+            tv_3.startAnimation(myAnim);
+            tv_4.startAnimation(myAnim);
+        } else if (BMIShareData.bmidata < 16.9) {
+            tv_5.setTextColor(getResources().getColor(R.color.bmi_text7));
+            tv_6.setTextColor(getResources().getColor(R.color.bmi_text7));
             tv_5.startAnimation(myAnim);
             tv_6.startAnimation(myAnim);
-            }else if (BMIShareData.bmidata < 18.4){
-                tv_7.setTextColor(getResources().getColor(R.color.bmi_text7));
-                tv_8.setTextColor(getResources().getColor(R.color.bmi_text7));
+        } else if (BMIShareData.bmidata < 18.4) {
+            tv_7.setTextColor(getResources().getColor(R.color.bmi_text7));
+            tv_8.setTextColor(getResources().getColor(R.color.bmi_text7));
             tv_7.startAnimation(myAnim);
             tv_8.startAnimation(myAnim);
-            }else if (BMIShareData.bmidata < 24.9){
-                tv_9.setTextColor(getResources().getColor(R.color.bmi_text2));
-                tv_10.setTextColor(getResources().getColor(R.color.bmi_text2));
+        } else if (BMIShareData.bmidata < 24.9) {
+            tv_9.setTextColor(getResources().getColor(R.color.bmi_text2));
+            tv_10.setTextColor(getResources().getColor(R.color.bmi_text2));
             tv_9.startAnimation(myAnim);
             tv_10.startAnimation(myAnim);
-            }else if (BMIShareData.bmidata < 25.9){
-                tv_11.setTextColor(getResources().getColor(R.color.bmi_text2));
-                tv_12.setTextColor(getResources().getColor(R.color.bmi_text2));
+        } else if (BMIShareData.bmidata < 25.9) {
+            tv_11.setTextColor(getResources().getColor(R.color.bmi_text2));
+            tv_12.setTextColor(getResources().getColor(R.color.bmi_text2));
             tv_11.startAnimation(myAnim);
             tv_12.startAnimation(myAnim);
-            }else if (BMIShareData.bmidata < 34.9){
-                tv_13.setTextColor(getResources().getColor(R.color.bmi_text4));
-                tv_14.setTextColor(getResources().getColor(R.color.bmi_text4));
+        } else if (BMIShareData.bmidata < 34.9) {
+            tv_13.setTextColor(getResources().getColor(R.color.bmi_text4));
+            tv_14.setTextColor(getResources().getColor(R.color.bmi_text4));
             tv_13.startAnimation(myAnim);
             tv_14.startAnimation(myAnim);
-            }else if (BMIShareData.bmidata < 39.9){
-                tv_15.setTextColor(getResources().getColor(R.color.bmi_text4));
-                tv_16.setTextColor(getResources().getColor(R.color.bmi_text4));
+        } else if (BMIShareData.bmidata < 39.9) {
+            tv_15.setTextColor(getResources().getColor(R.color.bmi_text4));
+            tv_16.setTextColor(getResources().getColor(R.color.bmi_text4));
             tv_15.startAnimation(myAnim);
             tv_16.startAnimation(myAnim);
-            }else  {
-                tv_17.setTextColor(getResources().getColor(R.color.bmi_text4));
-                tv_18.setTextColor(getResources().getColor(R.color.bmi_text4));
+        } else {
+            tv_17.setTextColor(getResources().getColor(R.color.bmi_text4));
+            tv_18.setTextColor(getResources().getColor(R.color.bmi_text4));
             tv_17.startAnimation(myAnim);
             tv_18.startAnimation(myAnim);
-            }
+        }
         return view;
     }
 

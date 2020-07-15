@@ -165,8 +165,12 @@ public class TranslatorActivity extends AppCompatActivity implements View.OnClic
         tv_to_lang.setText("" + toposlanguages.getName());
         tv_show_name1.setText("" + fromposlanguages.getName());
         tv_show_name2.setText("" + toposlanguages.getName());
+//        tv_from_lang.setCompoundDrawablesWithIntrinsicBounds(fromlangimg, 0, 0, 0);
+//        tv_to_lang.setCompoundDrawablesWithIntrinsicBounds(tolangimg, 0, 0, 0);
+
         tv_from_lang.setCompoundDrawablesWithIntrinsicBounds(fromlangimg, 0, 0, 0);
         tv_to_lang.setCompoundDrawablesWithIntrinsicBounds(tolangimg, 0, 0, 0);
+
         language_translator_srctext.setHint(fromposlanguages.getName());
         language_translator_dsttext.setHint(toposlanguages.getName());
     }
@@ -706,7 +710,7 @@ public class TranslatorActivity extends AppCompatActivity implements View.OnClic
                     iv_blast.setVisibility(View.VISIBLE);
                     ((AnimationDrawable) iv_blast.getBackground()).start();
 
-                    if (MainApplication.getInstance().requestNewInterstitial()) {
+                    if (MainApplication.getInstance()!= null && MainApplication.getInstance().requestNewInterstitial()) {
                         MainApplication.getInstance().mInterstitialAd.setAdListener(new AdListener() {
                             @Override
                             public void onAdClosed() {
@@ -731,6 +735,7 @@ public class TranslatorActivity extends AppCompatActivity implements View.OnClic
                             }
                         });
                     } else {
+                        Toast.makeText(TranslatorActivity.this, "Ad not loaded", Toast.LENGTH_SHORT).show();
                         iv_blast.setVisibility(View.GONE);
                         iv_more_app.setVisibility(View.GONE);
                     }
@@ -747,7 +752,7 @@ public class TranslatorActivity extends AppCompatActivity implements View.OnClic
             if (Share.isNeedToAdShow(this)) {
                 if (MainApplication.getInstance().mInterstitialAd.isLoaded()) {
                     Log.e("if", "if");
-                    iv_more_app.setVisibility(View.VISIBLE);
+//                    iv_more_app.setVisibility(View.VISIBLE);
                 } else {
                     MainApplication.getInstance().mInterstitialAd.setAdListener(null);
                     MainApplication.getInstance().mInterstitialAd = null;
@@ -758,7 +763,7 @@ public class TranslatorActivity extends AppCompatActivity implements View.OnClic
                         public void onAdLoaded() {
                             super.onAdLoaded();
                             Log.e("load", "load");
-                            iv_more_app.setVisibility(View.VISIBLE);
+//                            iv_more_app.setVisibility(View.VISIBLE);
                         }
 
                         @Override
@@ -774,7 +779,7 @@ public class TranslatorActivity extends AppCompatActivity implements View.OnClic
             }
 
         } catch (Exception e) {
-            iv_more_app.setVisibility(View.VISIBLE);
+//            iv_more_app.setVisibility(View.VISIBLE);
             e.printStackTrace();
         }
     }

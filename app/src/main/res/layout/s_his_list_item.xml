@@ -1,181 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:gravity="center_vertical"
-    android:layout_marginTop="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/card_view"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/_2sdp">
+        android:layout_height="120dp"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp">
 
         <LinearLayout
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" 
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="Age :"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
-
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:id="@+id/age"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="age"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Age :"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="age"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="weight :"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <TextView
+                            android:id="@+id/weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="weight"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="height :"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <TextView
+                            android:id="@+id/height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="height"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="weight :"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
-
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:id="@+id/weight"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="weight"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="BMI :"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/bmi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="age"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
 
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="height :"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
 
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:id="@+id/height"
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="height"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
 
-                </LinearLayout>
-            </LinearLayout>
+                        <TextView
+                            android:id="@+id/date"
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="weight"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal">
+                    </LinearLayout>
 
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="BMI :"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
-
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:id="@+id/bmi"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="age"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-
-                        android:id="@+id/date"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="weight"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="height"
+                            android:textStyle="bold"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="@dimen/_15ssp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:fontFamily="@font/poppins_regular"
-                        android:id="@+id/time"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="height"
-                        android:textColor="@color/navy_blue"
-                        android:textSize="@dimen/_15ssp" />
-
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
+
+</RelativeLayout>

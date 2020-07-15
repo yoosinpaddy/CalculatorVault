@@ -35,18 +35,18 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
                         android:text="BMI"
                         android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
                         android:text="24.9"
                         android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_12ssp"
@@ -59,21 +59,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:padding="4dp">
+                    android:padding="8dp">
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
                         android:text="Category"
                         android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
                         android:gravity="right"
                         android:text="Difference"
                         android:textColor="@color/navy_blue"
@@ -87,14 +87,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:padding="8dp">
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical"
                         android:layout_weight="@dimen/bmTEXT_WEIGHT"
+                        android:fontFamily="@font/poppins_regular"
                         android:text="Normal"
                         android:textColor="@color/navy_blue"
                         android:textSize="@dimen/_12ssp"
@@ -110,11 +111,13 @@
 
                 <TableLayout
                     android:layout_width="match_parent"
-                    android:layout_height="220dp"
-                    android:padding="16dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/j_bg_table_bmi"
-                    android:gravity="center_vertical">
+                    android:background="@drawable/j_tab_bmi_unselected"
+                    android:backgroundTint="@color/white"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp">
 
                     <TableRow
                         android:id="@+id/tablerow1"
@@ -124,18 +127,17 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv3"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/bmiverySeverely"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv4"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="≤16"
                             android:textColor="@color/navy_blue"
@@ -151,19 +153,18 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv5"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/bmiSeverely"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv6"
                             android:layout_marginRight="@dimen/_10sdp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="16.0-16.9"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
@@ -177,19 +178,18 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv7"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/bmiUnderweight"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv8"
                             android:layout_marginRight="@dimen/_10sdp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="17.0-18.4"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
@@ -203,19 +203,18 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv9"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/bminormal"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv10"
                             android:layout_marginRight="@dimen/_10sdp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="18.5-24.9"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
@@ -229,19 +228,18 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv11"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/bmiOverweight"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv12"
                             android:layout_marginRight="@dimen/_10sdp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="25.0-29.9"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
@@ -255,19 +253,18 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv13"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/obese1"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv14"
                             android:layout_marginRight="@dimen/_10sdp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="30.0-34.9"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
@@ -281,19 +278,18 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv15"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/obese2"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv16"
                             android:layout_marginRight="@dimen/_10sdp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="35.0-39.9"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
@@ -307,18 +303,17 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv17"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_weight="2"
+                            android:fontFamily="@font/poppins_regular"
                             android:text="@string/obese3"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv18"
                             android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="≥40"
                             android:textColor="@color/navy_blue"
@@ -333,14 +328,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:padding="8dp">
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv19"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
                         android:gravity="start"
                         android:text="Normal "
                         android:textColor="@color/navy_blue"
@@ -348,11 +343,11 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:fontFamily="@font/poppins_regular"
                         android:id="@+id/tv20"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
                         android:gravity="end"
                         android:text="18.5-24.9"
                         android:textColor="@color/navy_blue"

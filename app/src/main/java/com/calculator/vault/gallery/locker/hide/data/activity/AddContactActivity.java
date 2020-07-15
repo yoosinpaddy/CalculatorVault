@@ -318,9 +318,11 @@ public class AddContactActivity extends AppCompatActivity implements ContactList
         if (moContactListAdapter.getItemCount() < 1) {
             ll_nocontactView.setVisibility(View.VISIBLE);
             moRvContactList.setVisibility(View.GONE);
+            ed_search.setVisibility(View.GONE);
         } else {
             moRvContactList.setVisibility(View.VISIBLE);
             ll_nocontactView.setVisibility(View.GONE);
+            ed_search.setVisibility(View.GONE);
         }
 
         if (Share.isNeedToAdShow(this) && IntAdsHelper.isInterstitialLoaded()) {

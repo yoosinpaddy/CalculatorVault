@@ -367,7 +367,7 @@ public class WorldClockActivity extends AppCompatActivity implements OnItemClick
             if (Share.isNeedToAdShow(this)) {
                 if (MainApplication.getInstance().mInterstitialAd.isLoaded()) {
                     Log.e("if", "if");
-                    iv_more_app.setVisibility(View.VISIBLE);
+//                    iv_more_app.setVisibility(View.VISIBLE);
                 } else {
                     MainApplication.getInstance().mInterstitialAd.setAdListener(null);
                     MainApplication.getInstance().mInterstitialAd = null;
@@ -378,7 +378,7 @@ public class WorldClockActivity extends AppCompatActivity implements OnItemClick
                         public void onAdLoaded() {
                             super.onAdLoaded();
                             Log.e("load", "load");
-                            iv_more_app.setVisibility(View.VISIBLE);
+//                            iv_more_app.setVisibility(View.VISIBLE);
                         }
 
                         @Override
@@ -394,7 +394,7 @@ public class WorldClockActivity extends AppCompatActivity implements OnItemClick
             }
 
         } catch (Exception e) {
-            iv_more_app.setVisibility(View.VISIBLE);
+//            iv_more_app.setVisibility(View.VISIBLE);
             e.printStackTrace();
         }
     }

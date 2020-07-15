@@ -126,7 +126,7 @@ public class BrowserSelectionActivity extends AppCompatActivity implements View.
                 @Override
                 public void onLoad() {
                     moIvBlast.setVisibility(View.GONE);
-                    moIvMoreApp.setVisibility(View.VISIBLE);
+//                    moIvMoreApp.setVisibility(View.VISIBLE);
                 }
 
                 @Override

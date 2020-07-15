@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="No  History "
-            android:textColor="@color/white"
+            android:textColor="@color/navy_blue"
             android:textSize="26dp" />
     </LinearLayout>
 

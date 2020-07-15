@@ -136,7 +136,7 @@ private FirebaseAnalytics mFirebaseAnalytics;
             if (Share.isNeedToAdShow(this)){
                 if (MainApplication.getInstance().mInterstitialAd.isLoaded()) {
                     Log.e("if", "if");
-                    iv_more_app.setVisibility(View.VISIBLE);
+//                    iv_more_app.setVisibility(View.VISIBLE);
                 } else {
                     MainApplication.getInstance().mInterstitialAd.setAdListener(null);
                     MainApplication.getInstance().mInterstitialAd = null;
@@ -147,7 +147,7 @@ private FirebaseAnalytics mFirebaseAnalytics;
                         public void onAdLoaded() {
                             super.onAdLoaded();
                             Log.e("load", "load");
-                            iv_more_app.setVisibility(View.VISIBLE);
+//                            iv_more_app.setVisibility(View.VISIBLE);
                         }
 
                         @Override
@@ -163,7 +163,7 @@ private FirebaseAnalytics mFirebaseAnalytics;
             }
 
         } catch (Exception e) {
-            iv_more_app.setVisibility(View.VISIBLE);
+//            iv_more_app.setVisibility(View.VISIBLE);
             e.printStackTrace();
         }
     }

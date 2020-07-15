@@ -120,7 +120,7 @@ public class PhotoFragment extends Fragment {
         msVecAlbumsNames.clear();
         moTvError = view.findViewById(R.id.tvError);
         moRcvAlbum = view.findViewById(R.id.rcv_album);
-        moGridLayoutManager = new GridLayoutManager(getActivity(), 2);
+        moGridLayoutManager = new GridLayoutManager(getActivity(), 3);
         moRcvAlbum.setLayoutManager(moGridLayoutManager);
         moAlbumAdapter = new PhoneAlbumAdapter(getActivity(), moVectorPhoneAlbums);
         moRcvAlbum.setAdapter(moAlbumAdapter);

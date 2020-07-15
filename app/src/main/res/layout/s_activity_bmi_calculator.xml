@@ -7,10 +7,12 @@
     android:orientation="vertical"
     tools:context=".smartkit.activity.BMICalculatorActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/rel1"
@@ -34,12 +36,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
                     android:singleLine="true"
                     android:text="BMI Calculator"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -90,9 +92,6 @@
                 android:id="@+id/tab_lay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="4dp"
-                app:tabPadding="4dp"
                 app:tabBackground="@drawable/my_tabs_selector"
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@color/transparent"
@@ -104,7 +103,7 @@
 
         </FrameLayout>
 
-    </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_main"

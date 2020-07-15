@@ -20,13 +20,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.calculator.vault.gallery.locker.hide.data.R;
 import com.calculator.vault.gallery.locker.hide.data.smartkit.adapter.RecordingAdapter;
 import com.calculator.vault.gallery.locker.hide.data.smartkit.common.DisplayMetricsHandler;
 import com.calculator.vault.gallery.locker.hide.data.smartkit.common.NativeAdvanceHelper;
 import com.calculator.vault.gallery.locker.hide.data.smartkit.common.Share;
 import com.calculator.vault.gallery.locker.hide.data.smartkit.modle.Recording;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,7 +60,11 @@ public class RecordingListActivity extends AppCompatActivity implements View.OnC
 
         clearDate(recordingArraylist.size());
         if (Share.isNeedToAdShow(this)) {
-            NativeAdvanceHelper.loadAdBannerSize(activity, (FrameLayout) findViewById(R.id.fl_adplaceholder));
+            if (activity != null) {
+                NativeAdvanceHelper.loadAdBannerSize(activity, (FrameLayout) findViewById(R.id.fl_adplaceholder));
+            } else {
+                Log.e("RecordingListActivity", "onCreate: Context is null");
+            }
         }
 
       /*  if (recordingArraylist.size() != 0) {
@@ -201,7 +205,7 @@ public class RecordingListActivity extends AppCompatActivity implements View.OnC
                     @Override
                     public void onClick(View view) {
 
-                         ArrayList<File> filesList = new ArrayList<File>();
+                        ArrayList<File> filesList = new ArrayList<File>();
                         File contentFolder = new File(Environment.getExternalStorageDirectory().getAbsoluteFile() + "/SmartKit360/Record");
                         if (!contentFolder.exists()) {
                             contentFolder.mkdir();
@@ -212,13 +216,13 @@ public class RecordingListActivity extends AppCompatActivity implements View.OnC
                         for (int i = 0; i < filesList.size(); i++) {
                             File file = new File(filesList.get(i).getPath());
                             file.delete();
-                            if(file.exists()){
+                            if (file.exists()) {
                                 try {
                                     file.getCanonicalFile().delete();
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
-                                if(file.exists()){
+                                if (file.exists()) {
                                     getApplicationContext().deleteFile(file.getName());
                                 }
                             }

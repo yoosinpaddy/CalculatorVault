@@ -35,12 +35,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:id="@+id/tv_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
                     android:singleLine="true"
                     android:text="Calculator"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -108,6 +108,8 @@
                     android:layout_above="@+id/ll_back"
                     android:background="@android:color/white"
                     android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
                     android:weightSum="1">
 
 
@@ -122,18 +124,18 @@
 
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_degree"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="top|right"
+                            android:fontFamily="@font/poppins_regular"
                             android:padding="2dp"
-                            android:textStyle="bold"
                             android:paddingRight="@dimen/_2sdp"
                             android:text="DEG"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="@color/navy_blue"
-                            android:textSize="@dimen/txt2" />
+                            android:textSize="@dimen/txt2"
+                            android:textStyle="bold" />
 
                         <EditText
                             android:id="@+id/tv_Display"
@@ -146,7 +148,6 @@
                             android:focusable="false"
                             android:gravity="bottom|right"
                             android:paddingBottom="2dp"
-                            android:paddingRight="@dimen/pad"
                             android:scrollbars="horizontal"
                             android:text=" Start"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -190,10 +191,10 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:background="@drawable/j_img_calc_del_bg"
                         android:id="@+id/ll_delete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/j_img_calc_del_bg"
                         android:gravity="end|center_vertical"
                         android:paddingLeft="@dimen/txt1"
                         android:paddingRight="@dimen/half">
@@ -247,8 +248,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -256,8 +257,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
 
@@ -270,10 +271,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="("
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -286,8 +287,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -299,10 +300,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text=")"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -315,8 +316,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -328,10 +329,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="mc"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -344,8 +345,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -360,10 +361,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="m+"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -376,8 +377,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -392,10 +393,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="m-"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -410,8 +411,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -419,8 +420,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -432,10 +433,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="2nd"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -448,8 +449,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -461,10 +462,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="x\u00B2"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -477,8 +478,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -493,10 +494,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="x\u00B3"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -509,8 +510,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -525,10 +526,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="x\u02b8"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -541,8 +542,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -557,10 +558,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="mr"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -576,8 +577,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -585,8 +586,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -601,10 +602,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="e\u02e3"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -617,8 +618,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -630,10 +631,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u221Ax"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -646,8 +647,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -662,10 +663,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u00B3\u221Ax"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -678,8 +679,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -694,10 +695,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u02b8\u221Ax"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -710,8 +711,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -723,10 +724,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u215Fx"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -741,8 +742,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -750,8 +751,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -763,11 +764,11 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_rad"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="Rad"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -780,8 +781,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -796,11 +797,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_sin"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="sin"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -813,8 +814,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -829,11 +830,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_cos"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="cos"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -847,8 +848,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -863,11 +864,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_tan"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="tan"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -881,8 +882,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -897,10 +898,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="e"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -916,8 +917,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -925,8 +926,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -941,10 +942,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="Rand"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -957,8 +958,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -973,11 +974,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_sinh"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="sinh"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -990,8 +991,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
 
@@ -1004,11 +1005,11 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_cosh"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="cosh"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1022,8 +1023,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1038,11 +1039,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_tanh"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="tanh"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1056,8 +1057,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1072,10 +1073,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="EE"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1091,8 +1092,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -1100,8 +1101,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1116,10 +1117,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="ln"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1132,8 +1133,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1148,11 +1149,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_10_raised_to_x"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="10\u02e3"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1165,8 +1166,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
 
@@ -1182,11 +1183,11 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:id="@+id/tv_log10"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="log\u2081\u2080"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1200,8 +1201,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1216,10 +1217,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u03A0"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1233,8 +1234,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1246,10 +1247,10 @@
                             android:src="@drawable/j_img_calc_scie_btn" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="x!"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1265,8 +1266,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -1274,8 +1275,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1290,10 +1291,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="7"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1306,8 +1307,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1322,10 +1323,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="8"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1338,8 +1339,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1354,10 +1355,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="9"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1370,8 +1371,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1386,10 +1387,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u00f7"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1403,8 +1404,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1419,10 +1420,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="C"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1438,8 +1439,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -1447,8 +1448,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1460,10 +1461,10 @@
                             android:src="@drawable/j_img_calc_scie_btn_light" />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="4"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1476,8 +1477,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1492,10 +1493,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="5"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1508,8 +1509,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1524,10 +1525,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="6"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1540,8 +1541,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1556,10 +1557,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="\u00d7"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1572,8 +1573,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/sciebtn"
                         android:layout_marginLeft="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/pad"
+                        android:layout_marginRight="@dimen/_2sdp"
                         android:layout_weight="1">
 
                         <ImageView
@@ -1588,10 +1589,10 @@
                             />
 
                         <TextView
-                            android:fontFamily="@font/poppins_regular"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
                             android:text="%"
                             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1606,9 +1607,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:layout_marginBottom="@dimen/pad"
                     android:layout_marginTop="@dimen/pad"
+                    android:layout_marginBottom="@dimen/pad"
+                    android:gravity="top"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -1621,9 +1622,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
-                            android:layout_marginBottom="@dimen/pad"
                             android:layout_marginTop="@dimen/pad"
+                            android:layout_marginBottom="@dimen/pad"
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
@@ -1631,8 +1631,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_weight="1">
 
                                 <ImageView
@@ -1647,10 +1647,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="1"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1663,8 +1663,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_weight="1">
 
                                 <ImageView
@@ -1679,10 +1679,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="2"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1695,8 +1695,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_weight="1">
 
                                 <ImageView
@@ -1710,10 +1710,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="3"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1726,8 +1726,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
 
                                 android:layout_weight="1">
 
@@ -1743,10 +1743,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="-"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1762,18 +1762,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
+                            android:layout_marginTop="@dimen/_6sdp"
                             android:layout_marginBottom="@dimen/pad"
-                            android:layout_marginTop="@dimen/_2sdp"
                             android:layout_weight="1"
                             android:orientation="horizontal">
+
 
                             <FrameLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
 
                                 android:layout_weight="1">
 
@@ -1789,10 +1789,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="0"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1805,8 +1805,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_weight="1">
 
                                 <ImageView
@@ -1821,10 +1821,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="."
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1837,8 +1837,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_weight="1">
 
                                 <ImageView
@@ -1853,10 +1853,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="\u00b1"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1870,8 +1870,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sciebtn"
                                 android:layout_marginLeft="@dimen/_2sdp"
-                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_marginTop="@dimen/pad"
+                                android:layout_marginRight="@dimen/_2sdp"
                                 android:layout_weight="1">
 
                                 <ImageView
@@ -1886,10 +1886,10 @@
                                     />
 
                                 <TextView
-                                    android:fontFamily="@font/poppins_regular"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:gravity="center"
                                     android:text="+"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -1903,20 +1903,20 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="@dimen/_60sdp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/pad"
+                        android:padding="0dp"
                         android:layout_marginBottom="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/pad">
+                        android:baselineAligned="false">
+
 
                         <FrameLayout
-
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/_2sdp"
-
-
-                            android:layout_marginRight="@dimen/_2sdp"
                             android:layout_marginTop="@dimen/pad"
+                            android:layout_marginRight="@dimen/_2sdp"
                             android:layout_weight="1">
 
                             <ImageView
@@ -1931,10 +1931,10 @@
                                 />
 
                             <TextView
-                                android:fontFamily="@font/poppins_regular"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
                                 android:gravity="center"
                                 android:text="="
                                 android:textAppearance="?android:attr/textAppearanceMedium"

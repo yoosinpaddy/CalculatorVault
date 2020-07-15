@@ -130,7 +130,7 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
             if (Share.isNeedToAdShow(this)) {
                 if (MainApplication.getInstance().mInterstitialAd.isLoaded()) {
                     Log.e("if", "if");
-                    iv_more_app.setVisibility(View.VISIBLE);
+//                    iv_more_app.setVisibility(View.VISIBLE);
                 } else {
                     MainApplication.getInstance().mInterstitialAd.setAdListener(null);
                     MainApplication.getInstance().mInterstitialAd = null;
@@ -141,7 +141,7 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
                         public void onAdLoaded() {
                             super.onAdLoaded();
                             Log.e("load", "load");
-                            iv_more_app.setVisibility(View.VISIBLE);
+//                            iv_more_app.setVisibility(View.VISIBLE);
                         }
 
                         @Override
@@ -157,7 +157,7 @@ public class FlashActivity extends AppCompatActivity implements View.OnClickList
             }
 
         } catch (Exception e) {
-            iv_more_app.setVisibility(View.VISIBLE);
+//            iv_more_app.setVisibility(View.VISIBLE);
             e.printStackTrace();
         }
     }

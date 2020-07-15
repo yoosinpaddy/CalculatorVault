@@ -149,6 +149,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.15"
             android:background="@color/white"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_8sdp"
@@ -179,6 +180,7 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginEnd="4dp"
+                    android:drawablePadding="16dp"
                     android:fontFamily="@font/poppins_regular"
                     android:gravity="center"
                     android:padding="@dimen/_8sdp"
@@ -224,9 +226,9 @@
                 <EditText
                     android:id="@+id/language_translator_srctext"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="match_parent"
                     android:background="@null"
-                    android:hint="English"
+                    android:hint=""
                     android:inputType="textNoSuggestions|textMultiLine|textImeMultiLine"
                     android:paddingLeft="@dimen/_20sdp"
                     android:paddingTop="@dimen/_10sdp"
@@ -275,6 +277,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.15"
             android:orientation="horizontal"
+            android:gravity="center_vertical"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_8sdp"
             android:weightSum="1">
@@ -291,23 +294,30 @@
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_to_lang"
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:fontFamily="@font/poppins_regular"
-                android:gravity="center"
-                android:paddingStart="@dimen/_8sdp"
-                android:paddingTop="@dimen/_8sdp"
-                android:paddingEnd="8dp"
-                android:paddingBottom="@dimen/_8sdp"
-                android:singleLine="true"
-                android:text="Hindi "
-                android:textColor="@color/navy_blue"
-                android:textSize="@dimen/_15ssp"
-                android:textStyle="bold" />
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/tv_to_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:singleLine="true"
+                    android:text="Hindi "
+                    android:textColor="@color/navy_blue"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="0dp"

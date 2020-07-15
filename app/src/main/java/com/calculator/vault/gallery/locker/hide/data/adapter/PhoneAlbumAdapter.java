@@ -85,7 +85,8 @@ public class PhoneAlbumAdapter extends RecyclerView.Adapter<PhoneAlbumAdapter.Vi
 
         Glide.with(context).load(al_album.get(position).getCoverUri()).diskCacheStrategy(DiskCacheStrategy.NONE).into(holder.iv_album_image);
 
-        holder.iv_album_image.getLayoutParams().height = Share.screenHeight / 4;
+        //holder.iv_album_image.getLayoutParams().height = Share.screenHeight / 4;
+        holder.iv_album_image.getLayoutParams().height =  holder.iv_album_image.getLayoutParams().width;
         holder.tv_album_name.setText(al_album.get(position).getName());
 
         holder.itemView.setOnClickListener(view -> {

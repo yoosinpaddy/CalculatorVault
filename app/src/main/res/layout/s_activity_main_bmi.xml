@@ -46,6 +46,7 @@
                 android:id="@+id/iv_history"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:scaleType="fitCenter"
                 android:layout_alignParentRight="true"
                 android:src="@drawable/j_img_history"
                 android:visibility="visible" />
@@ -215,7 +216,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginRight="@dimen/_5sdp"
                             android:gravity="start"
-                            android:text="Height"
+                            android:text="Height (cm)"
                             android:textAllCaps="false"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_16ssp" />
@@ -270,7 +271,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginRight="@dimen/_5sdp"
                             android:gravity="start"
-                            android:text="Weight"
+                            android:text="Weight (kg)"
                             android:textAllCaps="false"
                             android:textColor="@color/navy_blue"
                             android:textSize="@dimen/_16ssp" />

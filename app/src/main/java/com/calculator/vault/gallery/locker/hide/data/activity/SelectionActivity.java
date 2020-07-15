@@ -90,7 +90,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 
     private SelectionActivity activity;
     private LinearLayout moLlPhotos, ll_videos, ll_contacts, ll_notes, ll_browser, ll_credentials,
-            llRateApp, llRemoveAds, llBackToCalculator, view_more, llOtherFiles, llAppLock;
+            llRateApp, llRemoveAds, llBackToCalculator, llMoreApps, llAntiLostGuid, view_more, llOtherFiles, llAppLock;
    // private View vBrowserSetting, vLockSetting, vBreakInReport, vDecoyPasscode, vRecoveryPasscode;
     private List<String> listPermissionsNeeded = new ArrayList<>();
     public final int STORAGE_PERMISSION_CODE = 23;
@@ -361,7 +361,8 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         //llMoreApps = nvDrawer.findViewById(R.id.ll_nav_moreApps);
         llRemoveAds = nvDrawer.findViewById(R.id.ll_nav_removeAds);
         vShareApp = nvDrawer.findViewById(R.id.view_shareApp);
-       // llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
+       llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
+        llMoreApps = nvDrawer.findViewById(R.id.ll_nav_moreApps);
 //        toolbar.setNavigationIcon(R.drawable.ic_menu1);
         translatorTop.setOnClickListener(v -> {
             Intent i5 = new Intent(this, TranslatorActivity.class);
@@ -539,6 +540,8 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         //llBackup.setOnClickListener(this);
         llAppLock.setOnClickListener(this);
         llOtherFiles.setOnClickListener(this);
+        llAntiLostGuid.setOnClickListener(this);
+        llRateApp.setOnClickListener(this);
         //llAntiLostGuid.setOnClickListener(this);
        /////**/ //
 
@@ -639,7 +642,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //        llRecoverPass.setOnClickListener(this);
         //llContactUs.setOnClickListener(this);
         llRateApp.setOnClickListener(this);
-        //llMoreApps.setOnClickListener(this);
+        llMoreApps.setOnClickListener(this);
         llRemoveAds.setOnClickListener(this);
         //llShareApp.setOnClickListener(this);
 

@@ -134,7 +134,7 @@ public class NoteTextActivity extends AppCompatActivity implements View.OnClickL
                 @Override
                 public void onLoad() {
                     moIvBlast.setVisibility(View.GONE);
-                    moIvMoreApp.setVisibility(View.VISIBLE);
+//                    moIvMoreApp.setVisibility(View.VISIBLE);
                 }
 
                 @Override

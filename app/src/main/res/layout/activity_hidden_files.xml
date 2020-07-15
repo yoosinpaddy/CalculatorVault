@@ -297,7 +297,7 @@
                 android:layout_height="@dimen/_40sdp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:src="@drawable/ic_add_svg"
+                android:src="@drawable/fiels"
                 ads:layout_constraintBottom_toBottomOf="parent"
                 ads:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

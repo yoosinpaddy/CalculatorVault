@@ -148,7 +148,7 @@ public class BackupActivity extends AppCompatActivity /*implements MoPubIntersti
                 @Override
                 public void onLoad() {
                     moIvBlast.setVisibility(View.GONE);
-                    moIvMoreApp.setVisibility(View.VISIBLE);
+//                    moIvMoreApp.setVisibility(View.VISIBLE);
                 }
 
                 @Override
