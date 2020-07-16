@@ -90,7 +90,7 @@
             <RelativeLayout
                 android:id="@+id/ll_changePasscode"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/j_nav_item_bg"
                 android:padding="@dimen/_10sdp">
@@ -120,7 +120,7 @@
             <RelativeLayout
                 android:id="@+id/view_change_pass"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/j_nav_item_bg"
                 android:padding="@dimen/_10sdp">
