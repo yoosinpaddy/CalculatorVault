@@ -70,13 +70,10 @@ import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.Translato
 import com.calculator.vault.gallery.locker.hide.data.smartkit.activity.WordToSpeakActivity;
 import com.calculator.vault.gallery.locker.hide.data.subscription.SubscriptionActivity;
 import com.google.android.material.navigation.NavigationView;
-import com.google.zxing.integration.android.IntentIntegrator;
 import com.hsalf.smilerating.SmileRating;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import example.zxing.ToolbarCaptureActivity;
 
 import static android.Manifest.permission.READ_CONTACTS;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
@@ -91,7 +88,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     private SelectionActivity activity;
     private LinearLayout moLlPhotos, ll_videos, ll_contacts, ll_notes, ll_browser, ll_credentials,
             llRateApp, llRemoveAds, llBackToCalculator, llMoreApps, llAntiLostGuid, view_more, llOtherFiles, llAppLock;
-   // private View vBrowserSetting, vLockSetting, vBreakInReport, vDecoyPasscode, vRecoveryPasscode;
+    // private View vBrowserSetting, vLockSetting, vBreakInReport, vDecoyPasscode, vRecoveryPasscode;
     private List<String> listPermissionsNeeded = new ArrayList<>();
     public final int STORAGE_PERMISSION_CODE = 23;
     private String image_name;
@@ -118,7 +115,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
-    private ImageView iv_back,babalao,babalao_dagote;
+    private ImageView iv_back, babalao, babalao_dagote;
     // private ImageView iv_remove_ad;
     private List<String> listPermissionsNeededContact = new ArrayList<>();
     private static final int STORAGE_PERMISSION_CODE_Contact = 1345;
@@ -296,19 +293,19 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 //        flOne = findViewById(R.id.fl_adplaceholder_one);
 //        flTwo = findViewById(R.id.fl_adplaceholder_two);
 
-        translaterTwo = (LinearLayout)findViewById( R.id.translater_two );
-        calcTwo = (LinearLayout)findViewById( R.id.calc_two );
-        recorderTwo = (LinearLayout)findViewById( R.id.recorder_two );
-        qrTwo = (LinearLayout)findViewById( R.id.qr_two );
-        lightTwo = (LinearLayout)findViewById( R.id.light_two );
-        bmiTwo = (LinearLayout)findViewById( R.id.bmi_two );
-        ageCalcTwo = (LinearLayout)findViewById( R.id.ageCalc_two );
-        textToSpeechTwo = (LinearLayout)findViewById( R.id.textToSpeech_two );
-        dayCounterTwo = (LinearLayout)findViewById( R.id.dayCounter_two );
+        translaterTwo = (LinearLayout) findViewById(R.id.translater_two);
+        calcTwo = (LinearLayout) findViewById(R.id.calc_two);
+        recorderTwo = (LinearLayout) findViewById(R.id.recorder_two);
+        qrTwo = (LinearLayout) findViewById(R.id.qr_two);
+        lightTwo = (LinearLayout) findViewById(R.id.light_two);
+        bmiTwo = (LinearLayout) findViewById(R.id.bmi_two);
+        ageCalcTwo = (LinearLayout) findViewById(R.id.ageCalc_two);
+        textToSpeechTwo = (LinearLayout) findViewById(R.id.textToSpeech_two);
+        dayCounterTwo = (LinearLayout) findViewById(R.id.dayCounter_two);
 
-        translatorTop = (LinearLayout)findViewById( R.id.translator_top );
-        calculatorTop = (LinearLayout)findViewById( R.id.calculator_top );
-        recorderTop = (LinearLayout)findViewById( R.id.recorder_top );
+        translatorTop = (LinearLayout) findViewById(R.id.translator_top);
+        calculatorTop = (LinearLayout) findViewById(R.id.calculator_top);
+        recorderTop = (LinearLayout) findViewById(R.id.recorder_top);
         moLlPhotos = findViewById(R.id.ll_photos);
         babalao = findViewById(R.id.babalao);
         babalao_dagote = findViewById(R.id.babalao_dagote);
@@ -361,7 +358,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         //llMoreApps = nvDrawer.findViewById(R.id.ll_nav_moreApps);
         llRemoveAds = nvDrawer.findViewById(R.id.ll_nav_removeAds);
         vShareApp = nvDrawer.findViewById(R.id.view_shareApp);
-       llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
+        llAntiLostGuid = nvDrawer.findViewById(R.id.ll_nav_anti_lost);
         llMoreApps = nvDrawer.findViewById(R.id.ll_nav_moreApps);
 //        toolbar.setNavigationIcon(R.drawable.ic_menu1);
         translatorTop.setOnClickListener(v -> {
@@ -394,12 +391,12 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         });
         babalao.setOnClickListener(v1 -> {
             if (mCLMain.getVisibility() == View.GONE) {
-                Log.e(TAG, "initView: visible" );
+                Log.e(TAG, "initView: visible");
                 mCLMain.setVisibility(View.VISIBLE);
                 mCLSecond.setVisibility(View.GONE);
                 babalao.setImageDrawable(getResources().getDrawable(R.drawable.ic_menu1));
-            }else {
-                Log.e(TAG, "initView: invisible" );
+            } else {
+                Log.e(TAG, "initView: invisible");
                 if (mDrawer.isDrawerOpen(GravityCompat.START)) {
                     mDrawer.closeDrawer(GravityCompat.START);
                 } else {
@@ -436,7 +433,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     }
 
 
-    public void settings(View v){
+    public void settings(View v) {
         Log.e(TAG, "onNavigationItemSelected: " + " nav_lockSetting");
         Intent intentpass = new Intent(SelectionActivity.this, SettingsActivity.class);
         startActivity(intentpass);
@@ -454,6 +451,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
             return true;
         }
     }
+
     // ToDo: Drawer menu listener is set here...
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
@@ -543,9 +541,9 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         llAntiLostGuid.setOnClickListener(this);
         llRateApp.setOnClickListener(this);
         //llAntiLostGuid.setOnClickListener(this);
-       /////**/ //
+        /////**/ //
 
-        translaterTwo.setOnClickListener(v->{
+        translaterTwo.setOnClickListener(v -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (checkAndRequestPermissions(STORAGE_PERMISSION)) {
                     Intent i5 = new Intent(this, TranslatorActivity.class);
@@ -558,11 +556,12 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 startActivity(i5);
             }
         });
-        calcTwo.setOnClickListener(v->{
+        calcTwo.setOnClickListener(v -> {
             Intent i1 = new Intent(this, ScientificCalculatorActivity.class);
             i1.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(i1);});
-        recorderTwo.setOnClickListener(v->{
+            startActivity(i1);
+        });
+        recorderTwo.setOnClickListener(v -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (checkAndRequestPermissionsRecoder(STORAGE_PERMISSION_CODE)) {
                     Intent i9 = new Intent(this, RecorderActivity.class);
@@ -575,32 +574,52 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 startActivity(i9);
             }
         });
-        qrTwo.setOnClickListener(v->{
-            if (checkPermission()) {
+        qrTwo.setOnClickListener(v -> {
+            Intent i89 = new Intent(this, JQrActivity.class);
+            i89.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(i89);
+
+           /* if (checkPermission()) {
                 new IntentIntegrator(SelectionActivity.this).setCaptureActivity(ToolbarCaptureActivity.class).initiateScan();
             } else {
                 requestPermission();
-            }});
-        lightTwo.setOnClickListener(v->{
+            }*/
+
+        });
+
+        lightTwo.setOnClickListener(v -> {
             Intent i3 = new Intent(this, FlashActivity.class);
             i3.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(i3);});
-        bmiTwo.setOnClickListener(v->{
+            startActivity(i3);
+        });
+        bmiTwo.setOnClickListener(v ->
+
+        {
             Intent i = new Intent(this, BMIMainActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(i);});
-        ageCalcTwo.setOnClickListener(v->{
+            startActivity(i);
+        });
+        ageCalcTwo.setOnClickListener(v ->
+
+        {
             Intent i8 = new Intent(this, AgeCalculatorActivity.class);
             i8.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(i8);});
-        textToSpeechTwo.setOnClickListener(v->{
+            startActivity(i8);
+        });
+        textToSpeechTwo.setOnClickListener(v ->
+
+        {
             Intent i4 = new Intent(this, WordToSpeakActivity.class);
             i4.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(i4);});
-        dayCounterTwo.setOnClickListener(v->{
+            startActivity(i4);
+        });
+        dayCounterTwo.setOnClickListener(v ->
+
+        {
             Intent i7 = new Intent(this, DayCounterActivity.class);
             i7.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(i7);});
+            startActivity(i7);
+        });
 //        iv_back.setOnClickListener(this);
         //navigationView.setNavigationItemSelectedListener(this);
     }
@@ -620,6 +639,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                 new String[]{Manifest.permission.CAMERA},
                 PERMISSION_REQUEST_CODE);
     }
+
     private void initViewAction() {
         Log.e(TAG, "initViewAction: " + nvDrawer.getMenu().size());
 
@@ -782,7 +802,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
         switch (requestCode) {
-                case STORAGE_PERMISSION_CODE:
+            case STORAGE_PERMISSION_CODE:
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
                         || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
                         || ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
@@ -885,7 +905,7 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
                     }
                 }
                 break;
-                case STORAGE_PERMISSION:
+            case STORAGE_PERMISSION:
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
                         || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
                         || ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
@@ -1344,9 +1364,9 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
         // iv_remove_ad.setVisibility(View.GONE);
         llRemoveAds.setVisibility(View.GONE);
         vRemoveAds.setVisibility(View.GONE);
-       // llShareApp.setVisibility(View.VISIBLE);
+        // llShareApp.setVisibility(View.VISIBLE);
         vShareApp.setVisibility(View.VISIBLE);
-       // llMoreApps.setVisibility(View.GONE);
+        // llMoreApps.setVisibility(View.GONE);
         vMoreApps.setVisibility(View.GONE);
 //        findViewById(R.id.fl_adplaceholder_one).setVisibility(View.GONE);
 //        findViewById(R.id.fl_adplaceholder_two).setVisibility(View.GONE);

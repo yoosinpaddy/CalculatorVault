@@ -64,7 +64,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:fullBackupContent,android:icon">
-        <activity android:name=".activity.SettingsActivity"></activity>
+        <activity android:name=".activity.JQrActivity"></activity>
+        <activity android:name=".activity.SettingsActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -459,7 +460,7 @@
         <activity
             android:name=".smartkit.activity.SplashScreenActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTranslucent"></activity>
+            android:theme="@style/AppTranslucent" />
         <activity
             android:name=".smartkit.activity.SplashHomeActivity"
             android:screenOrientation="portrait" />
@@ -471,7 +472,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".smartkit.activity.AgeCalculatorActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".smartkit.activity.DayCounterActivity"
             android:screenOrientation="portrait" />
