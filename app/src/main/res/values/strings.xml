@@ -34,7 +34,7 @@
     <string name="browserSettings" translatable="false">Browser Settings</string>
     <string name="lockSettings" translatable="false">Lock Settings</string>
     <string name="breakReport" translatable="false">Break-in-Report</string>
-    <string name="breakAlert" translatable="false">Break in Alert</string>
+    <string name="breakAlert" translatable="false">Break-in Alert</string>
     <string name="DecoyPasscode" translatable="false">Decoy Passcode</string>
     <string name="help" translatable="false">Help</string>
     <string name="ContactUS" translatable="false">Contact Us</string>
