@@ -41,7 +41,7 @@
                     android:layout_centerInParent="true"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Translator"
+                    android:text="Select Country"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp"

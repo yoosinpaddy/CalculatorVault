@@ -257,6 +257,8 @@ public class BackupActivity extends AppCompatActivity /*implements MoPubIntersti
             case REQUEST_CODE_SIGN_IN:
                 if (resultCode == Activity.RESULT_OK && resultData != null) {
                     handleSignInResult(resultData);
+                }else {
+                    Log.e(TAG, "onActivityResult: results not ok" );
                 }
                 break;
         }

@@ -1611,12 +1611,13 @@
                     android:layout_marginBottom="@dimen/pad"
                     android:gravity="top"
                     android:layout_weight="1"
+                    android:weightSum="5"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="4"
                         android:orientation="vertical">
 
                         <LinearLayout
@@ -1904,10 +1905,11 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/pad"
-                        android:padding="0dp"
-                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_gravity="top"
                         android:baselineAligned="false">
 
 
@@ -1923,9 +1925,9 @@
                                 android:id="@+id/iv_equals"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:src="@drawable/j_img_calc_scie_btn_equals"
                                 android:background="@android:color/transparent"
                                 android:padding="@dimen/half"
-                                android:src="@drawable/j_img_calc_scie_btn_equals"
 
 
                                 />

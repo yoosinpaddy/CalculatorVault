@@ -74,6 +74,8 @@ public class PatternActivity extends AppCompatActivity {
     // Variable used for storing the key in the Android Keystore container
     private static final String KEY_NAME = "com.calculatorvault.backup";
     private Cipher cipher;
+    Boolean isChanging=false;
+    FingerprintHandler helper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -232,6 +234,11 @@ public class PatternActivity extends AppCompatActivity {
             findViewById(R.id.pattern_iv_finger).setVisibility(View.INVISIBLE);
         }
     }
+    public void fingerValidated(){
+        fromWhere = "new_pattern";
+        tvAppName.setText("Draw new pattern.");
+        pvLock.clearPattern();
+    }
 
     @Override
     protected void onResume() {
@@ -371,7 +378,8 @@ public class PatternActivity extends AppCompatActivity {
                             generateKey();
                             if (cipherInit()) {
                                 FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
-                                FingerprintHandler helper = new FingerprintHandler(this, true);
+                                helper = new FingerprintHandler(this, true);
+
                                 helper.startAuth(fingerprintManager, cryptoObject);
                             }
                         }

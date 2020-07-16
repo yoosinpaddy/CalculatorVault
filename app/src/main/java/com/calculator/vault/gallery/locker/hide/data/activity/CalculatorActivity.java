@@ -14,6 +14,7 @@ import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
 import android.provider.Settings;
 import android.security.keystore.KeyGenParameterSpec;
@@ -1569,6 +1570,10 @@ public class CalculatorActivity extends HiddenCameraActivity implements View.OnC
                             Log.e(TAG, "CheckButtonClick: " + "Take picture true");
                             EnterePassword = msGetPassword;
                             takePicture();
+                            new Handler().postDelayed(() -> {
+//                                stopCamera();
+                            },1500);
+
                         } else {
                             Log.e(TAG, "CheckButtonClick: " + "Take picture false");
                         }

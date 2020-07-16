@@ -38,7 +38,7 @@
                 android:fontFamily="@font/poppins_regular"
                 android:text="hello"
                 android:textColor="@color/navy_blue"
-                android:textSize="@dimen/_20sdp"
+                android:textSize="@dimen/_15sdp"
                 android:textStyle="bold" />
 
             <ImageView
